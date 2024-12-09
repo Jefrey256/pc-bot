@@ -1,0 +1,1762 @@
+[14:15:54] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "9DmjDLAauRa+EBmUJr1+r81Ot7zMVnCWXbERkI5f6XI="
+      }
+    }
+[14:15:54] INFO: not logged in, attempting registration...
+    node: {
+      "passive": false,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "devicePairingData": {
+        "eRegid": "AAAALQ==",
+        "eKeytype": "BQ==",
+        "eIdent": "FGOBytlpYfHOJ2oRKaF6VDY3Cshr9ZAUGkLhZr6wo1A=",
+        "eSkeyId": "AAAB",
+        "eSkeyVal": "bO6+N2S9gM92Xak3eN8kO5+IwNOTAVkGFf10cQ4xr1A=",
+        "eSkeySig": "wXpYBvs389KyEITphzq0e8oqWvLROAVtB8pwNSQT0xTyxRlV+wMPqjUfunf98sTz80efjL4zg1NgTUi2VZ2shQ==",
+        "buildHash": "xEauBiqjwsZJtQsy2Yl8zg==",
+        "deviceProps": "CgZVYnVudHUYASAA"
+      }
+    }
+[14:16:17] INFO: pairing configured successfully, expect to restart the connection...
+    me: {
+      "id": "559481266028:78@s.whatsapp.net",
+      "name": "ᵃᵈᵐ"
+    }
+    platform: "smba"
+[14:16:18] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {
+        "code": "515"
+      }
+    }
+[14:16:18] INFO: connection errored
+    trace: "Error: Stream Errored (restart required)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[14:16:23] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "W7Sqw5BYmOyPHHSEUluC40ZWoB+zn60kmpi3RrUQ90A="
+      }
+    }
+[14:16:24] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[14:16:24] INFO: 0 pre-keys found on server
+[14:16:24] INFO: uploading pre-keys
+    count: 30
+[14:16:25] INFO: uploaded pre-keys
+    count: 30
+[14:16:25] INFO: opened connection to WA
+[14:16:25] INFO: handled 0 offline messages/notifications
+[14:16:25] INFO: injecting new app state sync keys
+    newAppStateSyncKeyId: "AAAAAMHp"
+    newKeys: [
+      "AAAAAMHG",
+      "AAAAAMHH",
+      "AAAAAMHE",
+      "AAAAAMHF",
+      "AAAAAMHD",
+      "AAAAAMHO",
+      "AAAAAMHP",
+      "AAAAAMHM",
+      "AAAAAMHN",
+      "AAAAAMHK",
+      "AAAAAMHL",
+      "AAAAAMHI",
+      "AAAAAMHJ",
+      "AAAAAMHW",
+      "AAAAAMHX",
+      "AAAAAMHU",
+      "AAAAAMHV",
+      "AAAAAMHS",
+      "AAAAAMHT",
+      "AAAAAMHQ",
+      "AAAAAMHR",
+      "AAAAAMHe",
+      "AAAAAMHf",
+      "AAAAAMHc",
+      "AAAAAMHd",
+      "AAAAAMHa",
+      "AAAAAMHb",
+      "AAAAAMHY",
+      "AAAAAMHZ",
+      "AAAAAMHm",
+      "AAAAAMHn",
+      "AAAAAMHk",
+      "AAAAAMHl",
+      "AAAAAMHi",
+      "AAAAAMHj",
+      "AAAAAMHg",
+      "AAAAAMHh",
+      "AAAAAMHu",
+      "AAAAAMHs",
+      "AAAAAMHt",
+      "AAAAAMHq",
+      "AAAAAMHr",
+      "AAAAAMHo",
+      "AAAAAMHp"
+    ]
+[14:16:26] INFO: doing initial app state sync
+[14:16:26] INFO: got history notification
+    histNotification: {
+      "fileSha256": "11APxE95cMhvST5ZqNjf7Wz9qIYcBojWk4P9pqtZN54=",
+      "fileLength": "6172",
+      "mediaKey": "QC6a+vxft8llL4By4jTxx/p8EFbrHTXUd77wt6ICn9M=",
+      "fileEncSha256": "a9YeeNncRaYGsje291uXYE8b6BxQqc4n5c/U5h9LATY=",
+      "directPath": "/v/t62.31111-24/32790949_600491345852515_1180023174195687_n.enc?ccb=11-4&oh=01_Q5AaIAFDI37XkdpcVjD6Gd2e78qNxcqXYBCTGxe_WZlyNeJj&oe=677E729A&_nc_sid=5e03e0",
+      "syncType": "INITIAL_STATUS_V3"
+    }
+    process: false
+    id: "1ACF03C32E6FEBB1EFAC276F5FCA394C"
+    isLatest: true
+[14:16:26] INFO: resyncing critical_block from v0
+[14:16:26] INFO: resyncing critical_unblock_low from v0
+[14:16:26] INFO: resyncing regular_high from v0
+[14:16:26] INFO: resyncing regular_low from v0
+[14:16:26] INFO: resyncing regular from v0
+[14:16:27] INFO: restored state of critical_block from snapshot to v54 with mutations
+[14:16:27] INFO (critical_block): failed to sync state from version
+    error: "Error: failed to find key \"AAAAAMHs\" to decode patch\n    at decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:203:19)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async doAppStateSync (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:790:17)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:768:21\n    at async Promise.all (index 0)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:763:9"
+[14:16:27] INFO (regular_high): failed to sync state from version, removing and trying from scratch
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async doAppStateSync (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:790:17)"
+[14:16:27] INFO (regular): failed to sync state from version, removing and trying from scratch
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async doAppStateSync (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:790:17)"
+[14:16:27] INFO (critical_unblock_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async doAppStateSync (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:790:17)"
+[14:16:27] INFO (regular_low): failed to sync state from version
+    error: "Error: failed to find key \"AAAAAMHS\" to decode mutation\n    at getKey (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:192:19)\n    at async decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:161:21)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async doAppStateSync (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:790:17)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:768:21\n    at async Promise.all (index 0)"
+[14:16:27] INFO: resyncing critical_unblock_low from v0
+[14:16:27] INFO: resyncing regular_high from v0
+[14:16:27] INFO: resyncing regular from v0
+[14:16:27] INFO (regular_high): failed to sync state from version, removing and trying from scratch
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36"
+[14:16:27] INFO (critical_unblock_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36"
+[14:16:27] INFO (regular): failed to sync state from version, removing and trying from scratch
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36"
+[14:16:27] INFO: resyncing critical_unblock_low from v0
+[14:16:27] INFO: resyncing regular_high from v0
+[14:16:27] INFO: resyncing regular from v0
+[14:16:28] INFO (regular_high): failed to sync state from version
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36"
+[14:16:28] INFO (regular): failed to sync state from version
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36"
+[14:16:28] INFO (critical_unblock_low): failed to sync state from version
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36"
+[14:16:28] INFO: got history notification
+    histNotification: {
+      "fileSha256": "KDE+UvN0s9KomAGYR/qFnxniDXDY3onBXCGhakQE6Mg=",
+      "fileLength": "12302",
+      "mediaKey": "2PhveFTsSmXTT30xxEg4oVVoVrUmAxnnuazIa2VwzbU=",
+      "fileEncSha256": "xQzhdbB55/z4mazzvvgwAkAidLh0ViBg8uLRqniD6Ww=",
+      "directPath": "/v/t62.31111-24/18857646_1266999081119283_1350741523157452787_n.enc?ccb=11-4&oh=01_Q5AaIBIFG6rtLtq36fnAWQ2BwxwejN4oPAAAAoI9ezaVXRQN&oe=677E5DFC&_nc_sid=5e03e0",
+      "syncType": "NON_BLOCKING_DATA"
+    }
+    process: false
+    id: "299140E1729E16551ACAEA785257ACD1"
+    isLatest: true
+[14:16:28] INFO: got history notification
+    histNotification: {
+      "fileSha256": "pXe3gpLhJI1UfaJZ4ZDzf1JcKbF3/u9Gs6Dll4+gEJ8=",
+      "fileLength": "14979",
+      "mediaKey": "TW/ST9U+Qa3hXyTcCkUmdWKSBoGa5k6zt8ZPl+4v9K8=",
+      "fileEncSha256": "sArFGJLWegqUadtAxpj3mIhqYF/gvjlahn5GB/mam0A=",
+      "directPath": "/v/t62.31111-24/32425844_1253191359280824_2736606076278966462_n.enc?ccb=11-4&oh=01_Q5AaIOZoQbRySlZeahZjU7-peB4AIKvHTIhY7N8e4pSbIazb&oe=677E615B&_nc_sid=5e03e0",
+      "syncType": "PUSH_NAME",
+      "chunkOrder": 1
+    }
+    process: true
+    id: "BC6A60905D78170CB361CA5461F3E26F"
+    isLatest: true
+[14:16:28] INFO: got history notification
+    histNotification: {
+      "fileSha256": "My7jLY+TcyME+xb4sKBJ0LoHFx0F2IH/4RWnfyWqz7Q=",
+      "fileLength": "348179",
+      "mediaKey": "667KKBz8S7hO6xlwpxOGpb88irk/L3WpfSScBbM6aKo=",
+      "fileEncSha256": "Ge6b7BJ+MA9S3g3ul0mrd5GzbN6KZOzPMkR3voJYjtI=",
+      "directPath": "/v/t62.31111-24/30970888_1103987418071887_2928506813419348400_n.enc?ccb=11-4&oh=01_Q5AaIJ_JFHlRSjBWlx65ez3m2KLROzkRQn3Ir6Pf_JQlboFf&oe=677E7E72&_nc_sid=5e03e0",
+      "syncType": "INITIAL_BOOTSTRAP"
+    }
+    process: true
+    id: "FA2F5F94C37BF7A7B5996A7C132ED184"
+    isLatest: false
+[14:16:28] INFO: resyncing regular_low from v0
+[14:16:29] INFO (regular_low): failed to sync state from version
+    error: "Error: failed to find key \"AAAAAMHS\" to decode mutation\n    at getKey (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:192:19)\n    at async decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:161:21)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:575:33\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\make-mutex.js:19:36"
+[14:16:29] INFO: resyncing regular from v0
+[14:16:29] INFO (regular): failed to sync state from version, removing and trying from scratch
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)"
+[14:16:29] INFO: resyncing regular from v0
+[14:16:29] INFO (regular): failed to sync state from version, removing and trying from scratch
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36"
+[14:16:29] INFO: resyncing regular from v0
+[14:16:30] INFO (regular): failed to sync state from version
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36"
+[14:16:30] ERROR: failed to decrypt message
+    key: {
+      "remoteJid": "120363330239998629@g.us",
+      "fromMe": false,
+      "id": "3EB08A06DE62E32ADF8E01",
+      "participant": "6285601314834:20@s.whatsapp.net"
+    }
+    err: {
+      "type": "Error",
+      "message": "No SenderKeyRecord found for decryption",
+      "stack":
+          Error: No SenderKeyRecord found for decryption
+              at 120363330239998629@g.us::6285601314834::20 [as awaitable] (C:\Users\reism\Desktop\bot\node_modules\baileys\WASignalGroup\group_cipher.js:49:15)
+              at async _asyncQueueExecutor (C:\Users\reism\Desktop\bot\node_modules\baileys\WASignalGroup\queue_job.js:20:29)
+    }
+[14:16:30] ERROR: failed to decrypt message
+    key: {
+      "remoteJid": "120363330239998629@g.us",
+      "fromMe": false,
+      "id": "3EB09B04A6AE0222266CB7",
+      "participant": "6285601314834:20@s.whatsapp.net"
+    }
+    err: {
+      "type": "Error",
+      "message": "No SenderKeyRecord found for decryption",
+      "stack":
+          Error: No SenderKeyRecord found for decryption
+              at 120363330239998629@g.us::6285601314834::20 [as awaitable] (C:\Users\reism\Desktop\bot\node_modules\baileys\WASignalGroup\group_cipher.js:49:15)
+              at async _asyncQueueExecutor (C:\Users\reism\Desktop\bot\node_modules\baileys\WASignalGroup\queue_job.js:20:29)
+    }
+[14:16:30] INFO: resyncing regular from v0
+[14:16:30] INFO (regular): failed to sync state from version, removing and trying from scratch
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)"
+[14:16:30] INFO: resyncing regular from v0
+[14:16:31] INFO (regular): failed to sync state from version, removing and trying from scratch
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36"
+[14:16:31] INFO: resyncing regular from v0
+[14:16:31] INFO (regular): failed to sync state from version
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36"
+[14:16:35] INFO: sent retry receipt
+    msgAttrs: {
+      "from": "120363330239998629@g.us",
+      "type": "text",
+      "id": "3EB08A06DE62E32ADF8E01",
+      "participant": "6285601314834:20@s.whatsapp.net",
+      "participant_lid": "231190070059183@lid",
+      "addressing_mode": "pn",
+      "notify": "🤖 Spider X 🇮🇩",
+      "t": "1733753788"
+    }
+    retryCount: 1
+[14:16:40] INFO: sent retry receipt
+    msgAttrs: {
+      "from": "120363330239998629@g.us",
+      "type": "text",
+      "id": "3EB09B04A6AE0222266CB7",
+      "participant": "6285601314834:20@s.whatsapp.net",
+      "participant_lid": "231190070059183@lid",
+      "addressing_mode": "pn",
+      "notify": "🤖 Spider X 🇮🇩",
+      "t": "1733753789"
+    }
+    retryCount: 1
+[14:16:51] INFO: got history notification
+    histNotification: {
+      "fileSha256": "qCYhoJgZasu/nf+m2AnjU6DqmMmwWxjXEUmrHEitX2M=",
+      "fileLength": "10652660",
+      "mediaKey": "yd1/tXB0DXyD987sZBvBPcHcKObPbsBkRkJXXlG9jEU=",
+      "fileEncSha256": "pJ+jqiXu0wBPFjq7vniJDF94ROkPiYpFFqq4OLigBCg=",
+      "directPath": "/v/t62.31111-24/31859387_629306962753778_7367847188283529290_n.enc?ccb=11-4&oh=01_Q5AaIFopRJV7-hrz_71eJyv2xDfy2IbaGpOdPGaMr0fnlj1l&oe=677E5C88&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 1,
+      "progress": 2,
+      "oldestMsgInChunkTimestampSec": "1733323708"
+    }
+    process: true
+    id: "8394662A735CD6E6A6B8F727E11A42EB"
+    isLatest: false
+[14:17:01] INFO: got history notification
+    histNotification: {
+      "fileSha256": "KVVu1zj5CuaQNU0WlQI4G09YIkAXFu2QQ2dfxy5oJok=",
+      "fileLength": "5393868",
+      "mediaKey": "yc2Zkx1XmoK2sI7o75NbW6QKIKOR04bBQrr0BjXPp2k=",
+      "fileEncSha256": "oXdw0NG//WI4MrWgZtDj9xh4BwJoTV6IiqwbBMb7aXA=",
+      "directPath": "/v/t62.31111-24/30723208_563760282958618_6139951434122515273_n.enc?ccb=11-4&oh=01_Q5AaICgSL5Tn8TxaHR4FMMwtuCbsEh9Dlb7GCzL7ENSXl8rn&oe=677E562D&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 2,
+      "progress": 4,
+      "oldestMsgInChunkTimestampSec": "1732972247"
+    }
+    process: true
+    id: "3035A7D2D1A6B63592739DF56C8B6BF3"
+    isLatest: false
+[14:17:08] INFO: got history notification
+    histNotification: {
+      "fileSha256": "Bufn/DhVHuAjDdCvWK+9GPF6vQreGOv48XgQgiGIR6o=",
+      "fileLength": "2060625",
+      "mediaKey": "AjSXRigCoI2kkSg4+FGONK9Z73b4zDX4DIkGVutohnY=",
+      "fileEncSha256": "oyE9Pbd2WVpddND8YUUxbnbSMk6YBRPvX6mrVo6vXoY=",
+      "directPath": "/v/t62.31111-24/19253896_2542560589286539_5829874041524071672_n.enc?ccb=11-4&oh=01_Q5AaICCApk_bBi0SUoUOBU5ZFhcSX0aqJp-RUCnhuzKYUFUo&oe=677E6C2B&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 3,
+      "progress": 6,
+      "oldestMsgInChunkTimestampSec": "1732718705"
+    }
+    process: true
+    id: "D9C5BA0ABAD72239FC02452627F9F670"
+    isLatest: false
+[14:17:19] INFO: got history notification
+    histNotification: {
+      "fileSha256": "SYP8pxfFqwSdPw3RQuzd94lJYiSJSnLssBGZ1B1NZs8=",
+      "fileLength": "1971844",
+      "mediaKey": "8mU/pwX/8X4d4yhbXImK4oOp22AU7H4k3stBRB2G0SU=",
+      "fileEncSha256": "bAevrclDk5X4SXq7LZx30az+yGFVlGqNiWyVzG3avK0=",
+      "directPath": "/v/t62.31111-24/13202931_435344542960558_2412618235217042839_n.enc?ccb=11-4&oh=01_Q5AaIM-sfOlL4KphsFzfCHtl52Ejrz6i7B7GBPbXZKj-5Hm-&oe=677E7F8C&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 4,
+      "progress": 8,
+      "oldestMsgInChunkTimestampSec": "1732410015"
+    }
+    process: true
+    id: "3C16E25E8D858049C1F58A50C7884C7A"
+    isLatest: false
+[14:17:35] INFO: got history notification
+    histNotification: {
+      "fileSha256": "biCXNbDp9YPrxGBXQn1gEW5PD+9TsE8CbMts62WaoXQ=",
+      "fileLength": "7710335",
+      "mediaKey": "46e//BThdmygJYU5YZBBJFXklJvgOxDYo76Oc9+TPiI=",
+      "fileEncSha256": "HaYQGOCXL1eOpgj6kIrKlrQ2Atb3eoR9Naw2U3f3wHA=",
+      "directPath": "/v/t62.31111-24/40248019_565579156194608_5728752753639745045_n.enc?ccb=11-4&oh=01_Q5AaILi4BaWAaAKItjXFcLe8ACsJFiYAbwebZQtIFZ-TdXqp&oe=677E6F82&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 5,
+      "progress": 10,
+      "oldestMsgInChunkTimestampSec": "1732139522"
+    }
+    process: true
+    id: "91E4E3526327A751461CED778E478F0A"
+    isLatest: false
+[14:17:42] INFO: got history notification
+    histNotification: {
+      "fileSha256": "UP6tnR4aaSXzKXmjIhxCbDH2Rn5E1Qt2B/p2vg+2bcA=",
+      "fileLength": "1533813",
+      "mediaKey": "DjgEdNqPfz51VF18tyNU3ZlhvAWM8sVW+o8bAENFS3w=",
+      "fileEncSha256": "Ts14rD7p2xoDtYV1JPQ32WFEg+OxZrzItn0AUoyGK9E=",
+      "directPath": "/v/t62.31111-24/20097631_908063554852383_2863597259747653269_n.enc?ccb=11-4&oh=01_Q5AaIPFLSj6toAZQbsMufvH3qrZ46eoUX04SZoiiSPuQI0Bi&oe=677E69C7&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 6,
+      "progress": 12,
+      "oldestMsgInChunkTimestampSec": "1731870905"
+    }
+    process: true
+    id: "9A871CA985CFA97D2F9E0A141CEFAEA2"
+    isLatest: false
+[14:17:52] INFO: got history notification
+    histNotification: {
+      "fileSha256": "+QSa1RvMoBLXfHH15XYqPqpARiagVGfNoK854n2TZK4=",
+      "fileLength": "271376",
+      "mediaKey": "EkvyrudyLkHXmvnDHsydKJMTkyGFpEkZLKPMbdQvkFI=",
+      "fileEncSha256": "eP8FM7tGI++b92vggplfy9U52/4nCr9qxVTh1Hq4Tsg=",
+      "directPath": "/v/t62.31111-24/11419475_2235954343444814_5366557109133151201_n.enc?ccb=11-4&oh=01_Q5AaIB2ZIPxfSsrU3DMlz-uLVxXXO6oZK-g38MQ96Mj9DssU&oe=677E60BC&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 7,
+      "progress": 14,
+      "oldestMsgInChunkTimestampSec": "1731856908"
+    }
+    process: true
+    id: "CEA81A5EE27A447DD10EB56EA3866F06"
+    isLatest: false
+[14:18:04] INFO: got history notification
+    histNotification: {
+      "fileSha256": "fGZOUuEG2cPsEGtHfnUPE8BJp9WcpkgXcB/e3x79JA4=",
+      "fileLength": "391949",
+      "mediaKey": "o0/EZVxtY8lyKm86+nFcOotwB7BIzOQjgGjS57/BTxA=",
+      "fileEncSha256": "WXJ/uUv2kDoT77nkszaJGrXF4DCpNty6GDQee3EhSrI=",
+      "directPath": "/v/t62.31111-24/11877441_466821029383181_486623012759291718_n.enc?ccb=11-4&oh=01_Q5AaICTPW13GEt7gpT3t1Gdu428hy6_mLmGnnwfoDwLZQlZN&oe=677E73B9&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 8,
+      "progress": 17,
+      "oldestMsgInChunkTimestampSec": "1731766810"
+    }
+    process: true
+    id: "6A681A3B7B67843C03FBC01458E6289E"
+    isLatest: false
+[14:18:14] INFO: got history notification
+    histNotification: {
+      "fileSha256": "8mZGzofe6ibr3b5k50NYvqOnO2yExW+5W67DReoSesg=",
+      "fileLength": "175210",
+      "mediaKey": "4o4WpW8iwfCZxe4/5eMEEKqkw3OCnM/40+QylGsRj0s=",
+      "fileEncSha256": "F5dlbFe0uClEPE9p3mC55MnTFTCOsjXwPlohiQt3ynM=",
+      "directPath": "/v/t62.31111-24/32404638_897910329077190_3072890342079221295_n.enc?ccb=11-4&oh=01_Q5AaII3nCQN727r0aiC-3tjjClyFT3RJ75pW2gLzRsIEIQdp&oe=677E6238&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 9,
+      "progress": 19,
+      "oldestMsgInChunkTimestampSec": "1731763666"
+    }
+    process: true
+    id: "0878FF84910C30508E053C8C8AC2ED15"
+    isLatest: false
+[14:18:25] INFO: got history notification
+    histNotification: {
+      "fileSha256": "O0ht2YJHfDcOiL8gpXJkm8Ah1LEjtUtcFDPPXOAOTj4=",
+      "fileLength": "764228",
+      "mediaKey": "KRhnf+TUTGyRGnWurLAF5N5hqdB/2cg+Hhj1KI8282M=",
+      "fileEncSha256": "XlyYeSDNR56XgTEGY9RpD7i6gwF2vzWEJ+mEySCsvk4=",
+      "directPath": "/v/t62.31111-24/19935126_951161137070555_5140444922091610714_n.enc?ccb=11-4&oh=01_Q5AaIKoTk6xYavDVxvgOLzXzo1lCJLHpWtyllOjIh9E6sniA&oe=677E75DF&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 10,
+      "progress": 21,
+      "oldestMsgInChunkTimestampSec": "1731456941"
+    }
+    process: true
+    id: "0FFC9F003CFC452EFE7C16ECFCE6FA0A"
+    isLatest: false
+[14:18:36] INFO: got history notification
+    histNotification: {
+      "fileSha256": "CXykFv4Cg9tbJTEdps5tA8lzjhWtUj5uLr6xpc+r9F4=",
+      "fileLength": "732815",
+      "mediaKey": "h1bsAXynaS3Ljo8KOoQJ+36Atb8YLss+YWdNiM+NudM=",
+      "fileEncSha256": "+avmN2G7AnUoMCFPfFxKZXvCIqrvqmmG15gFr7Ir6cc=",
+      "directPath": "/v/t62.31111-24/31856758_576404525091834_4413333193484220859_n.enc?ccb=11-4&oh=01_Q5AaIKz5S_CkX-ly4eZzkWni5vwE2Bhgr-tiJxtPWypvllUO&oe=677E8909&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 11,
+      "progress": 23,
+      "oldestMsgInChunkTimestampSec": "1731023745"
+    }
+    process: true
+    id: "39287DE85B04129468B6674E91DBE8CE"
+    isLatest: false
+[14:18:46] INFO: got history notification
+    histNotification: {
+      "fileSha256": "QHdVk/qS97567rEYEL6Zi7kvWuoDdsBvvoR9WXJY5SA=",
+      "fileLength": "564095",
+      "mediaKey": "aF0C0DL4kPN2325peES8ZmCTGwrJjxeDSusYIdYjTnI=",
+      "fileEncSha256": "OVOlMDmjh6FPmvw0JiQUDG1br+mO/JgIZ/BuEzpenxA=",
+      "directPath": "/v/t62.31111-24/23424199_1752680965481836_3170212916232272403_n.enc?ccb=11-4&oh=01_Q5AaIB2_bzKV6G4SEkx2GL7Ls_iovrWK-3ZiWceBDBetTHwz&oe=677E53E2&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 12,
+      "progress": 25,
+      "oldestMsgInChunkTimestampSec": "1730731228"
+    }
+    process: true
+    id: "5DCEBA2115DDC219B714A509E4849067"
+    isLatest: false
+[14:18:59] INFO: got history notification
+    histNotification: {
+      "fileSha256": "7iCfRq6l33gHpMKUj8JpNtSTel0XnifivHEO4Dh/c5w=",
+      "fileLength": "737251",
+      "mediaKey": "NniIgeJVbj15klirosh0z1sAwsOwJqSO9PfSDRGNPAg=",
+      "fileEncSha256": "33IAc7yv+xjcvs2291tJSwvnx3BLtxN5O5+iPYwrQPM=",
+      "directPath": "/v/t62.31111-24/11242806_3842788029343058_408268804808879595_n.enc?ccb=11-4&oh=01_Q5AaIFqAxkMsuryzKS-z5nDY0MGoDYiHyLTq45k5-G3EYnFK&oe=677E7C8E&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 13,
+      "progress": 27,
+      "oldestMsgInChunkTimestampSec": "1730335997"
+    }
+    process: true
+    id: "0381655199A4B0637C69D5599488A770"
+    isLatest: false
+[14:19:11] INFO: got history notification
+    histNotification: {
+      "fileSha256": "DOvBQ9HhcLSmEy4DK+2GSPDIyzfvsbBwq+NknxsGbEk=",
+      "fileLength": "1735696",
+      "mediaKey": "2IE4JfWe+Mw2Q+gJxgZuk/ICNOzj2lOjxAyKurdc8+I=",
+      "fileEncSha256": "baoDJPa24RTc9gzdUoURruIN9yuAvgEU/euQp7uGcIg=",
+      "directPath": "/v/t62.31111-24/55682242_1636080267334864_6680103662139782725_n.enc?ccb=11-4&oh=01_Q5AaIM9kk0L3UnWvSHQAZOWHZWtpa7ej-uDdzlZQKuRguP85&oe=677E5DD5&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 14,
+      "progress": 29,
+      "oldestMsgInChunkTimestampSec": "1730215339"
+    }
+    process: true
+    id: "28B882DD358CBA455AD9F769ABE20546"
+    isLatest: false
+[14:19:20] INFO: got history notification
+    histNotification: {
+      "fileSha256": "Q+/LTIN+PMlBJenAzwb2CjFB8ZinFNRhDvkS8PTA4+8=",
+      "fileLength": "1392422",
+      "mediaKey": "sEHNG4VILgb51JEdJk3jPe5EeHDWmiLClcE4XKKHdH0=",
+      "fileEncSha256": "UcDCBIMb3KikOR4fDSxHXfcWwc4eVgOp2CvwbiZSYt8=",
+      "directPath": "/v/t62.31111-24/12099320_1057250169775541_3542670852004592255_n.enc?ccb=11-4&oh=01_Q5AaIFlwGA37Od3nc9RMdBrBxoDsXqwbFOpdNhJziKhwPAOq&oe=677E6EC3&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 15,
+      "progress": 31,
+      "oldestMsgInChunkTimestampSec": "1730084570"
+    }
+    process: true
+    id: "715A44DECA06890C34FA78BC26736EBA"
+    isLatest: false
+[14:19:33] INFO: got history notification
+    histNotification: {
+      "fileSha256": "SFDmBTujX6Lov2JP3d4ZEtqbHaz+2PDuk+XFE/QhfoY=",
+      "fileLength": "855380",
+      "mediaKey": "S0fqxj21u7EkETf59HyXWJ/RzdGad9NufhVebplyZR8=",
+      "fileEncSha256": "k+m+hIZr4wzT5kczIB8pmn9KNLFsMIyhHUYEzMhEaks=",
+      "directPath": "/v/t62.31111-24/25185615_506915955687158_8982761852041978468_n.enc?ccb=11-4&oh=01_Q5AaIHYc45yWXkYjIyqJdZPJDQ3QRoP0LaWaSX1p3GUTPdoE&oe=677E6FD6&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 16,
+      "progress": 34,
+      "oldestMsgInChunkTimestampSec": "1729997198"
+    }
+    process: true
+    id: "7465F3A43C777B3B992CB64C17949127"
+    isLatest: false
+[14:19:40] INFO: got history notification
+    histNotification: {
+      "fileSha256": "TukcRP55rYkexr0eXmrp8wr4FjZkxUV9vD1vb+IAvHE=",
+      "fileLength": "752727",
+      "mediaKey": "F9q8I7Ree4gtRIDfQBwKvNdRI1ouUTiUo+/0RtuyKJo=",
+      "fileEncSha256": "8D6IwozzFtDpgxO025gVZlwBZLS4RBNCTxxK4RDRwRI=",
+      "directPath": "/v/t62.31111-24/30723498_1091218619051212_6849411382965639836_n.enc?ccb=11-4&oh=01_Q5AaICjlD0obMn-ahBDev7LbI-qEf5f3tzdl7t2KzFO4TWSZ&oe=677E8719&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 17,
+      "progress": 36,
+      "oldestMsgInChunkTimestampSec": "1729952717"
+    }
+    process: true
+    id: "94D1BE732FC3FABE1E7A47DF7B9FEB35"
+    isLatest: false
+[14:19:58] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "SjKFR99/7cbyo4uxpN52W0tyJQjRPJ21htkuJlnc/Rg="
+      }
+    }
+[14:19:58] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[14:19:58] INFO: clean dirty bits account_sync
+    fromTimestamp: 1733753785
+[14:19:58] INFO: 24 pre-keys found on server
+[14:19:59] INFO: opened connection to WA
+[14:19:59] INFO: handled 6 offline messages/notifications
+[14:19:59] INFO: got history notification
+    histNotification: {
+      "fileSha256": "GAy5MS5/TH0o+yHTAEy6W7kqgO4BAcA8HzdwI8PIdPk=",
+      "fileLength": "1133227",
+      "mediaKey": "ejIvqbwy1JMrTGGwXnbjoIhEMzVGBWUCij89DNwqX2g=",
+      "fileEncSha256": "KL1edFT0vVotWgMhdmh4IjP+MRDgwN2uKUKoXF8Rctw=",
+      "directPath": "/v/t62.31111-24/21197063_1302018450701717_4549118426866108623_n.enc?ccb=11-4&oh=01_Q5AaINtFe76uBXvQb8yqdRA4sI6S_hPpkqxrOUIZ_WE0NkTd&oe=677E796C&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 18,
+      "progress": 38,
+      "oldestMsgInChunkTimestampSec": "1729795556"
+    }
+    process: true
+    id: "608FC0A4DAC87DE2AD1FE3CAF9C8392F"
+    isLatest: false
+[14:20:04] INFO: got history notification
+    histNotification: {
+      "fileSha256": "q2gF0hFTWX7ilGQQflorrPGuu55FkBHBg9+Zr1EPFn8=",
+      "fileLength": "1139320",
+      "mediaKey": "K+yjoGbWkj8Bl/cAJiDSfe2a+FofIWMlD5ipM3XkwR4=",
+      "fileEncSha256": "4Ed/Z6XCi+cYXtK8YlQrVxCplBLxne1tsNV5fKr62C0=",
+      "directPath": "/v/t62.31111-24/40880693_831892952286614_4661597748708830819_n.enc?ccb=11-4&oh=01_Q5AaIKioCDSXEDDcuZhUPyjmS_ZxW_66xfMBu2jVIPdq5quo&oe=677E626A&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 19,
+      "progress": 40,
+      "oldestMsgInChunkTimestampSec": "1729626738"
+    }
+    process: true
+    id: "FDA855F400FF088994FF54D03CBED2A5"
+    isLatest: false
+[14:20:17] INFO: got history notification
+    histNotification: {
+      "fileSha256": "U2TJWJ2HI2giCmmht9Om7uLSb+Vxlo72R0KT9vOoeuE=",
+      "fileLength": "2473545",
+      "mediaKey": "SgSfB+pNYlV8k/WDjSPbsdQIt6i1OCxBn0G79hxndjo=",
+      "fileEncSha256": "HooJpR1BE1C+a2jbPIfQEVp0kRvsAk+MB57CqxHzb1w=",
+      "directPath": "/v/t62.31111-24/19970182_1319135312781096_5012047516660133135_n.enc?ccb=11-4&oh=01_Q5AaICn0deVlW-fLcc73BWJhuQR_2AYTjaGy6xACp_WCafFI&oe=677E5658&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 20,
+      "progress": 42,
+      "oldestMsgInChunkTimestampSec": "1729469605"
+    }
+    process: true
+    id: "92265CE6F3D4D1BB2DEC82C3936F962D"
+    isLatest: false
+[14:20:23] INFO: got history notification
+    histNotification: {
+      "fileSha256": "l9Z/a80Z/O82DuFViGvNZFsdpgEXn3YYfKcLjD6j944=",
+      "fileLength": "1185655",
+      "mediaKey": "LfuveTnhzY9E5SXrrpjXf+4QLDHbDgK48GAAmF9hri4=",
+      "fileEncSha256": "9nAXqMnMz1QwIgu0QJaUjYR2cXP6PtSWI9eVKNSJs8o=",
+      "directPath": "/v/t62.31111-24/31800731_1101462747865112_5833052757429481968_n.enc?ccb=11-4&oh=01_Q5AaIOqlpUjkrFmZA8XGbYzKUT16IEE2bFhu_qXwF_R6DM4-&oe=677E601E&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 21,
+      "progress": 44,
+      "oldestMsgInChunkTimestampSec": "1729354600"
+    }
+    process: true
+    id: "137C91266E6203F015F6A34C9DF2D051"
+    isLatest: false
+[14:20:33] INFO: got history notification
+    histNotification: {
+      "fileSha256": "6j/sotmxBY39yafriqkVKcpN0F0Jzgwd7fhlyxa9lCA=",
+      "fileLength": "857689",
+      "mediaKey": "Cf2Z2vBLWKTcb5BUFCrutDh8xcSmfnMcUb/JkYoY19I=",
+      "fileEncSha256": "aenMRYI/rpE8f7NDDhFcv0gfhL7XsEl2AMWlITI8tvA=",
+      "directPath": "/v/t62.31111-24/12153762_1101647574423219_1297267311989428295_n.enc?ccb=11-4&oh=01_Q5AaINaIDH4UINvzQGosJ9MwQUYiD9L1cZ6g860C2RGQg73X&oe=677E51FC&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 22,
+      "progress": 46,
+      "oldestMsgInChunkTimestampSec": "1729219270"
+    }
+    process: true
+    id: "E088B168605436689CA10291B91D8C2A"
+    isLatest: false
+[14:20:42] INFO: got history notification
+    histNotification: {
+      "fileSha256": "J9v/CBBhe/rncbXRQFAarMooJ5pwqIioGCGRPRMbPPw=",
+      "fileLength": "766369",
+      "mediaKey": "oKLQlup+WtOUrv1WXp3CDV6K74bdLIq5dwMkVyVB6r4=",
+      "fileEncSha256": "aUkgtSgOneq6gza2ay+IsRcEKfZ+DWz0UOWnQLcWFfw=",
+      "directPath": "/v/t62.31111-24/13848148_1575075039803781_7073055236482323087_n.enc?ccb=11-4&oh=01_Q5AaIGSHC4t_MrhAyDwgqsO_L55tFAYtIQaRIuIUDEDLCmJg&oe=677E884D&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 23,
+      "progress": 49,
+      "oldestMsgInChunkTimestampSec": "1729074699"
+    }
+    process: true
+    id: "BB9EEE868CF7436DD05AADB1B737A713"
+    isLatest: false
+[14:21:04] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "TeF/HPI6/D8Hu7QyV/n60TdvNXH4LUESm1ZpBw4Nyz8="
+      }
+    }
+[14:21:04] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[14:21:04] INFO: 24 pre-keys found on server
+[14:21:05] INFO: opened connection to WA
+[14:21:05] INFO: handled 5 offline messages/notifications
+[14:21:05] INFO: got history notification
+    histNotification: {
+      "fileSha256": "dnsiAuVu53L2gvKA9d2I9A5uRtqBytHLcwv+k99mW3k=",
+      "fileLength": "3752061",
+      "mediaKey": "d3LHv2VxWdSwLXTvGhgtFf4lYb48ynw7Ve/TVQQTXaU=",
+      "fileEncSha256": "71ZU+OuTp4wCDexoCu10Hh5807Q7Nmj24KqAuYqrDk8=",
+      "directPath": "/v/t62.31111-24/26859219_9033546573397696_3273395985113433949_n.enc?ccb=11-4&oh=01_Q5AaIH-dmaQxHrcPmT4mRSzkMZtHBVJnKcTTfk1O9LzrV9eW&oe=677E5BC3&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 24,
+      "progress": 51,
+      "oldestMsgInChunkTimestampSec": "1728938490"
+    }
+    process: true
+    id: "4793255B947B6F9A81874A82EBC61428"
+    isLatest: false
+[14:21:14] INFO: got history notification
+    histNotification: {
+      "fileSha256": "CSJX4KlFTsh0nBqfhW8m/24+17PUcLu8v/guQH/6sWc=",
+      "fileLength": "794842",
+      "mediaKey": "mbcuXu8Kebz36kGcHxPVBXlq3K+DYPZvCyrfuWb1A0E=",
+      "fileEncSha256": "76jQ+4fUWDa6iu7xKXYk/vSsk0B6nzGXDYQmxTBJHVU=",
+      "directPath": "/v/t62.31111-24/12158936_561777853369483_8212582808091502491_n.enc?ccb=11-4&oh=01_Q5AaIAV0WlRGqm3F81ZgBkO7ixaDmVNasxpz_g1YG1ZAv3HN&oe=677E5B10&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 25,
+      "progress": 53,
+      "oldestMsgInChunkTimestampSec": "1728783298"
+    }
+    process: true
+    id: "B477002E0BC99059E46CB4561CD6D3A8"
+    isLatest: false
+[14:22:37] INFO: got history notification
+    histNotification: {
+      "fileSha256": "Uw5c6iOlDDBfS1P+pYxJ3y+56UU+ZnQaMsMFre8kTqc=",
+      "fileLength": "1637120",
+      "mediaKey": "8999WyjiNG6yNqDPSN4e+GqGMIoLAHpLexw64I5X6Uw=",
+      "fileEncSha256": "L6Rkrc7meMAf6ooHtzLxEkVo5S2Bti/1+Tf+5TFoGJo=",
+      "directPath": "/v/t62.31111-24/30577483_2916873558462589_5752105148137158390_n.enc?ccb=11-4&oh=01_Q5AaIBdcLe1LE3gN_JcWN5z46NY8LnxNL3-U0sgltBdjDcCV&oe=677E59FF&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 26,
+      "progress": 55,
+      "oldestMsgInChunkTimestampSec": "1728690843"
+    }
+    process: true
+    id: "AC9531C7D84ED249D669B977B18DB3AC"
+    isLatest: false
+[14:22:40] INFO: got history notification
+    histNotification: {
+      "fileSha256": "PD3HtCzAumOYJF0ILyn2gv1YFKPCiILf6q09jPqzJ74=",
+      "fileLength": "936607",
+      "mediaKey": "8XhkXfetE829oIUvj7Hm7ur04xGxfMVBte8TqTgdpwY=",
+      "fileEncSha256": "WeEqHOAaNrv330Zna60zjCdlEDtuJZaALld3hHhEr5g=",
+      "directPath": "/v/t62.31111-24/33335815_868474408787264_5714538749348344784_n.enc?ccb=11-4&oh=01_Q5AaIBUTaikiV-4TVwa6a5nQy37mWxwBxMRSqljXcAAI5Rsm&oe=677E8014&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 27,
+      "progress": 57,
+      "oldestMsgInChunkTimestampSec": "1728595167"
+    }
+    process: true
+    id: "319B869253C8C20BEA55A9AF68FDC7E5"
+    isLatest: false
+[14:22:41] INFO: got history notification
+    histNotification: {
+      "fileSha256": "ZB+SZksIZXVggFOzQi7wywNYyFFKRAq2NCkqpEb+7qw=",
+      "fileLength": "1255432",
+      "mediaKey": "V0sXiu733eXyEpJ9BeKAlLFJwyQ9ZBpcLYlwU8AWLLE=",
+      "fileEncSha256": "1eRI5vdPdMrXHewUq67uvDPOk1L9oX6FpCjhNoB20Y4=",
+      "directPath": "/v/t62.31111-24/55881336_370492562789992_1661987218823742092_n.enc?ccb=11-4&oh=01_Q5AaILGIcttUWs04fbeTyBelemRJTSyALA5FTnko6-3IXrgY&oe=677E5AC5&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 31,
+      "progress": 66,
+      "oldestMsgInChunkTimestampSec": "1728265311"
+    }
+    process: true
+    id: "752E294D1F545B1AFDA88F85196E4942"
+    isLatest: false
+[14:22:42] INFO: got history notification
+    histNotification: {
+      "fileSha256": "vJh+JhbuaL44UhG4viWPifXfM5DSmeVyuOI+MWKLc5w=",
+      "fileLength": "954360",
+      "mediaKey": "MRiKp0+McFjScX72E7CejnaxSKaVoevOJ9aU7bmRE28=",
+      "fileEncSha256": "jvZgvDW0BzqLQHnGiGXUV9oIVajLeSOmnGBKN4ev2rI=",
+      "directPath": "/v/t62.31111-24/23656196_454898460973616_2298549820362051537_n.enc?ccb=11-4&oh=01_Q5AaIEyKbTDvi2S9fGC5YRwsiet5xG6FZavRqCZawV0mvzF0&oe=677E5C0E&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 29,
+      "progress": 61,
+      "oldestMsgInChunkTimestampSec": "1728434929"
+    }
+    process: true
+    id: "1484A35596AFF35287F6074B06427E97"
+    isLatest: false
+[14:22:43] INFO: got history notification
+    histNotification: {
+      "fileSha256": "Gxw4obLFpxqdUFiy8rWuTKWcfGHK5umAgafCkKpDYlU=",
+      "fileLength": "704285",
+      "mediaKey": "4EsjQ3JwBRlms3CgphOLc03b+uHlHXN19HG++eqx7ZA=",
+      "fileEncSha256": "yGZOzqc8xfbk3L2NndS3B2wp6kFg8qsBro+RkL2L0ew=",
+      "directPath": "/v/t62.31111-24/21415642_601621725649868_8323491038923032084_n.enc?ccb=11-4&oh=01_Q5AaIOtjridbDojQX7UaSiXeMwsRdKi3dLIw10-Qi6KkfbPp&oe=677E5CFD&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 30,
+      "progress": 63,
+      "oldestMsgInChunkTimestampSec": "1728351552"
+    }
+    process: true
+    id: "22569839298EF866E162666E732178FD"
+    isLatest: false
+[14:22:43] INFO: got history notification
+    histNotification: {
+      "fileSha256": "+uZH0fR14fEfuTw54TAB0IARAiejWipLoMk4Be6Z5qs=",
+      "fileLength": "1246908",
+      "mediaKey": "3U0f4EQg1vYtPntfat6OHajGp4CLA8G8uqYSoDedXQc=",
+      "fileEncSha256": "d+cSZxyKYCaY1Dhjbso7YdfnUZaqWg5sj1Z6ckmhMNE=",
+      "directPath": "/v/t62.31111-24/25613487_605433908602046_531492238785045971_n.enc?ccb=11-4&oh=01_Q5AaIDKKaqOeIH3HAglfx7juCIpP1ToUOhmI6g_47G13asSp&oe=677E619A&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 32,
+      "progress": 68,
+      "oldestMsgInChunkTimestampSec": "1728182460"
+    }
+    process: true
+    id: "48EE12E544DFB35E6A7081F11FC1D635"
+    isLatest: false
+[14:22:45] INFO: got history notification
+    histNotification: {
+      "fileSha256": "tLiEPc0pUcQxkZQP7HBrtwM1HcMirIaNIMZw5mcYSlU=",
+      "fileLength": "1424875",
+      "mediaKey": "orH6eBXSlZzZtztkYr9nvenUEk/2jz8mQIYGWZtcplM=",
+      "fileEncSha256": "RH0+1ASJu9O/BhhP3g/Q/mnrg6b7vYogweJt3Atlt+8=",
+      "directPath": "/v/t62.31111-24/32361271_1606104450027812_9199789006763790371_n.enc?ccb=11-4&oh=01_Q5AaIESpF2Criofw6jdeEtC83nrGyRumWibSY-Od25-aGhVi&oe=677E5A1A&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 33,
+      "progress": 70,
+      "oldestMsgInChunkTimestampSec": "1728141115"
+    }
+    process: true
+    id: "8B080814BCE77DAA3C4549584DA85221"
+    isLatest: false
+[14:22:46] INFO: got history notification
+    histNotification: {
+      "fileSha256": "p1Y4fcCW8UoERagAsQ8ZeK0vmBgWN5L+ffDTsvh4Xgo=",
+      "fileLength": "1508502",
+      "mediaKey": "i/bVSJXsiY6vyDFO4QUVIdcgsoix126LMIrMrnMEml4=",
+      "fileEncSha256": "dsSXLjSroIevg7sGkCmDnOk36XbQqZbSarFHoG6RB1g=",
+      "directPath": "/v/t62.31111-24/19252094_492861419875615_7980930310213719224_n.enc?ccb=11-4&oh=01_Q5AaIHs0UzEdkzFCSLLZjBHNifHpqCdCabHV_CLwFxx-_bx8&oe=677E561E&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 28,
+      "progress": 59,
+      "oldestMsgInChunkTimestampSec": "1728498034"
+    }
+    process: true
+    id: "FA98C7F21830B5968ABF35FDFB21ACBE"
+    isLatest: false
+[14:22:47] INFO: got history notification
+    histNotification: {
+      "fileSha256": "28xNS+TNHRmcClX5ewS5bgHGep7v9iRFeRCbD4GSmEs=",
+      "fileLength": "1091960",
+      "mediaKey": "XUVXBNEW4ZxwI0JId/j0Z17AtmwCPQhCyo8FazGwhtM=",
+      "fileEncSha256": "6aZdFBU8BlWxtJJFJaunVylZBOQIbmn2+YhyviBg/2Y=",
+      "directPath": "/v/t62.31111-24/32123451_592488143359097_6726671295250806354_n.enc?ccb=11-4&oh=01_Q5AaIOZAOw3QkOkRXPDGYC_BhT2CfRR-vcOc6IG-Ptm-dz9f&oe=677E60A7&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 34,
+      "progress": 72,
+      "oldestMsgInChunkTimestampSec": "1728056621"
+    }
+    process: true
+    id: "F5320D7C84E5C78CC3A09832436A3796"
+    isLatest: false
+[14:22:56] INFO: got history notification
+    histNotification: {
+      "fileSha256": "74L4Si2yvt+gIGqO//z624YADn1/AAzLjmPPDTZL7OQ=",
+      "fileLength": "720746",
+      "mediaKey": "kWkzWKTfVFPvzkVk4VpG8rujGppxevFUCyfTt/CqahY=",
+      "fileEncSha256": "S7hZKf2e0IfZMJ4y44dlGqt8D+LGeOFBTFORaflXw+U=",
+      "directPath": "/v/t62.31111-24/25228325_796782515912388_8676010635747734708_n.enc?ccb=11-4&oh=01_Q5AaIKgqgOlUi5d3-Uh0bIddvbivQKMmktNBFh_GvqvkDcDx&oe=677E80D1&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 35,
+      "progress": 74,
+      "oldestMsgInChunkTimestampSec": "1727970681"
+    }
+    process: true
+    id: "0BD0CCE2737E1D517356FBACA8BAE2C2"
+    isLatest: false
+[14:23:05] INFO: got history notification
+    histNotification: {
+      "fileSha256": "w9eU6XxAr5eGMrGV5qC81wYg1VR7PDjDqPWdVlxyDac=",
+      "fileLength": "1020554",
+      "mediaKey": "5lpMqYnSGHUAHH1MNK989ScUYBISLWTBriWehHpKJRE=",
+      "fileEncSha256": "tr+tAn38B9iHMXRACnsxs0GNP2SpcYzcwU7x4zoEwTg=",
+      "directPath": "/v/t62.31111-24/17701973_892731386406471_7315561153634513060_n.enc?ccb=11-4&oh=01_Q5AaIMfbwpFOBg0C3EqXr4lNSMrWd3XWb2WOC1vz3TISqJ7h&oe=677E7A73&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 36,
+      "progress": 76,
+      "oldestMsgInChunkTimestampSec": "1727907449"
+    }
+    process: true
+    id: "DA030BB3E0E3F56265AA5F73C1E5BEBB"
+    isLatest: false
+[14:23:14] INFO: got history notification
+    histNotification: {
+      "fileSha256": "EQpGG4HCHRYyweTR09/ZtFSgM0OojJUmvWH2qYw+DvU=",
+      "fileLength": "879689",
+      "mediaKey": "wODbWmQl9QekFqBhcAjtNnC8CP5GYel+X1akr5gdWeU=",
+      "fileEncSha256": "6xDtJ+jOqyFhwGxIlVSEs4sIAJN8QqRXe34yaqNIB3k=",
+      "directPath": "/v/t62.31111-24/31087472_1540113209975365_3901698897323751264_n.enc?ccb=11-4&oh=01_Q5AaILdXldyL87ifZ7fVakYTYbhDQXmNpxrDRhKH_D_vPkec&oe=677E52F3&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 37,
+      "progress": 78,
+      "oldestMsgInChunkTimestampSec": "1727825569"
+    }
+    process: true
+    id: "59335E2232AB50554AD150D636F6D74D"
+    isLatest: false
+[14:23:24] INFO: got history notification
+    histNotification: {
+      "fileSha256": "hwjigo/ggg2Wv1hk0uD/asR7bDwZiqEkqURn5vZRIHk=",
+      "fileLength": "1685226",
+      "mediaKey": "y+wm/Ige6Ge4jH4Psvg2+WhJMm3e1an+FhL949r3UkU=",
+      "fileEncSha256": "kBw5WyIyvmZObyBWYU5lgHKrNJSkqRS7XgdBve0QmL8=",
+      "directPath": "/v/t62.31111-24/19954337_9266006703432714_2062170042171875110_n.enc?ccb=11-4&oh=01_Q5AaIJl2RipjUjRXQiLgqBxmrlqWo1vWq9CRXQE1I_DkkEGe&oe=677E5613&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 38,
+      "progress": 80,
+      "oldestMsgInChunkTimestampSec": "1727745821"
+    }
+    process: true
+    id: "E185E1887677FB6782C87B6D254289D1"
+    isLatest: false
+[14:23:34] INFO: got history notification
+    histNotification: {
+      "fileSha256": "TFSkHlaLjC5nsqUT+RndJi6h1OLgsr15anUM9ZwtiF4=",
+      "fileLength": "898979",
+      "mediaKey": "oSa2VeUGqkxiz1xqMRLUFMGOESWDyDdcIYaCCwpESQk=",
+      "fileEncSha256": "SbvWXYtwDbWix2ZURQFpx2+6FAl0oZj5YVKnIHD8q20=",
+      "directPath": "/v/t62.31111-24/40990296_564561099774769_2059404309507932288_n.enc?ccb=11-4&oh=01_Q5AaIELkb2KTTXBtGK9RtgHm5w9fkBPNS3vJITGgDmxg7rJ8&oe=677E5D74&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 39,
+      "progress": 83,
+      "oldestMsgInChunkTimestampSec": "1727655185"
+    }
+    process: true
+    id: "F389BA8F1AF2E63FDF6F5ED79D20FA26"
+    isLatest: false
+[14:23:43] INFO: got history notification
+    histNotification: {
+      "fileSha256": "QyWqq/3WWOGYtMFkwRjwlheihOwjdW2X/98ZresbIVA=",
+      "fileLength": "681744",
+      "mediaKey": "7gP60xxY9QweBPer+wZ6362H293u+IMKlepojF/fUGM=",
+      "fileEncSha256": "UPvfPwNFxg1j1298+wv9U00VbH/qFp+jPmf5G3pz+es=",
+      "directPath": "/v/t62.31111-24/32610494_1104751307907829_7902373122301912664_n.enc?ccb=11-4&oh=01_Q5AaIC-KoaYFbQ0KqSJ_pPN5GaF4Q2juj18gl_H91hYElHPX&oe=677E54C1&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 40,
+      "progress": 85,
+      "oldestMsgInChunkTimestampSec": "1727569782"
+    }
+    process: true
+    id: "FD92D4C04512CE599DB862BCB44991A9"
+    isLatest: false
+[14:24:08] INFO: got history notification
+    histNotification: {
+      "fileSha256": "ps7ouofR2hrVJ9csC10PXhK1ZO4GIaNdj2GXvFp0Trk=",
+      "fileLength": "833047",
+      "mediaKey": "/s4TNNSx/RvWTE903Ux4HUDVN2Ry41d60c7cOS6AQuY=",
+      "fileEncSha256": "YUfRctO7LJAefX3XF6/WsTbdrDr9fjx+mndax6mW51g=",
+      "directPath": "/v/t62.31111-24/34712417_1101599374654679_8429363713091229046_n.enc?ccb=11-4&oh=01_Q5AaIJJ38G_QG0AQTtP99zqD3XF_w_AqxQoHHWZi_SQsX8Yk&oe=677E59EB&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 42,
+      "progress": 89,
+      "oldestMsgInChunkTimestampSec": "1727385281"
+    }
+    process: true
+    id: "0AFF82AE0DABF860E79DB0D7DBA5DD96"
+    isLatest: false
+[14:24:14] INFO: got history notification
+    histNotification: {
+      "fileSha256": "wPLYehWXFijs8yWfETQrUaHWBqhxP73WjQ7jbfUr28o=",
+      "fileLength": "4166531",
+      "mediaKey": "HFa4E73h7jt4kbXJZJlTxGf3XdjMJe1DRctFWq+pAsE=",
+      "fileEncSha256": "HZPeaazYKSZePBA4KXC92StdYHetmo1dgzoxFkE9uBU=",
+      "directPath": "/v/t62.31111-24/11289707_1134063761772962_6638317828815341142_n.enc?ccb=11-4&oh=01_Q5AaIPgHEY5-Ys-D6GUu4-ccSTL_LHP-X31OReYvreGk6l9Y&oe=677E64F3&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 41,
+      "progress": 87,
+      "oldestMsgInChunkTimestampSec": "1727489111"
+    }
+    process: true
+    id: "C5A3508CA7CD188065D47DCF0381C707"
+    isLatest: false
+[14:24:17] INFO: got history notification
+    histNotification: {
+      "fileSha256": "Q/OVCC/jz/1mrsHCjiDaBOQCqGRibUsiA9QSxLiGAWM=",
+      "fileLength": "2159138",
+      "mediaKey": "gzBq+fzlWze5L+0el3IAfolhZGgRkz/JFSFtx0m2r7A=",
+      "fileEncSha256": "R3HJNTgUzzsyUPvim1VYlD+mZqJDShcd13VxW+sKEqw=",
+      "directPath": "/v/t62.31111-24/29539034_592385796646460_4078279871932173233_n.enc?ccb=11-4&oh=01_Q5AaIMkWMCQ2iyN7ew1NKuxGg3sklVqpL5DWOodES5p2t_iX&oe=677E7E39&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 43,
+      "progress": 91,
+      "oldestMsgInChunkTimestampSec": "1727300049"
+    }
+    process: true
+    id: "42F3DA71A8D139E27186B7A7FD90F6BE"
+    isLatest: false
+[14:24:24] INFO: got history notification
+    histNotification: {
+      "fileSha256": "z+V7iMr6oi9Qs6Ow24VdRztiMJfEAp+vitxjNdELzw0=",
+      "fileLength": "1078651",
+      "mediaKey": "tER+oNqFwkL1/l5n30QCObpzkriKRbo1fauZiBnzKPo=",
+      "fileEncSha256": "Z3D66VlAMX4Bm0tcWHv+G9NCnhGeDm2UgPFx6VRED0A=",
+      "directPath": "/v/t62.31111-24/11886087_1747740375801892_6940771424296753688_n.enc?ccb=11-4&oh=01_Q5AaIDwSuoLwx7_LXO_fmhxsR2BHStgf7M-Sl57R45fcFpZt&oe=677E6996&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 44,
+      "progress": 93,
+      "oldestMsgInChunkTimestampSec": "1727107778"
+    }
+    process: true
+    id: "A05DE13641C3E44C7EEEE42DFF6C39B9"
+    isLatest: false
+[14:24:32] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "M+Xg6mmJTA963ILjTi1o93uQbHliaFKbDfE6u2iPKDE="
+      }
+    }
+[14:24:32] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[14:24:33] INFO: 21 pre-keys found on server
+[14:24:33] INFO: opened connection to WA
+[14:24:33] INFO: handled 0 offline messages/notifications
+[14:24:44] INFO: got history notification
+    histNotification: {
+      "fileSha256": "7tvbP8vqeGo3Y+oy+eVdypPAgm3JG6YgLftw2UXMp6Q=",
+      "fileLength": "2821426",
+      "mediaKey": "Y2D7S3iqRwSMCxCAeCIax1kFQK7t3nNJ3dJYIeqPBmM=",
+      "fileEncSha256": "tnjVgqc7WO0UwyU3Smg28TuSJPM1fxX291JdyWr5m/c=",
+      "directPath": "/v/t62.31111-24/31470437_1120674786267309_8526883880122342087_n.enc?ccb=11-4&oh=01_Q5AaINATYT7e4-OTpU_W1a54q0ITGOF9tFNffQaMh60GHIh4&oe=677E61CA&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 45,
+      "progress": 95,
+      "oldestMsgInChunkTimestampSec": "1726801860"
+    }
+    process: true
+    id: "85B28AA8DA6455757F13B82294E202F8"
+    isLatest: false
+[14:24:50] INFO: got history notification
+    histNotification: {
+      "fileSha256": "8hANbjlYyBamM2O5b2mdHR99EZdrJKwTmeNEL05v9d8=",
+      "fileLength": "2141488",
+      "mediaKey": "qCUlxtcF0xOIm63j4Yur93A93xzBDyc6+yspUmsphEc=",
+      "fileEncSha256": "vc6H8agUACIMuyqLu9Rq6uHoIxc1xU01O3vkiDUffp8=",
+      "directPath": "/v/t62.31111-24/30267434_2401151980055550_6656358584763230303_n.enc?ccb=11-4&oh=01_Q5AaICU6AUFe9yrOsCMCVWTvZgLiRExmFI1yWaz1ZuBgZjU2&oe=677E8494&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 46,
+      "progress": 98,
+      "oldestMsgInChunkTimestampSec": "1726446625"
+    }
+    process: true
+    id: "56CD00B069697B53AA4815613475FCB2"
+    isLatest: false
+[14:24:53] INFO: got history notification
+    histNotification: {
+      "fileSha256": "ciMBD64gvz83cWmcBpCKBiGBQNXthr/9JWwAoq6a/kw=",
+      "fileLength": "14",
+      "mediaKey": "HlBG4YVaZT8USun5PiFSZa8K/faVEumc8WOrGb2Gt6k=",
+      "fileEncSha256": "gkUCDQ7pmE2nRUXiAztHO3CyfS7wdsUGxfshzJCZQYQ=",
+      "directPath": "/v/t62.31111-24/14745378_916972940099826_7598713867562295985_n.enc?ccb=11-4&oh=01_Q5AaIOwh3ShlK7UD77d7g1qpyJYyrTETFb5GmbJqzW42OYrj&oe=677E7819&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 48,
+      "progress": 100
+    }
+    process: true
+    id: "16E631199664094AC0F589BB9A99E3BB"
+    isLatest: false
+[14:24:55] INFO: got history notification
+    histNotification: {
+      "fileSha256": "N8Ondssrk0WTRMbtJao94FK+UlvjfS0g3pZX4PMx3dU=",
+      "fileLength": "900858",
+      "mediaKey": "n3qd9cNjRczvNTexKQAgRSNdR0d+Yh3pUFh+4StznMo=",
+      "fileEncSha256": "tv586z1KfLF7hc3w6VMjYdm8mKZCYRe61mSim8sF6e8=",
+      "directPath": "/v/t62.31111-24/41025037_577065148260156_2413730992858866180_n.enc?ccb=11-4&oh=01_Q5AaIBij1MuSVsgk-z5mLBHBZ1u6F73w1jrbW6LV8-0QovqD&oe=677E685E&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 47,
+      "progress": 100,
+      "oldestMsgInChunkTimestampSec": "1726072371"
+    }
+    process: true
+    id: "37142F85A67D6BA061D1F7D019F65591"
+    isLatest: false
+[14:25:16] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "xBCLD4i7Q3/zHzC3mWlV1v/pusRf3PKr92LSTAFZWXs="
+      }
+    }
+[14:25:17] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[14:25:17] INFO: 20 pre-keys found on server
+[14:25:17] INFO: opened connection to WA
+[14:25:17] INFO: handled 1 offline messages/notifications
+[14:26:59] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "Uy70Z8vxlQTM+7dnF++D99HlgmcDUFMl4KRp1PhFQTw="
+      }
+    }
+[14:26:59] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[14:26:59] INFO: 18 pre-keys found on server
+[14:27:00] INFO: opened connection to WA
+[14:27:00] INFO: handled 19 offline messages/notifications
+[14:27:30] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB015F88D28D2DB9DBD03",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733754451"
+    }
+[14:27:30] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB015F88D28D2DB9DBD03",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733754451"
+    }
+[14:32:03] INFO: connection errored
+    trace: "Error: Connection Terminated\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:454:30)\n    at WebSocketClient.emit (node:events:532:35)\n    at WebSocketClient.emit (node:domain:488:12)\n    at WebSocket.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\Client\websocket.js:46:100)\n    at WebSocket.emit (node:events:520:28)\n    at WebSocket.emit (node:domain:488:12)\n    at WebSocket.emitClose (C:\Users\reism\Desktop\bot\node_modules\ws\lib\websocket.js:272:10)\n    at Receiver.receiverOnFinish (C:\Users\reism\Desktop\bot\node_modules\ws\lib\websocket.js:1209:20)\n    at Receiver.emit (node:events:520:28)\n    at Receiver.emit (node:domain:488:12)"
+[14:32:03] ERROR: error in sending keep alive
+[14:32:09] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "LIgIlEQ41fKEjJAqXl7u+9Dn+Ybs7sbZjcmSyiFQPXo="
+      }
+    }
+[14:32:09] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[14:32:09] INFO: 17 pre-keys found on server
+[14:32:09] INFO: opened connection to WA
+[14:32:10] INFO: handled 4 offline messages/notifications
+[14:52:31] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "Kvxy3f0woB+M5NsfX7LngpoRbxVjp1FZE44dzr9ha1s="
+      }
+    }
+[14:52:31] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[14:52:31] INFO: 16 pre-keys found on server
+[14:52:31] INFO: opened connection to WA
+[14:52:31] INFO: handled 0 offline messages/notifications
+[14:54:29] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "seYDTz9rOTs2YXA8l07pu2B0lqEgWPuulhUexSke3Tw="
+      }
+    }
+[14:54:29] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[14:54:30] INFO: 16 pre-keys found on server
+[14:54:30] INFO: opened connection to WA
+[14:54:31] INFO: handled 0 offline messages/notifications
+[14:54:41] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB00F00030C2B75A4325A",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733756082"
+    }
+[14:54:41] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB00F00030C2B75A4325A",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733756082"
+    }
+[14:58:36] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "6/yPzQdt9Gi18RXYp/ET7om7uIIrzLt7nwI7UI0uICk="
+      }
+    }
+[14:58:36] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[14:58:36] INFO: 15 pre-keys found on server
+[14:58:37] INFO: opened connection to WA
+[14:58:37] INFO: handled 0 offline messages/notifications
+[14:58:44] WARN: failed to obtain extra info
+    msgId: "3EB05D93BD9B805F642E1C"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[14:58:46] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB05D93BD9B805F642E1C",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733756327"
+    }
+[14:58:46] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB05D93BD9B805F642E1C",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733756327"
+    }
+[15:00:40] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "dVzUBKwMW6o21pIafwE9/QET4wVD7gYUjq+Dj589dQA="
+      }
+    }
+[15:00:40] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[15:00:41] INFO: 14 pre-keys found on server
+[15:00:41] INFO: opened connection to WA
+[15:00:41] INFO: handled 0 offline messages/notifications
+[15:00:49] WARN: failed to obtain extra info
+    msgId: "3EB004CFC9CDD5516D81E5"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[15:00:50] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB004CFC9CDD5516D81E5",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733756451"
+    }
+[15:00:50] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB004CFC9CDD5516D81E5",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733756451"
+    }
+[15:04:13] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "ooZ0QLU2sQZydZ84AJpdxXo0uQWrR69dNOTpIRXIUCE="
+      }
+    }
+[15:04:14] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[15:04:14] INFO: 13 pre-keys found on server
+[15:04:15] INFO: opened connection to WA
+[15:04:15] INFO: handled 0 offline messages/notifications
+[15:04:19] WARN: failed to obtain extra info
+    msgId: "3EB04C7BFDB0F60B9E60F8"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[15:04:22] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB04C7BFDB0F60B9E60F8",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733756662"
+    }
+[15:04:22] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB04C7BFDB0F60B9E60F8",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733756662"
+    }
+[15:05:41] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "sZ/WCCN4iW0kNiYk7/mYsPppMp7fTaFy1QQOFdUb+0c="
+      }
+    }
+[15:05:41] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[15:05:42] INFO: 12 pre-keys found on server
+[15:05:42] INFO: opened connection to WA
+[15:05:43] INFO: handled 0 offline messages/notifications
+[15:05:48] WARN: failed to obtain extra info
+    msgId: "3EB08532AA91C4AF4FEDE9"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[15:05:50] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB08532AA91C4AF4FEDE9",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733756750"
+    }
+[15:05:50] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB08532AA91C4AF4FEDE9",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733756750"
+    }
+[15:07:21] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "ivC2tJBrS9UpwschQ37+WNKE7CwDw9B3LTQ4aeKPKQ0="
+      }
+    }
+[15:07:21] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[15:07:22] INFO: 12 pre-keys found on server
+[15:07:22] INFO: opened connection to WA
+[15:07:22] INFO: handled 0 offline messages/notifications
+[15:07:25] WARN: failed to obtain extra info
+    msgId: "3EB093EBF6011CA08CA847"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[15:07:27] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB093EBF6011CA08CA847",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733756848"
+    }
+[15:07:27] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB093EBF6011CA08CA847",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733756848"
+    }
+[15:07:59] WARN: failed to obtain extra info
+    msgId: "3EB0A6EA277190DD3F5499"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[15:08:01] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0A6EA277190DD3F5499",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733756881"
+    }
+[15:08:01] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0A6EA277190DD3F5499",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733756881"
+    }
+[15:09:43] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "8PiQMsgLFJEtbZ0A1B1c3CsTuQuIbLIYmrCce7nboCA="
+      }
+    }
+[15:09:43] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[15:09:44] INFO: 11 pre-keys found on server
+[15:09:44] INFO: opened connection to WA
+[15:09:44] INFO: handled 1 offline messages/notifications
+[15:09:48] WARN: failed to obtain extra info
+    msgId: "3EB03928E6BFD310A29B9A"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[15:09:49] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB03928E6BFD310A29B9A",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733756990"
+    }
+[15:09:49] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB03928E6BFD310A29B9A",
+      "phash": "2:YUoeGNW5",
+      "count": "3",
+      "t": "1733756990"
+    }

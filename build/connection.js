@@ -47,45 +47,61 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.chico = chico;
 const baileys_1 = __importStar(require("baileys"));
-const pino_1 = __importDefault(require("pino"));
 const path_1 = __importDefault(require("path"));
 const exports_1 = require("./exports");
+const exports_2 = require("./exports");
+const commands_1 = require("./commands");
+const messages_1 = require("./exports/messages");
 function chico() {
     return __awaiter(this, void 0, void 0, function* () {
-        const logger = (0, pino_1.default)({ timestamp: () => `"time":"${new Date().toJSON}"` }, pino_1.default.destination("./database/wa-logs.txt"));
-        logger.level = "trace";
+        var _a;
         const { state, saveCreds } = yield (0, baileys_1.useMultiFileAuthState)(path_1.default.resolve(__dirname, "..", "database", "qr-code"));
         const { version } = yield (0, baileys_1.fetchLatestBaileysVersion)();
         const pico = (0, baileys_1.default)({
             printQRInTerminal: false,
             version,
+            logger: exports_2.logger, // Altere o nível para "info" em produção
             auth: state,
             browser: ["Ubuntu", "Chrome", "20.0.04"],
-            markOnlineOnConnect: true
+            markOnlineOnConnect: true,
         });
-        if (!pico.authState.creds.registered) {
-            let phoneNumber = yield (0, exports_1.question)("Digite o número de telefone: ");
+        // Verificar registro antes de solicitar o código de pareamento
+        if (!((_a = state.creds) === null || _a === void 0 ? void 0 : _a.registered)) {
+            let phoneNumber = yield (0, exports_1.question)("Digite o número de telefone: ");
             phoneNumber = phoneNumber.replace(/[^0-9]/g, "");
             if (!phoneNumber) {
-                throw new Error("Número de telefone inválido");
+                throw new Error("Número de telefone inválido");
             }
             const code = yield pico.requestPairingCode(phoneNumber);
-            console.log(`codigo de pareamento, ${code}`);
+            console.log(`Código de pareamento: ${code}`);
         }
+        // Manipular atualizações de conexão
         pico.ev.on("connection.update", (update) => {
             var _a;
             const { connection, lastDisconnect } = update;
             if (connection === "close") {
-                const shouldReconnect = ((_a = lastDisconnect === null || lastDisconnect === void 0 ? void 0 : lastDisconnect.error) === null || _a === void 0 ? void 0 : _a.stausCode) !== baileys_1.DisconnectReason.loggedOut;
-                console.log("connection closed", lastDisconnect === null || lastDisconnect === void 0 ? void 0 : lastDisconnect.error, "tenta reconectar", shouldReconnect);
+                const shouldReconnect = ((_a = lastDisconnect === null || lastDisconnect === void 0 ? void 0 : lastDisconnect.error) === null || _a === void 0 ? void 0 : _a.statusCode) !== baileys_1.DisconnectReason.loggedOut;
+                console.log("Conexão fechada devido ao erro:", lastDisconnect === null || lastDisconnect === void 0 ? void 0 : lastDisconnect.error, "Tentando reconectar...", shouldReconnect);
                 if (shouldReconnect) {
-                    chico().catch(console.error);
+                    setTimeout(() => chico(), 5000); // Tentar reconectar após 5 segundos
                 }
             }
             else if (connection === "open") {
-                console.log("conexão aberta");
+                console.log("Conexão aberta com sucesso!");
+                pico.sendPresenceUpdate("available"); // Atualizar presença ao conectar
             }
         });
+        // Salvar credenciais ao atualizar
         pico.ev.on("creds.update", saveCreds);
+        // Manipular mensagens recebidas
+        pico.ev.on("messages.upsert", (_a) => __awaiter(this, [_a], void 0, function* ({ messages }) {
+            if (!messages.length)
+                return;
+            const messageDetails = messages[0];
+            const { from } = (0, messages_1.extractMessage)(messageDetails);
+            if (!messageDetails.message)
+                return;
+            yield (0, commands_1.handleMenuCommand)(pico, from, messageDetails);
+        }));
     });
 }
