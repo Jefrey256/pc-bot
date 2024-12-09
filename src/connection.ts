@@ -3,6 +3,8 @@ import  P  from "pino";
 import path from "path";
 import { question } from "./exports";
 import { logger } from "./exports";
+import { handleMenuCommand } from "./commands";
+import { extractMessage } from "./exports/messages";
 
 
 export async function chico():Promise <void> {
@@ -16,7 +18,7 @@ export async function chico():Promise <void> {
     const pico = makeWASocket({
         printQRInTerminal: false,
         version,
-        logger,
+        //logger,
         auth: state,
         browser: ["Ubuntu", "Chrome", "20.0.04"],
         markOnlineOnConnect: true
@@ -53,6 +55,16 @@ export async function chico():Promise <void> {
 )
 
     pico.ev.on("creds.update", saveCreds)
+    await pico.sendPresenceUpdate('available')
+
+    pico.ev.on("messages.upsert", async({messages})=>{
+        const messageDetails = messages[0]
+
+        const {from} = extractMessage(messageDetails)
+        if (!messageDetails.message)return
+
+        await handleMenuCommand(pico, from, messageDetails )
+    })
 
     
 

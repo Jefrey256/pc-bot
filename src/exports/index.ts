@@ -13,6 +13,5 @@ export  const question = (text: string): Promise<string> => {
     })
 }
 
-export const logger = pino({
-    level: "trace"
-})
+export const logger = pino({ timestamp: ()=>`"time":"${new Date().toJSON}"`}, pino.destination("./database/wa-logs.txt"))
+logger.level = "trace"
