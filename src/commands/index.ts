@@ -1,10 +1,10 @@
 import { extractMessage, setupMessagingServices } from "../exports/messages";
 import { menu } from "./users/menu";
 
-export async function handleMenuCommand(pico, from, messageDetails) {
+export async function handleMenuCommand(pico, from, messageDetails, ) {
     const { enviarTexto } = setupMessagingServices(pico, from, messageDetails);
 
-    const { fullMessage, commandName, fromUser, media, isCommand, from: messageFrom } = extractMessage(messageDetails);
+    const { fullMessage, commandName, fromUser, media, isCommand, from: messageFrom, userName } = extractMessage(messageDetails);
 
     // Verifica se a mensagem foi enviada pelo próprio bot para evitar loops
     if (messageFrom === pico) {
@@ -18,6 +18,7 @@ export async function handleMenuCommand(pico, from, messageDetails) {
     };
 
     console.log(`Comando recebido: ${commandName} de ${fromUser}`);
+    console.log(userName)
 
     if (isCommand) {
         if (commands[commandName]) {

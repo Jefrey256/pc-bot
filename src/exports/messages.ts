@@ -16,7 +16,7 @@ export const extractMessage = (messageDetails: any) => {
         commandName: "",
         args: [],
         userName: "Desconhecido",
-        participant: "Desconhecido",
+        participant: null,
       };
     }
   

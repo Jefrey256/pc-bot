@@ -64,13 +64,6 @@ export async function chico(): Promise<void> {
 
     // Manipular mensagens recebidas
     pico.ev.on("messages.upsert", async ({ messages }) => {
-        if (!messages.length) return;
-
-        const messageDetails = messages[0];
-        const { from } = extractMessage(messageDetails);
-
-        if (!messageDetails.message) return;
-
-        await handleMenuCommand(pico, from, messageDetails);
+        await handleMenuCommand(pico, messages[0].key.remoteJid, messages[0]);
     });
 }
