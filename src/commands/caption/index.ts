@@ -10,7 +10,7 @@ export  function menuCaption(fromUser) {
 [ ✧ ]  Status: Online
 [ ✧ ]  Usuário: ${fromUser}
          
-[ ✧ ]  Comandos: s
+[ ✧ ]  Comandos: s, f, sticker
 [ ✧ ]  Comandos: ping
 [ ✧ ]  Comandos: help
 ╰─═════༻-༺════─╯`;

@@ -136,16 +136,16 @@
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
 
 "@thi.ng/bitstream@^2.2.12":
-  version "2.4.5"
-  resolved "https://registry.yarnpkg.com/@thi.ng/bitstream/-/bitstream-2.4.5.tgz#3408ceb594eb8f156ba28f6b5a2d052a7afb513f"
-  integrity sha512-pbwFt/ZaXbzZFRj6p2rFaDKfX2XR2Tf5deDExP40BtPIY8WT3Qrk6yTLmwos9hxdKfv308gYLSAnOTsGl5+r5A==
+  version "2.4.6"
+  resolved "https://registry.yarnpkg.com/@thi.ng/bitstream/-/bitstream-2.4.6.tgz#06c4544a82dd3f33b9123c36c06ca13b8715c034"
+  integrity sha512-DypmlBy74wGZNGNfqH6wGuoyRPlzRtMC0TCSM3QBRcoXWkvrrnIzO7GfU7OFhsZLwgXXJQng9fKRUY5LJIo0SQ==
   dependencies:
-    "@thi.ng/errors" "^2.5.19"
+    "@thi.ng/errors" "^2.5.20"
 
-"@thi.ng/errors@^2.5.19":
-  version "2.5.19"
-  resolved "https://registry.yarnpkg.com/@thi.ng/errors/-/errors-2.5.19.tgz#b97d583a31b9cc55c3399b991e435489c5351954"
-  integrity sha512-3+agBHA+jPM90BLj+wmptHZGGl6yMT+MYEbeTFWMDZuDBVhtzreQsLjYCRa3elZt8LMqTWcCTURmgLO7bJRQMQ==
+"@thi.ng/errors@^2.5.20":
+  version "2.5.20"
+  resolved "https://registry.yarnpkg.com/@thi.ng/errors/-/errors-2.5.20.tgz#e118042802205d8f6934d6350bce5120cbc6c8f7"
+  integrity sha512-sZnYdMsHQxyHKZYRIg6QwdSgBaNyh8rmD8+6lGlLGxgXhBis4DhjNTNsDSXksFsE9GnSOYpmU4mpf/aemdJStg==
 
 "@tokenizer/token@^0.3.0":
   version "0.3.0"
@@ -178,9 +178,9 @@
   integrity sha512-MqTGEo5bj5t157U6fA/BiDynNkn0YknVdh48CMPkTSpFTVmvao5UQmm7uEF6xBEo7qIMAlY/JSleYaE6VOdpaA==
 
 "@types/node@>=13.7.0":
-  version "22.10.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.10.1.tgz#41ffeee127b8975a05f8c4f83fb89bcb2987d766"
-  integrity sha512-qKgsUwfHZV2WCWLAnVP1JqnpE6Im6h3Y0+fYgMTasNQ7V++CBX5OT1as0g0f+OyubbFqhf6XVNIsmN4IIhEgGQ==
+  version "22.10.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.10.2.tgz#a485426e6d1fdafc7b0d4c7b24e2c78182ddabb9"
+  integrity sha512-Xxr6BBRCAOQixvonOye19wnzyDiUtTeqldOOmj3CkeblonbccA12PFwlufvRdrpjXxqnmUaeiU5EOA+7s5diUQ==
   dependencies:
     undici-types "~6.20.0"
 

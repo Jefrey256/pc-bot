@@ -8901,3 +8901,762 @@
       "count": "3",
       "t": "1734035688"
     }
+[20:51:56] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "tcGyP1wLOliDbSMmmzw7FzCP0eLPy+H1DboectmkCms="
+      }
+    }
+[20:51:57] INFO: not logged in, attempting registration...
+    node: {
+      "passive": false,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "devicePairingData": {
+        "eRegid": "AAAAqA==",
+        "eKeytype": "BQ==",
+        "eIdent": "Irq4qVdXdiz4aXOrC8jJ+6VQcvJyTZGNd++xC/q28wg=",
+        "eSkeyId": "AAAB",
+        "eSkeyVal": "TNCxWVmErt2/H3ynUr/TdAFpxzbhOm5CzAyixErbW0g=",
+        "eSkeySig": "UspZ46WreaSneC1gFjD0eytlrYwBROva48futX2yBJKvtZ8sZFhQ2ABPG/5x04Lw1/uHbKyBOAhziORMK7KAjw==",
+        "buildHash": "xEauBiqjwsZJtQsy2Yl8zg==",
+        "deviceProps": "CgZVYnVudHUYASAA"
+      }
+    }
+[20:53:18] INFO: pairing configured successfully, expect to restart the connection...
+    me: {
+      "id": "559481266028:88@s.whatsapp.net",
+      "name": "ᵃᵈᵐ"
+    }
+    platform: "smba"
+[20:53:19] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {
+        "code": "515"
+      }
+    }
+[20:53:19] INFO: connection errored
+    trace: "Error: Stream Errored (restart required)\n    at WebSocketClient.<anonymous> (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Socket/socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at WebSocketClient.emit (node:domain:488:12)\n    at /data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Socket/socket.js:236:35\n    at Object.decodeFrame (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/noise-handler.js:144:17)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)"
+[20:53:20] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "5pBjIga0l6URzeBtfI4NFmJTg5OeLil1Eujxb5I7ah0="
+      }
+    }
+[20:53:20] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 88
+    }
+[20:53:21] INFO: 0 pre-keys found on server
+[20:53:21] INFO: uploading pre-keys
+    count: 30
+[20:53:21] INFO: uploaded pre-keys
+    count: 30
+[20:53:21] INFO: opened connection to WA
+[20:53:21] INFO: handled 0 offline messages/notifications
+[20:53:22] INFO: injecting new app state sync keys
+    newAppStateSyncKeyId: "AAAAAMH5"
+    newKeys: [
+      "AAAAAMHG",
+      "AAAAAMHH",
+      "AAAAAMHE",
+      "AAAAAMHF",
+      "AAAAAMHO",
+      "AAAAAMHP",
+      "AAAAAMHM",
+      "AAAAAMHN",
+      "AAAAAMHK",
+      "AAAAAMHL",
+      "AAAAAMHI",
+      "AAAAAMHJ",
+      "AAAAAMHW",
+      "AAAAAMHX",
+      "AAAAAMHU",
+      "AAAAAMHV",
+      "AAAAAMHS",
+      "AAAAAMHT",
+      "AAAAAMHQ",
+      "AAAAAMHR",
+      "AAAAAMHe",
+      "AAAAAMHf",
+      "AAAAAMHc",
+      "AAAAAMHd",
+      "AAAAAMHa",
+      "AAAAAMHb",
+      "AAAAAMHY",
+      "AAAAAMHZ",
+      "AAAAAMHm",
+      "AAAAAMHn",
+      "AAAAAMHk",
+      "AAAAAMHl",
+      "AAAAAMHi",
+      "AAAAAMHj",
+      "AAAAAMHg",
+      "AAAAAMHh",
+      "AAAAAMHu",
+      "AAAAAMHv",
+      "AAAAAMHs",
+      "AAAAAMHt",
+      "AAAAAMHq",
+      "AAAAAMHr",
+      "AAAAAMHo",
+      "AAAAAMHp",
+      "AAAAAMH2",
+      "AAAAAMH3",
+      "AAAAAMH0",
+      "AAAAAMH1",
+      "AAAAAMHy",
+      "AAAAAMHz",
+      "AAAAAMHw",
+      "AAAAAMHx",
+      "AAAAAMH4",
+      "AAAAAMH5"
+    ]
+[20:53:23] INFO: doing initial app state sync
+[20:53:23] INFO: got history notification
+    histNotification: {
+      "fileSha256": "SmncCek26rv3cly5o7m78WjxtJLr2FX5nYEe64+Oh1o=",
+      "fileLength": "12382",
+      "mediaKey": "HpZqugAsJLqZSd5ajj93iD71bMtZ/RlWpe9olCRN4dU=",
+      "fileEncSha256": "hO+/C59lwb9tIXhELn9U+vRRlVf+SB3hvNLb3ERl7hw=",
+      "directPath": "/v/t62.31111-24/25430238_1127163025777656_2761667445853529280_n.enc?ccb=11-4&oh=01_Q5AaIHeu2aHW1xsiaJDiwyQdr7GrWulnWXYpLuSLVLDtlH3t&oe=6782A438&_nc_sid=5e03e0",
+      "syncType": "INITIAL_STATUS_V3"
+    }
+    process: false
+    id: "C62783AC5B79E84466069F81E876C119"
+    isLatest: true
+[20:53:23] INFO: resyncing critical_block from v0
+[20:53:23] INFO: resyncing critical_unblock_low from v0
+[20:53:23] INFO: resyncing regular_high from v0
+[20:53:23] INFO: resyncing regular_low from v0
+[20:53:23] INFO: resyncing regular from v0
+[20:53:24] INFO: restored state of critical_block from snapshot to v57 with mutations
+[20:53:25] INFO: synced critical_block to v62
+[20:53:25] INFO: restored state of regular_high from snapshot to v63 with mutations
+[20:53:25] INFO: synced regular_high to v69
+[20:53:25] INFO: restored state of regular from snapshot to v247 with mutations
+[20:53:25] INFO: synced regular to v259
+[20:53:25] INFO: restored state of critical_unblock_low from snapshot to v250 with mutations
+[20:53:25] INFO: synced critical_unblock_low to v258
+[20:53:25] INFO: restored state of regular_low from snapshot to v379 with mutations
+[20:53:25] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/chat-utils.js:58:27)\n    at decodeSyncdMutations (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/chat-utils.js:181:21)\n    at async decodeSyncdPatch (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/chat-utils.js:212:20)\n    at async decodePatches (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/chat-utils.js:319:30)\n    at async /data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Socket/chats.js:425:70\n    at async Object.transaction (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/auth-utils.js:135:26)\n    at async /data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Socket/chats.js:361:9\n    at async /data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/event-buffer.js:105:36\n    at async doAppStateSync (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Socket/chats.js:790:17)\n    at async /data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Socket/chats.js:768:21"
+[20:53:25] INFO: resyncing regular_low from v0
+[20:53:25] INFO: restored state of regular_low from snapshot to v379 with mutations
+[20:53:25] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/chat-utils.js:58:27)\n    at decodeSyncdMutations (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/chat-utils.js:181:21)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async decodeSyncdPatch (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/chat-utils.js:212:20)\n    at async decodePatches (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/chat-utils.js:319:30)\n    at async /data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Socket/chats.js:425:70\n    at async Object.transaction (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/auth-utils.js:135:26)\n    at async /data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Socket/chats.js:361:9\n    at async /data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/event-buffer.js:105:36\n    at async doAppStateSync (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Socket/chats.js:790:17)"
+[20:53:25] INFO: resyncing regular_low from v0
+[20:53:26] INFO: restored state of regular_low from snapshot to v379 with mutations
+[20:53:26] INFO (regular_low): failed to sync state from version
+    error: "Error: tried remove, but no previous op\n    at Object.mix (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/chat-utils.js:58:27)\n    at decodeSyncdMutations (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/chat-utils.js:181:21)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async decodeSyncdPatch (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/chat-utils.js:212:20)\n    at async decodePatches (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/chat-utils.js:319:30)\n    at async /data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Socket/chats.js:425:70\n    at async Object.transaction (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/auth-utils.js:135:26)\n    at async /data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Socket/chats.js:361:9\n    at async /data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/event-buffer.js:105:36\n    at async doAppStateSync (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Socket/chats.js:790:17)"
+[20:53:26] INFO: archive setting updated => 'false'
+[20:53:26] INFO: got history notification
+    histNotification: {
+      "fileSha256": "tNL8SeDMlN2w9/36AsU9eUyaK6qyKlHdEE/raAFhcs4=",
+      "fileLength": "15183",
+      "mediaKey": "nmrjetxhHV+msrwGT0A4LBH8qwZCVFgc+gJfhPS7I7c=",
+      "fileEncSha256": "3WopWbciwl4crFdPEMA/VD1Q5ETK+sf3QqhfLrV/7fc=",
+      "directPath": "/v/t62.31111-24/30615506_900110072111084_7987690098618649685_n.enc?ccb=11-4&oh=01_Q5AaILG_hin1zynhiEtvlRapG73PL_FGO8Qz8MlV8nh4-neZ&oe=6782B2DB&_nc_sid=5e03e0",
+      "syncType": "PUSH_NAME",
+      "chunkOrder": 1
+    }
+    process: true
+    id: "36C96E456C2ECA503F7D72B02E981577"
+    isLatest: true
+[20:53:26] INFO: got history notification
+    histNotification: {
+      "fileSha256": "9IaRbxueC8UVh69L6bn7zNN14AFHqo1+WP9dmc+1B6c=",
+      "fileLength": "12663",
+      "mediaKey": "3x9nlINJN8/74cszKLoOXckyXgH3l2qTN28zbwi89TA=",
+      "fileEncSha256": "1uUKQuigBnHIg0hq2YcG99MG92GGqSC22NljO4QO1Ys=",
+      "directPath": "/v/t62.31111-24/31853472_1293692101879698_4985816696586473125_n.enc?ccb=11-4&oh=01_Q5AaIPIsX2g_lorT4_Z5KZd4jmSOoKE4nW29jJe3W7AmILdl&oe=6782CE40&_nc_sid=5e03e0",
+      "syncType": "NON_BLOCKING_DATA"
+    }
+    process: false
+    id: "D5065995BA3D14A565F219ECB3D18B97"
+    isLatest: false
+[20:53:26] INFO: got history notification
+    histNotification: {
+      "fileSha256": "fh12XASfJCtTHDexi4SbRUoUxvJZ0gb4EJambcCf3zY=",
+      "fileLength": "110385",
+      "mediaKey": "26CRR14WCi3C80iAH97xT8zfjvDhW5rk3oWsuLQ4EWA=",
+      "fileEncSha256": "iFwSWwlHSrPADTHsmzB3fKjK0A6g2FQISzKgWyIsU+o=",
+      "directPath": "/v/t62.31111-24/11294201_1761548651273278_3280209292052747249_n.enc?ccb=11-4&oh=01_Q5AaIM_n0gshQ1YznG9unbRTkw9IChqzJ4C3JD8EnCtlVs3s&oe=6782B5B6&_nc_sid=5e03e0",
+      "syncType": "INITIAL_BOOTSTRAP"
+    }
+    process: true
+    id: "FD272DC4A6D0E860FD433359C056D791"
+    isLatest: false
+[20:53:27] INFO: injecting new app state sync keys
+    newAppStateSyncKeyId: "AAAAAMH6"
+    newKeys: [
+      "AAAAAMH6"
+    ]
+[20:53:27] INFO: resyncing regular from v259
+[20:53:27] INFO: synced regular to v260
+[20:53:27] ERROR: failed to decrypt message
+    key: {
+      "remoteJid": "120363330239998629@g.us",
+      "fromMe": false,
+      "id": "BAE57CD2B5052382",
+      "participant": "554789252045:3@s.whatsapp.net"
+    }
+    err: {
+      "type": "Error",
+      "message": "No SenderKeyRecord found for decryption",
+      "stack":
+          Error: No SenderKeyRecord found for decryption
+              at Object.120363330239998629@g.us::554789252045::3 [as awaitable] (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/WASignalGroup/group_cipher.js:49:15)
+              at async _asyncQueueExecutor (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/WASignalGroup/queue_job.js:20:29)
+    }
+[20:53:28] INFO: resyncing regular from v260
+[20:53:28] INFO: synced regular to v261
+[20:53:32] INFO: sent retry receipt
+    msgAttrs: {
+      "from": "120363330239998629@g.us",
+      "type": "text",
+      "id": "BAE57CD2B5052382",
+      "participant": "554789252045:3@s.whatsapp.net",
+      "participant_lid": "128587546030226@lid",
+      "addressing_mode": "pn",
+      "verified_name": "4930325472639528189",
+      "verified_level": "unknown",
+      "notify": "Cartoon cat",
+      "t": "1734036806"
+    }
+    retryCount: 1
+[20:53:43] WARN: failed to obtain extra info
+    msgId: "3EB048D04B7638B6BBB740"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/messages-media.js:63:11)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async extractImageThumb (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/messages-media.js:104:17)\n    at async generateThumbnail (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/messages-media.js:290:38)\n    at async /data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/messages.js:120:40)\n    at async generateWAMessageContent (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/messages.js:415:13)\n    at async generateWAMessage (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Utils/messages.js:507:59)\n    at async Object.sendMessage (/data/data/com.termux/files/home/pc-bot/node_modules/baileys/lib/Socket/messages-send.js:626:33)"
+[20:53:44] INFO: got history notification
+    histNotification: {
+      "fileSha256": "lOAxN6XKS+pPgOcXfedHIYUo4OOTzgIEnehzQNPH2NE=",
+      "fileLength": "6027441",
+      "mediaKey": "fVvpffBpCFalZQAalins1HXF94uZ0G/MkDBgudyl7i8=",
+      "fileEncSha256": "lsY8KoSW9Ni2shK8FbmJM0tJiYe+igQi9yfjobErIY8=",
+      "directPath": "/v/t62.31111-24/29317776_1747274286050626_5824808989659460979_n.enc?ccb=11-4&oh=01_Q5AaIHhN83DOV_7AZtBsWqFOmnjmUUkpxiijQEA_slpq1G0h&oe=6782B34C&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 1,
+      "progress": 2,
+      "oldestMsgInChunkTimestampSec": "1733606108"
+    }
+    process: true
+    id: "A1F0213F318CA0699631EC56292855D3"
+    isLatest: false
+[20:53:56] INFO: got history notification
+    histNotification: {
+      "fileSha256": "qgDWMT/sP4yxXq5yHJxdcH85nsotme8xrb1gGnZAyM4=",
+      "fileLength": "6942295",
+      "mediaKey": "jLU3OxtPy2bHkvrQJLka3SweFBLLM+dvj/05W9t5BGM=",
+      "fileEncSha256": "u1j61ueRbwK/Bp3qzl8QMywy2WhLXXJW4s96ybSKHOw=",
+      "directPath": "/v/t62.31111-24/29030176_919197063645817_7744402168740982891_n.enc?ccb=11-4&oh=01_Q5AaIPgNWNALKZLAjj-BMkzk5o42lhorfXNAQXMS1mau4OgN&oe=6782BD46&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 2,
+      "progress": 4,
+      "oldestMsgInChunkTimestampSec": "1733230419"
+    }
+    process: true
+    id: "3267EAE84FD584604EFD7E3FBC478B64"
+    isLatest: false
+[20:54:25] INFO: got history notification
+    histNotification: {
+      "fileSha256": "96SD/QpWuwB10kkzGrp1d0/+IeHCm7d3mimdN0F4YkA=",
+      "fileLength": "6065940",
+      "mediaKey": "KbF45N+LrS6cPcE8dnkjixru3YWjY+47w99j5iNrM/0=",
+      "fileEncSha256": "+UBdI2F7mqlzvjAiAE9lt7JVV5/rxwA9P/4yun+NviM=",
+      "directPath": "/v/t62.31111-24/13814284_1149399293468576_6079214534839897175_n.enc?ccb=11-4&oh=01_Q5AaIAfdRe9GPhz3wJehiFRUAwi5k3o5PDDStrWcdq4U3oTp&oe=6782A4CA&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 3,
+      "progress": 6,
+      "oldestMsgInChunkTimestampSec": "1732895064"
+    }
+    process: true
+    id: "957E566693FB0B35C04EF68904A3EE46"
+    isLatest: false
+[20:54:40] INFO: got history notification
+    histNotification: {
+      "fileSha256": "ZcRxPS3EsZWfIjluZxXIFt535/AvYDa2IK04PEeFwe0=",
+      "fileLength": "962619",
+      "mediaKey": "ch5fK/Qqi1FmNBPbH9qr+dWHEiK0d9RmOZoauVM36iI=",
+      "fileEncSha256": "ggk+6vf9dDdBLOdENfdWyoyqEqTRuPRlhGOsmXammpQ=",
+      "directPath": "/v/t62.31111-24/34785720_1812160276188067_6442349954751340385_n.enc?ccb=11-4&oh=01_Q5AaIPi-hAiHfTTNKWoROh2aijERPXeV5Rn5en0SfCIfU-2k&oe=6782CE4C&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 4,
+      "progress": 8,
+      "oldestMsgInChunkTimestampSec": "1732624521"
+    }
+    process: true
+    id: "94227C6351A1798064FCBC188519CC72"
+    isLatest: false
+[20:54:55] INFO: got history notification
+    histNotification: {
+      "fileSha256": "OYDb3B74X1SZIJPArwgfiGxSYbczzi3cpCaXJfdt8CI=",
+      "fileLength": "7659325",
+      "mediaKey": "cy51/uy2SiP9jsyoMSpk+0ZLmIVU1dTHofmz5Adwfvk=",
+      "fileEncSha256": "LsNWiJ0wCVRBlLMpI5MGIQA00a1N9HSvArrt/ef0T7k=",
+      "directPath": "/v/t62.31111-24/21388733_615127634286620_5489239296572233343_n.enc?ccb=11-4&oh=01_Q5AaIPWhIZjAT_Wx4oUZ4j-Neqz2LJH0kznt2arBpHRs85wC&oe=6782CD41&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 5,
+      "progress": 10,
+      "oldestMsgInChunkTimestampSec": "1732339002"
+    }
+    process: true
+    id: "D0C8ACE3B25B9743D28C25C485DBFB70"
+    isLatest: false
+[20:55:08] INFO: got history notification
+    histNotification: {
+      "fileSha256": "+OEaLxqESQa1yW6vOW8R6WCdHMIiF41SyIloxbIf3wk=",
+      "fileLength": "2053997",
+      "mediaKey": "2A19nbfafrjlyNaZoKOUysrkDb9QgXCI7dIsMJx/HHQ=",
+      "fileEncSha256": "tVdGb6eN+oWXlmcJm9ytNvsSKb5c8tyJXZ0LGCmItME=",
+      "directPath": "/v/t62.31111-24/24908850_1743895383120123_782304729826716809_n.enc?ccb=11-4&oh=01_Q5AaILBiJEPgIm3uX9gnVB41uv6lyyrX31OJJ5k6ZdCqiGDq&oe=6782CFB8&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 6,
+      "progress": 12,
+      "oldestMsgInChunkTimestampSec": "1732050390"
+    }
+    process: true
+    id: "B9484ED0D71A660BB4893E1340F98FAB"
+    isLatest: false
+[20:55:19] INFO: got history notification
+    histNotification: {
+      "fileSha256": "AxIptK5c0LHhf1GWih0+A73oRWuVB4xdMN1tjFvbkK0=",
+      "fileLength": "1446466",
+      "mediaKey": "MWFvgFS6EAnEWZSu+mWmFps6njn/NsD/lInHHj3VhTU=",
+      "fileEncSha256": "cFq3qrbpz0pdmHTa31urP+zeAE9MjkPXIib/GT1gvDI=",
+      "directPath": "/v/t62.31111-24/31083602_1850735182344905_4651367976766998314_n.enc?ccb=11-4&oh=01_Q5AaIGGj4J_prpfrZrNiF0PiP1XmMcfOdPxehADyj0P00C7K&oe=6782AB95&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 7,
+      "progress": 14,
+      "oldestMsgInChunkTimestampSec": "1731857517"
+    }
+    process: true
+    id: "FC9D428E5ACC7E1093170C81E47F9C61"
+    isLatest: false
+[20:55:28] INFO: got history notification
+    histNotification: {
+      "fileSha256": "lwt0IhZk22odIEgmML8Z6x8d9gBeyDuqHdONZ3D0ysc=",
+      "fileLength": "127052",
+      "mediaKey": "ZHWTE7PO1KkGvt7oc+cZudCtCJDMb9EZ37N1KVjdVcQ=",
+      "fileEncSha256": "SbEO05x13fD8m++FFzjP6MejLhFb24/i+6uifCyKZEQ=",
+      "directPath": "/v/t62.31111-24/21226277_567155139354457_7251881928790947132_n.enc?ccb=11-4&oh=01_Q5AaIAOQsmZOgdrUaiSijAj49GRyM4UmNLVw4G01O18Xtmz4&oe=6782C021&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 8,
+      "progress": 16,
+      "oldestMsgInChunkTimestampSec": "1731855091"
+    }
+    process: true
+    id: "B125C2FC58C39F236F13FAC17F3A594B"
+    isLatest: false
+[20:55:37] INFO: got history notification
+    histNotification: {
+      "fileSha256": "M3ShK77Ovg8bDXFOe6BTkt7PZ1h9PswX57w3EDmy5sY=",
+      "fileLength": "389197",
+      "mediaKey": "bEgYSB+YhS4E6brF2r+61xr84izho3yvr87d7zYJTQc=",
+      "fileEncSha256": "TU0XOx6ZVm4yL18jOYmLWW5PPJ1HmHJcmFWotXiGnME=",
+      "directPath": "/v/t62.31111-24/23146008_549253714574782_5077503789571114479_n.enc?ccb=11-4&oh=01_Q5AaIGERZFUTG3NSTlCyhKnoC3F7tuN5uC6dm5gEr0Bj_6nD&oe=6782C25C&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 9,
+      "progress": 19,
+      "oldestMsgInChunkTimestampSec": "1731766793"
+    }
+    process: true
+    id: "04A2563F355B4F45F234C988AAE757F2"
+    isLatest: false
+[20:55:48] INFO: got history notification
+    histNotification: {
+      "fileSha256": "Uc0O8iIIzuPWZ/GbHU/3mg65vVuidCucsPJ6Og5YZ34=",
+      "fileLength": "349086",
+      "mediaKey": "lOGgrH5iFyD4gPdSK+WJ8SsGMe/R0yanl7zt1oPSHks=",
+      "fileEncSha256": "uv6CqcfSnz++245/QB3PGdh/skoGUYbqjHuD4RAUcZc=",
+      "directPath": "/v/t62.31111-24/30213526_609825584825908_7482962977380952032_n.enc?ccb=11-4&oh=01_Q5AaIGpq8ZLzHeUEJXVkECPvY11cHlsXmxK50gdXlIYeYpkQ&oe=6782A56E&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 10,
+      "progress": 21,
+      "oldestMsgInChunkTimestampSec": "1731723225"
+    }
+    process: true
+    id: "614983CA1B60256ACD34FF2E40807AC9"
+    isLatest: false
+[20:55:56] INFO: got history notification
+    histNotification: {
+      "fileSha256": "/3VOz57EcIBKKjwV0oEV9cmd5px8Y4ZeVSSgLSmTlwk=",
+      "fileLength": "730511",
+      "mediaKey": "yFCWlWHiNjQK9K89w9QSO2iD1q86HwKE4psIdAjveR4=",
+      "fileEncSha256": "bIsArEXfIbrdDc1mra1Jsp4AdjIh4ij8mESP/VnU8j0=",
+      "directPath": "/v/t62.31111-24/30175012_1211119809983082_107805763158530108_n.enc?ccb=11-4&oh=01_Q5AaIF02QeWq9EqE0IO7NSOo1XbLrXM2qpk6mo9jWe5IL59_&oe=6782C544&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 11,
+      "progress": 23,
+      "oldestMsgInChunkTimestampSec": "1731272117"
+    }
+    process: true
+    id: "73CFF8237C7DA2CD4AB5B30FF72442D6"
+    isLatest: false
+[20:56:06] INFO: got history notification
+    histNotification: {
+      "fileSha256": "l68Xu3QTRaz+7Lujj4rDONjbyqCSm0AWa60fCj3TBSU=",
+      "fileLength": "614305",
+      "mediaKey": "b19oHYnka/3jlFsr+HceobayZ9etKJT/44/6PRIELyY=",
+      "fileEncSha256": "5PuP2b4PZ/AA8HyGel7BXvN4oWiG2W92kyoOwFVmZMo=",
+      "directPath": "/v/t62.31111-24/30541600_1102829258129334_5924481776391905862_n.enc?ccb=11-4&oh=01_Q5AaIHYVoHcDxFOVuAlQN3m-1yjrWjh9muakRlr90Y17JFJi&oe=6782A6F9&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 12,
+      "progress": 25,
+      "oldestMsgInChunkTimestampSec": "1730935131"
+    }
+    process: true
+    id: "FFEC6E2AE77DC8266C9E1B351DA9953E"
+    isLatest: false
+[20:56:24] INFO: got history notification
+    histNotification: {
+      "fileSha256": "CsHvBEfsRqoDw9J3ycXRifXb4xourvZgtXXzsLUHobM=",
+      "fileLength": "553835",
+      "mediaKey": "izkBUeEBbu/ONZ5dpV13QMK+/cLpOmmkvbZprNGUYS4=",
+      "fileEncSha256": "7xU0nm2rRPgdxTQvWYAN+l8f1PPA4DmXcaT0A3gBMdI=",
+      "directPath": "/v/t62.31111-24/34732972_1142563237217128_8170732123909107168_n.enc?ccb=11-4&oh=01_Q5AaIHku6HSia98eepw-tNqSGW1vAHV4cF4s9WZjXfRreyYN&oe=6782C292&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 13,
+      "progress": 27,
+      "oldestMsgInChunkTimestampSec": "1730572214"
+    }
+    process: true
+    id: "04347D922BCD385CFE204194E146C03D"
+    isLatest: false
+[20:56:43] INFO: got history notification
+    histNotification: {
+      "fileSha256": "3cnpdRPNUxNurkEgMwXsCOd0HDBHDmz+nYMcpwF7p14=",
+      "fileLength": "744823",
+      "mediaKey": "Vv8RnoOOzLXEZkxDiB5z2QXCapnvqrXjWpF15ouArOs=",
+      "fileEncSha256": "fc2dKkpUsEY+rh206sDHoQxrCnPiWPZLONVWVDZKEso=",
+      "directPath": "/v/t62.31111-24/12475203_2978800005603842_6869044234122042218_n.enc?ccb=11-4&oh=01_Q5AaIISWw3MST7c2BFi-ObuPHJ5jxc2dBttGjD57kD-StjLz&oe=6782AE73&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 14,
+      "progress": 29,
+      "oldestMsgInChunkTimestampSec": "1730317618"
+    }
+    process: true
+    id: "741BC6C435BCA18C67C12B1D453122F4"
+    isLatest: false
+[20:56:57] INFO: got history notification
+    histNotification: {
+      "fileSha256": "UnE6pUz9pzStW7GUXh3vxLj2EXfQg1rL/smea3fTWrI=",
+      "fileLength": "2308019",
+      "mediaKey": "1WPrw2wZkE/uQLbIBmUI8hakIIOC7/1W9OBkutYFI98=",
+      "fileEncSha256": "gl84aBrYwbuq6CyIgPeKiiF2pzHeYF2E3sB32oEMxkw=",
+      "directPath": "/v/t62.31111-24/19440040_1611564166460603_1070512253178200752_n.enc?ccb=11-4&oh=01_Q5AaIMXXRnKCGXMqGzsCz8xuwF-VLMx3C5cvMri2wYc5wH1D&oe=6782A9C3&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 15,
+      "progress": 31,
+      "oldestMsgInChunkTimestampSec": "1730169239"
+    }
+    process: true
+    id: "9030A50AB1C21080618E9570910E7BC9"
+    isLatest: false
+[20:57:16] INFO: got history notification
+    histNotification: {
+      "fileSha256": "Ax5DCcVgXSBJTlyJAN9MKDt12cw2UzlsfbvqhIjbIBg=",
+      "fileLength": "946348",
+      "mediaKey": "o6tqwqZfkXmb2eWv/hThr9iAooT2o3KfLF1b/F8Q4w4=",
+      "fileEncSha256": "vbeZ6U5ydnotrC0Rg4DgQfQoPbS6DxG3xHar2qHykog=",
+      "directPath": "/v/t62.31111-24/30181156_1089917579128071_2853016863501584859_n.enc?ccb=11-4&oh=01_Q5AaIHVZyW-i5hT3evZAL4z7yvJircmuKBFgtvlx0mapk1Cv&oe=6782D7EB&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 16,
+      "progress": 33,
+      "oldestMsgInChunkTimestampSec": "1730067701"
+    }
+    process: true
+    id: "5CBEE3C41B2F927966BA58F64E6DA816"
+    isLatest: false
+[20:57:33] INFO: got history notification
+    histNotification: {
+      "fileSha256": "A7WSVB7sTo0GIAlo0by+SLemsfv5ykHoftNlbyE7PUE=",
+      "fileLength": "831873",
+      "mediaKey": "ha4MGraQRSnqvMty+gImM6zv0WAXOfdsJDObgh7GrwU=",
+      "fileEncSha256": "X5baPC5G+reZdrh8X0o+VoivcJe64wJmplWnB9Aec68=",
+      "directPath": "/v/t62.31111-24/31794619_2428080534192758_3211093239958102580_n.enc?ccb=11-4&oh=01_Q5AaIJplEJEm-3Rmqq7fG8Q1p4spDI63qlgvbyxfw8yP4fpM&oe=6782AA22&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 17,
+      "progress": 36,
+      "oldestMsgInChunkTimestampSec": "1729989813"
+    }
+    process: true
+    id: "0163FDE7A7DD24EC845DB28282CEA673"
+    isLatest: false
+[20:57:46] INFO: got history notification
+    histNotification: {
+      "fileSha256": "alFH/tckJVZkbLv5yUFhp+G1MXc53yeiP5pmFXLgpRM=",
+      "fileLength": "697632",
+      "mediaKey": "xfvUaNqLeEdKFsQ/Slt1afQC4oETLkCOr+BRjMU3PhQ=",
+      "fileEncSha256": "b59d3Gcka9ju+ZbCVnqwvKKduZrzvoS0tr9ADIGGluE=",
+      "directPath": "/v/t62.31111-24/18894617_985836526916710_1313368641640624612_n.enc?ccb=11-4&oh=01_Q5AaIBZ0iR_C5TJjCr0KZbYhyWnF18xOhvhH6Dlbt1JFsHc0&oe=6782BC2E&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 18,
+      "progress": 38,
+      "oldestMsgInChunkTimestampSec": "1729902158"
+    }
+    process: true
+    id: "AE7DD43782E0D3C3EE0126C07183358B"
+    isLatest: false
+[20:58:02] INFO: got history notification
+    histNotification: {
+      "fileSha256": "iTqa4A7jm6zQhEmXSRpxFcrt1CKuO7K5eV0jRjH7j/c=",
+      "fileLength": "1366950",
+      "mediaKey": "ehv9Y602WwcjMfx+lUhujic7wQcNcMfl4JQV9QZtxD4=",
+      "fileEncSha256": "MsmjsUR7PqPelLOUZPdDQHK6xmIk2DO3FMCo0vbofFM=",
+      "directPath": "/v/t62.31111-24/30136409_1243305800458990_2627409164777512356_n.enc?ccb=11-4&oh=01_Q5AaIKhA26CVi604jo9UlyAxxpHwrhVE3uvJM_cTvztqWZjn&oe=6782CE97&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 19,
+      "progress": 40,
+      "oldestMsgInChunkTimestampSec": "1729734443"
+    }
+    process: true
+    id: "E2A4152C07D14F77CF1BC9F8329E6916"
+    isLatest: false
+[20:58:17] INFO: got history notification
+    histNotification: {
+      "fileSha256": "ehNCLYdVhBbYUggvICgfwNUkPqgqCADiCUvorryMF9M=",
+      "fileLength": "2560239",
+      "mediaKey": "j/Nmx9DXXhZ38gtjda5oYV+QQw/vSysoaF9ZpNpsas8=",
+      "fileEncSha256": "QqHyOnqw+H4FdQBIHJit1p7qS+UXBbpzfq4HVavGMW8=",
+      "directPath": "/v/t62.31111-24/23119876_1337912663887701_1996884626884553465_n.enc?ccb=11-4&oh=01_Q5AaIFqh73kq6qLCwmXxRQXZiI9XgpuatInz2prkfWCG0dUR&oe=6782D9A3&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 20,
+      "progress": 42,
+      "oldestMsgInChunkTimestampSec": "1729569969"
+    }
+    process: true
+    id: "DA545C091CC3CF4030C7A2B2E2DE18E4"
+    isLatest: false
+[20:58:40] INFO: got history notification
+    histNotification: {
+      "fileSha256": "RLUU+/hCwovUgUPzLbWYIihQGzS51mtlvj8qrUym420=",
+      "fileLength": "947196",
+      "mediaKey": "WcCocN86OKxhlR5m2hPIkjvb96IqOWjinombbFlHm98=",
+      "fileEncSha256": "+KoyIx/N93yRpoUBm+wZK08OITc3L2zdXhstIv3lKtQ=",
+      "directPath": "/v/t62.31111-24/23333205_547302508295711_1162238493097135093_n.enc?ccb=11-4&oh=01_Q5AaIIu58p9oj-nPtuUWE_IDA5I6mg76Q8OlQxa9wkWCUH5p&oe=6782BFEE&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 21,
+      "progress": 44,
+      "oldestMsgInChunkTimestampSec": "1729428642"
+    }
+    process: true
+    id: "D1FFFD4B4D570F27789E4B658B950299"
+    isLatest: false
+[20:58:50] INFO: got history notification
+    histNotification: {
+      "fileSha256": "EiB8pNDcU4OS4scKO0OO2+IUfCWd9p5pSH24dD3Cqik=",
+      "fileLength": "1091922",
+      "mediaKey": "K9/ANG+VPQQWA28AfLBVSiD24YGNOgsjO7nJfl/Z8tU=",
+      "fileEncSha256": "oBk4QPr9h0pnu96yfksniUU7FgBEX8KGO57W4575DRY=",
+      "directPath": "/v/t62.31111-24/27383133_575704158375058_6275096953310871428_n.enc?ccb=11-4&oh=01_Q5AaIOXKIjvVfEZPYPX04KFnTopG-ImcJrAkbNNCb3c0ebAt&oe=6782C2CE&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 22,
+      "progress": 46,
+      "oldestMsgInChunkTimestampSec": "1729306443"
+    }
+    process: true
+    id: "7EEF2E9E14E6AC4BE4348592A18A7B0B"
+    isLatest: false
+[20:58:59] INFO: got history notification
+    histNotification: {
+      "fileSha256": "tUcoWd7QaDyiOAB9kb+0NVRAQ0t2OdqgRp8cyV1VdPU=",
+      "fileLength": "798543",
+      "mediaKey": "t9QC0J4+ba7SM1oxeijiplZtcmpAPteLtxvxF/S84I0=",
+      "fileEncSha256": "uZ51AgxsLuoGAK1C/ZdbD1j2jAUy8nB8nhaMYRUsaUc=",
+      "directPath": "/v/t62.31111-24/13156885_1415912225795387_7894160015633107154_n.enc?ccb=11-4&oh=01_Q5AaIIiLmiKsotB55aWyZLBeY7AD-4l6cT604R-qsaz8Ecuc&oe=6782D847&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 23,
+      "progress": 48,
+      "oldestMsgInChunkTimestampSec": "1729181237"
+    }
+    process: true
+    id: "095E151AFB8818BA45BD4B5DD22314B1"
+    isLatest: false
+[20:59:08] INFO: got history notification
+    histNotification: {
+      "fileSha256": "Xt9lzSyB71yCB/tu1Gwl25o+0Ll7Wlzc2B5mbxF55rA=",
+      "fileLength": "3780257",
+      "mediaKey": "pytQ/4QmB3C+LjomMwjHjGEEf9DRpe26Irm68lI5luw=",
+      "fileEncSha256": "dOn7QdHSIU4nImaVPP9+tFI8spLgdAAEN+ARgi5dRFo=",
+      "directPath": "/v/t62.31111-24/12147060_3515178298626731_2298913741662849323_n.enc?ccb=11-4&oh=01_Q5AaIEUc2QuVfxw649rdeFitCiPTjC72oyBeel4wupdts74H&oe=6782DA00&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 24,
+      "progress": 50,
+      "oldestMsgInChunkTimestampSec": "1729032518"
+    }
+    process: true
+    id: "107B3E0D07F58890A107880B2D5984AE"
+    isLatest: false
+[20:59:26] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363350190455246@g.us",
+      "class": "message",
+      "id": "3EB013ED6DCDCA56ACF48F",
+      "phash": "2:d7IJVeZX",
+      "count": "11",
+      "t": "1734037166"
+    }
+[20:59:26] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363350190455246@g.us",
+      "class": "message",
+      "id": "3EB013ED6DCDCA56ACF48F",
+      "phash": "2:d7IJVeZX",
+      "count": "11",
+      "t": "1734037166"
+    }
+[20:59:30] INFO: got history notification
+    histNotification: {
+      "fileSha256": "13p758r7ezsTPfqYtMdTikqSUJILEzOc66U2+D17gCs=",
+      "fileLength": "803602",
+      "mediaKey": "fpZSV9/57cjHDTAoAAEnwjXzQ3jlBP6ZlvZ+CuwSfTw=",
+      "fileEncSha256": "DDj29hRDILyOzQohvEzo6yCB5aDQ8AluKAQRtBv6fRY=",
+      "directPath": "/v/t62.31111-24/40816332_938782184338564_3186525509252651661_n.enc?ccb=11-4&oh=01_Q5AaIBK9nDzMY5ELik9NpnFRYUwAsLkTCPPleK5TTeirwmPw&oe=6782CD0E&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 25,
+      "progress": 52,
+      "oldestMsgInChunkTimestampSec": "1728864385"
+    }
+    process: true
+    id: "1A0AEF718252D47501DC6BA689255B69"
+    isLatest: false
+[20:59:45] INFO: got history notification
+    histNotification: {
+      "fileSha256": "2TbEit1XKLyY/f/dd+t+FaBsmMR4HwPdt4SG0xqWQ5Y=",
+      "fileLength": "682088",
+      "mediaKey": "KlgWiDPHPxNZJwxQZq7bBUIpBU/MPdMYwhGGtCcR08Y=",
+      "fileEncSha256": "AOaKZRBCzWKC88PJEFLtFrfSc4CkzVUGrpQQ2oQ3Lzs=",
+      "directPath": "/v/t62.31111-24/12100010_3805531963018230_4388821211488769469_n.enc?ccb=11-4&oh=01_Q5AaICUcuQdVW-H33JzCBZKFZ_ogR4wiG3dV6OCvDenG2FMy&oe=6782B07C&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 26,
+      "progress": 55,
+      "oldestMsgInChunkTimestampSec": "1728763097"
+    }
+    process: true
+    id: "D1899807059596039903A1704EB05E52"
+    isLatest: false
+[21:00:01] INFO: got history notification
+    histNotification: {
+      "fileSha256": "EaQXUoDaIFvPrEVmOR8pUpbIDHFyqnblpb1UuN6ne6E=",
+      "fileLength": "1688498",
+      "mediaKey": "tbow/ZzqYN454X6F0Af682UA7MvWvhhjXtnEJ71Wmbw=",
+      "fileEncSha256": "XoIb15TnBDOyv/8IvGqybKkczeZzJMhAyM2l2PgLwPg=",
+      "directPath": "/v/t62.31111-24/40255667_503266846058373_8578058971820136682_n.enc?ccb=11-4&oh=01_Q5AaILZ8vSUNrm79tI3aK2iLtsAxStV4L6al6viY7RURyMiD&oe=6782A730&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 27,
+      "progress": 57,
+      "oldestMsgInChunkTimestampSec": "1728669350"
+    }
+    process: true
+    id: "D88082CF0D664A4CF298F455558E5777"
+    isLatest: false
+[21:00:36] INFO: got history notification
+    histNotification: {
+      "fileSha256": "o1w/t5BbfZnbZFmLvY+h5bpP6meZRCaLD+tuYAJrEpQ=",
+      "fileLength": "1617669",
+      "mediaKey": "gM1erSxk+8AQan12G1j6vg1D+4+aNHDC62XrPzUBEBs=",
+      "fileEncSha256": "Tf4I8+BlyudNOpw3djvw7gGjLTCT5v8Y96/2VGi4o64=",
+      "directPath": "/v/t62.31111-24/29055689_595835586301638_2858114780989288642_n.enc?ccb=11-4&oh=01_Q5AaIBSrA4zTtmRnkQjn3s0dguwZk-RwVYr8l4wUj-jYIuVP&oe=6782CB38&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 28,
+      "progress": 59,
+      "oldestMsgInChunkTimestampSec": "1728572001"
+    }
+    process: true
+    id: "213E9F382C4595E3C8E73E0257B28BFA"
+    isLatest: false
+[21:00:54] INFO: got history notification
+    histNotification: {
+      "fileSha256": "KIKzKgfGnRJKR1kQCZBsVk8YvTiaIy3OvG29+XKfaMc=",
+      "fileLength": "776856",
+      "mediaKey": "ZHwoUSygrJWQVG2CUEq3Td7OdSlloEXxQVgowZ2CDO4=",
+      "fileEncSha256": "CSCgVyVLbrle1nuZUYszGKUDegA3AubVtSK/aq9l6u8=",
+      "directPath": "/v/t62.31111-24/20099556_2170129273383091_8137841758999775800_n.enc?ccb=11-4&oh=01_Q5AaIEY3bXWio_9dhM9k_r3EEPj7wkQ29GFOpXe-IqixX9IU&oe=6782AC0B&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 29,
+      "progress": 61,
+      "oldestMsgInChunkTimestampSec": "1728485136"
+    }
+    process: true
+    id: "9970038FFA6AEB2CD07C6D9729D3CE1F"
+    isLatest: false
+[21:01:11] INFO: got history notification
+    histNotification: {
+      "fileSha256": "tF5oRT5IVlMtCem/sqGCjZXioxssr9XZSGOGkYm/O6Y=",
+      "fileLength": "964652",
+      "mediaKey": "9U9+ZnEW52K61vqa0j6kvdv3+GIflxe01a4QA0LhTUo=",
+      "fileEncSha256": "U6cgqDQueldj/IldA+79Yftg/gbVZicOULZreBJWa4g=",
+      "directPath": "/v/t62.31111-24/20100831_1308258353697463_1983509671167475620_n.enc?ccb=11-4&oh=01_Q5AaIMu1S2u0nkUHTaFrc8ufYnpHStNl_AYHJkbWxubeAzSW&oe=6782C963&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 30,
+      "progress": 63,
+      "oldestMsgInChunkTimestampSec": "1728421865"
+    }
+    process: true
+    id: "3CB1AEE9FCB3D098359A45D24DBDAA37"
+    isLatest: false
+[21:01:30] INFO: got history notification
+    histNotification: {
+      "fileSha256": "W6Wg/P8gsrOxEAXcxgXzZGU3GRkcdWkhc9qj5J4UZlc=",
+      "fileLength": "712740",
+      "mediaKey": "2py0nPwsvsfR3plb+Z+KxVaru9LhSobg0l8V6O9ayfQ=",
+      "fileEncSha256": "NtUeHzbAIxTG023wpm4Ai84IUxG201ZiNMJ9W+zf/rc=",
+      "directPath": "/v/t62.31111-24/23147011_570851792226393_6617862083430993012_n.enc?ccb=11-4&oh=01_Q5AaIMJo4fRElcWtUro3yKWLZ0rKglNb2VhSmHRcj75782SS&oe=6782D9F5&_nc_sid=5e03e0",
+      "syncType": "RECENT",
+      "chunkOrder": 31,
+      "progress": 65,
+      "oldestMsgInChunkTimestampSec": "1728334106"
+    }
+    process: true
+    id: "C0B2F3FF61590E3E87411A2BC63D2E79"
+    isLatest: false
