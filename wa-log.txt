@@ -4448,3 +4448,62 @@
       "count": "3",
       "t": "1733970590"
     }
+[17:21:20] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "jm2xElpISD8rdUW60vjqvCe9XbtZU7fr0NYgGQpTSxU="
+      }
+    }
+[17:21:20] INFO: not logged in, attempting registration...
+    node: {
+      "passive": false,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "devicePairingData": {
+        "eRegid": "AAAA4g==",
+        "eKeytype": "BQ==",
+        "eIdent": "mrSL/vPVn6ueuffkl60a9tvCd3+pfPGYM+vfW0DDyz4=",
+        "eSkeyId": "AAAB",
+        "eSkeyVal": "zneWNbkk+pLw2jlAYC3Zh+dzC5k/TvoZVE8tuiOb+Dg=",
+        "eSkeySig": "rlCfXdC0J0iVFI94BUnO9FYaMhue4z2Hbw1zjPpz0fAsEV79ivDDR1Pkn8p0MHdgy0Pq28MjdACjqBg7uH8HhA==",
+        "buildHash": "xEauBiqjwsZJtQsy2Yl8zg==",
+        "deviceProps": "CgZVYnVudHUYASAA"
+      }
+    }
+[17:22:10] INFO: pairing configured successfully, expect to restart the connection...
+    me: {
+      "id": "559481266028:85@s.whatsapp.net",
+      "name": "ᵃᵈᵐ"
+    }
+    platform: "smba"
+[17:22:11] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {
+        "code": "515"
+      }
+    }
+[17:22:11] INFO: connection errored
+    trace: "Error: Stream Errored (restart required)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at WebSocketClient.emit (node:domain:488:12)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
