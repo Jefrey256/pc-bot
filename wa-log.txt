@@ -4137,3 +4137,314 @@
       "count": "3",
       "t": "1733897678"
     }
+[02:06:33] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "5rl4H84MAvuPtuhKNiP5XtFs89iqv5LtthfY5aOUwno="
+      }
+    }
+[02:06:33] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[02:06:35] INFO: 0 pre-keys found on server
+[02:06:35] INFO: uploading pre-keys
+    count: 30
+[02:06:37] INFO: uploaded pre-keys
+    count: 30
+[02:06:37] INFO: opened connection to WA
+[02:06:50] INFO: handled 1213 offline messages/notifications
+[02:06:51] INFO: identity changed
+    jid: "559499085126@s.whatsapp.net"
+[02:06:59] WARN: poll creation message not found, cannot decrypt update
+    creationMsgKey: {
+      "remoteJid": "120363302832173379@g.us",
+      "fromMe": false,
+      "id": "2E56B4BE7546D12230A8881854A92620",
+      "participant": "554396129282@s.whatsapp.net"
+    }
+[02:07:04] INFO: identity changed
+    jid: "556699175775@s.whatsapp.net"
+[02:07:06] INFO: identity changed
+    jid: "556283086924@s.whatsapp.net"
+[02:07:07] INFO: resyncing critical_unblock_low from v0
+[02:07:21] INFO (critical_unblock_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)"
+[02:07:21] INFO: resyncing critical_unblock_low from v0
+[02:07:22] INFO (critical_unblock_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36"
+[02:07:22] INFO: resyncing critical_unblock_low from v0
+[02:07:23] INFO (critical_unblock_low): failed to sync state from version
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36"
+[02:07:23] INFO: resyncing critical_unblock_low from v0
+[02:07:25] INFO (critical_unblock_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)"
+[02:07:25] INFO: resyncing critical_unblock_low from v0
+[02:07:26] INFO (critical_unblock_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36"
+[02:07:26] INFO: resyncing critical_unblock_low from v0
+[02:07:26] INFO (critical_unblock_low): failed to sync state from version
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36"
+[02:07:27] ERROR: failed to decrypt message
+    key: {
+      "remoteJid": "120363330239998629@g.us",
+      "fromMe": false,
+      "id": "16BA3CF1834ED25CA09D451496E5DF86",
+      "participant": "553180440637@s.whatsapp.net"
+    }
+    err: {
+      "type": "Error",
+      "message": "No session found to decrypt message",
+      "stack":
+          Error: No session found to decrypt message
+              at Object.120363330239998629@g.us::553180440637::0 [as awaitable] (C:\Users\reism\Desktop\bot\node_modules\baileys\WASignalGroup\group_cipher.js:54:15)
+              at async _asyncQueueExecutor (C:\Users\reism\Desktop\bot\node_modules\baileys\WASignalGroup\queue_job.js:20:29)
+    }
+[02:07:28] INFO: identity changed
+    jid: "5511987961958@s.whatsapp.net"
+[02:07:28] INFO: resyncing regular_high from v0
+[02:07:32] INFO: sent retry receipt
+    msgAttrs: {
+      "from": "120363330239998629@g.us",
+      "type": "text",
+      "id": "16BA3CF1834ED25CA09D451496E5DF86",
+      "participant": "553180440637@s.whatsapp.net",
+      "offline": "0",
+      "participant_lid": "29013007417536@lid",
+      "notify": "ı.am » 𝖵 𝗂 𝗍 𝗎  ",
+      "addressing_mode": "pn",
+      "t": "1733962826"
+    }
+    retryCount: 1
+[02:07:33] INFO (regular_high): failed to sync state from version, removing and trying from scratch
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)"
+[02:07:33] INFO: resyncing regular_high from v0
+[02:07:34] INFO (regular_high): failed to sync state from version, removing and trying from scratch
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36"
+[02:07:34] INFO: resyncing regular_high from v0
+[02:07:34] INFO (regular_high): failed to sync state from version
+    error: "Error: error:1C800064:Provider routines::bad decrypt\n    at Decipheriv.final (node:internal/crypto/cipher:184:29)\n    at aesDecryptWithIV (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:116:51)\n    at aesDecrypt (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\crypto.js:110:12)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:171:48)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdSnapshot (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:274:37)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:417:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36"
+[02:08:35] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "/Bxg5DCnlC3UGC2A0Q0yn0Dzx/v6f+9lOpsSC/Qt1i4="
+      }
+    }
+[02:08:35] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[02:08:36] INFO: 30 pre-keys found on server
+[02:08:36] INFO: opened connection to WA
+[02:08:36] INFO: handled 0 offline messages/notifications
+[02:10:14] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB03C2B57F56FAFC1488F",
+      "phash": "2:gkYQPMEh",
+      "count": "3",
+      "t": "1733969414"
+    }
+[02:10:14] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB03C2B57F56FAFC1488F",
+      "phash": "2:gkYQPMEh",
+      "count": "3",
+      "t": "1733969414"
+    }
+[02:10:31] WARN: failed to obtain extra info
+    msgId: "3EB0CEF53160261CF5ED5D"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[02:10:32] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0CEF53160261CF5ED5D",
+      "phash": "2:gkYQPMEh",
+      "count": "3",
+      "t": "1733969432"
+    }
+[02:10:32] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0CEF53160261CF5ED5D",
+      "phash": "2:gkYQPMEh",
+      "count": "3",
+      "t": "1733969432"
+    }
+[02:24:26] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "Eag4QJbfFRhicotb573s4QI7vG8upeZrHCLysYeCWQg="
+      }
+    }
+[02:24:26] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[02:24:27] INFO: 30 pre-keys found on server
+[02:24:27] INFO: opened connection to WA
+[02:24:27] INFO: handled 0 offline messages/notifications
+[02:24:38] WARN: failed to obtain extra info
+    msgId: "3EB00BE585BB81C1FD3BC6"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[02:24:39] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB00BE585BB81C1FD3BC6",
+      "phash": "2:gkYQPMEh",
+      "count": "3",
+      "t": "1733970279"
+    }
+[02:24:39] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB00BE585BB81C1FD3BC6",
+      "phash": "2:gkYQPMEh",
+      "count": "3",
+      "t": "1733970279"
+    }
+[02:29:37] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "2GxSFeUSCb4HhCvCIv8gj7Jb5mSt/0IQRwTWH6rFv2w="
+      }
+    }
+[02:29:37] INFO: logging in...
+    node: {
+      "username": "559481266028",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 78
+    }
+[02:29:37] INFO: 30 pre-keys found on server
+[02:29:38] INFO: opened connection to WA
+[02:29:38] INFO: handled 0 offline messages/notifications
+[02:29:48] WARN: failed to obtain extra info
+    msgId: "3EB08128C2A8E320A39091"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[02:29:50] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB08128C2A8E320A39091",
+      "phash": "2:gkYQPMEh",
+      "count": "3",
+      "t": "1733970590"
+    }
+[02:29:50] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB08128C2A8E320A39091",
+      "phash": "2:gkYQPMEh",
+      "count": "3",
+      "t": "1733970590"
+    }

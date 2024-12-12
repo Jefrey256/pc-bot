@@ -1,4 +1,4 @@
-import makeWASocket, { useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion } from "baileys";
+import makeWASocket, { useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, makeInMemoryStore } from "baileys";
 import P from "pino";
 import path from "path";
 import { question } from "./exports";
@@ -10,8 +10,16 @@ export async function chico(): Promise<void> {
     const { state, saveCreds } = await useMultiFileAuthState(
         path.resolve(__dirname, "..", "database", "qr-code")
     );
+    
+    //test
+    const store = makeInMemoryStore({})
+    store.readFromFile(path.resolve(__dirname, "..", "database", "store.json"))
+    setInterval(()=>{
+        store.writeToFile(path.resolve(__dirname, "..", "database", "store.json"))
+    })
+    //
 
-    const { version } = await fetchLatestBaileysVersion();
+    const { version, isLatest } = await fetchLatestBaileysVersion();
 
     const pico = makeWASocket({
         printQRInTerminal: false,
@@ -21,6 +29,10 @@ export async function chico(): Promise<void> {
         browser: ["Ubuntu", "Chrome", "20.0.04"],
         markOnlineOnConnect: true,
     });
+    //test2
+    console.log(`usando o baileys v${version}${isLatest ? "" : " (desatualizado)"}`);
+    store.bind(pico.ev)
+    //
 
     // Verificar registro antes de solicitar o código de pareamento
     if (!state.creds?.registered) {
@@ -61,6 +73,7 @@ export async function chico(): Promise<void> {
 
     // Salvar credenciais ao atualizar
     pico.ev.on("creds.update", saveCreds);
+    await pico.readMessages([key])
 
     // Manipular mensagens recebidas
     pico.ev.on("messages.upsert", async ({ messages }) => {

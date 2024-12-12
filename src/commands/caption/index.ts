@@ -1,13 +1,13 @@
-import { PREFIX, BOT_NAME, USER } from "../../config";
-import { extractMessage } from "../../exports/messages";
+import { PREFIX, BOT_NAME, } from "../../config";
+import { setupMessagingServices } from "../../exports/messages";
 
-export  function menuCaption() {
+export  function menuCaption(fromUser) {
   
 
   return `╭─═════༻-༺════─╮
 [ ✧ ]  Me: ${BOT_NAME}
 [ ✧ ]  Prefix: (${PREFIX})
 [ ✧ ]  Status: Online
-[ ✧ ]  Usuário: ${USER}
+[ ✧ ]  Usuário: ${fromUser}
 ╰─═════༻-༺════─╯`;
 }

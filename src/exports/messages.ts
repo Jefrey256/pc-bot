@@ -50,6 +50,7 @@ export const extractMessage = (messageDetails: any) => {
     // Extrai o nome do comando e argumentos
     const commandName = isCommand ? fullMessage.slice(PREFIX.length).split(" ")[0] : "";
     const args = isCommand ? fullMessage.slice(PREFIX.length).split(" ").slice(1) : [];
+    const key = messageDetails.key || null;
   
     // Verificação de mídia (direta ou marcada)
     const media =
@@ -66,6 +67,7 @@ export const extractMessage = (messageDetails: any) => {
       undefined;
   
     return {
+      key,
       media,
       mentions,
       fullMessage,
