@@ -8574,3 +8574,330 @@
       "count": "3",
       "t": "1734034881"
     }
+[20:25:00] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "6ComzZoIC1qVXNJ50f0JeGc+DPSrl2RprNB1rMe900E="
+      }
+    }
+[20:25:00] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[20:25:01] INFO: 27 pre-keys found on server
+[20:25:01] INFO: opened connection to WA
+[20:25:01] INFO: handled 0 offline messages/notifications
+[20:25:07] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB080EAE40CD79AB3F459",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035108"
+    }
+[20:25:07] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB080EAE40CD79AB3F459",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035108"
+    }
+[20:25:12] WARN: failed to obtain extra info
+    msgId: "3EB0325EB27A647704D028"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[20:25:12] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0484B749E4E72DD97A2",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035113"
+    }
+[20:25:12] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0484B749E4E72DD97A2",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035113"
+    }
+[20:25:13] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0325EB27A647704D028",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035115"
+    }
+[20:25:13] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0325EB27A647704D028",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035115"
+    }
+[20:33:02] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "6gjHhilc2DA4AS8/mWSn+nzIGqHhV4P1zLlWwzFNiCQ="
+      }
+    }
+[20:33:03] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[20:33:03] INFO: 27 pre-keys found on server
+[20:33:03] INFO: opened connection to WA
+[20:33:03] INFO: handled 0 offline messages/notifications
+[20:33:13] WARN: failed to obtain extra info
+    msgId: "3EB06A8684BF0AA4200E93"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[20:33:13] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0199E41788EB647D505",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035594"
+    }
+[20:33:13] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0199E41788EB647D505",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035594"
+    }
+[20:33:14] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB06A8684BF0AA4200E93",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035595"
+    }
+[20:33:14] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB06A8684BF0AA4200E93",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035595"
+    }
+[20:33:30] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB07F32DF5E1E1EDFCE9C",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035611"
+    }
+[20:33:30] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB07F32DF5E1E1EDFCE9C",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035611"
+    }
+[20:34:08] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "AdYQUqz4O/JBuEqXpOJonxlmozerp/DhOmBWeO3UpRE="
+      }
+    }
+[20:34:08] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[20:34:08] INFO: 27 pre-keys found on server
+[20:34:08] INFO: opened connection to WA
+[20:34:08] INFO: handled 0 offline messages/notifications
+[20:34:23] WARN: failed to obtain extra info
+    msgId: "3EB0284CADF874BB0A5042"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[20:34:23] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB01252438AA69BC2C75A",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035664"
+    }
+[20:34:23] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB01252438AA69BC2C75A",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035664"
+    }
+[20:34:24] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0284CADF874BB0A5042",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035665"
+    }
+[20:34:24] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0284CADF874BB0A5042",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035665"
+    }
+[20:34:39] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB06575AC250C2B5A59CA",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035680"
+    }
+[20:34:39] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB06575AC250C2B5A59CA",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035680"
+    }
+[20:34:46] WARN: failed to obtain extra info
+    msgId: "3EB0F1DE6816B095422D68"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[20:34:46] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB07904B470EB2A5BC63C",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035688"
+    }
+[20:34:46] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB07904B470EB2A5BC63C",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035688"
+    }
+[20:34:47] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0F1DE6816B095422D68",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035688"
+    }
+[20:34:47] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0F1DE6816B095422D68",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734035688"
+    }

@@ -24,7 +24,13 @@ export async function handleMenuCommand(pico, from, messageDetails, ) {
         ft: alterarP,
         d: videoDow,
         ping: ping,
-        s: createSticker
+        //comandos de figurinha
+        s: createSticker,
+        sticker: createSticker,
+        stk: createSticker,
+        f: createSticker,
+        //fim
+
     };
 
     console.log(`Comando recebido: ${commandName} de ${fromUser}`);
@@ -43,7 +49,7 @@ export async function handleMenuCommand(pico, from, messageDetails, ) {
             }
         } else {
             // Envia mensagem caso o comando não seja encontrado
-            await enviarTexto(`Comando ${commandName} não encontrado. Comandos válidos: ${Object.keys(commands).join(", ")}`);
+            await enviarTexto(`Comando ${commandName} não encontrado. `);
         }
     }
 }

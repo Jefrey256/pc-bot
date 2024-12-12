@@ -17,7 +17,7 @@ function menu(pico, from, messageDetails, userName, fromUser) {
         const { enviarTexto, enviarImagem, enviarAudioGravacao } = (0, messages_1.setupMessagingServices)(pico, from, messageDetails);
         try {
             yield enviarAudioGravacao("assets/audios/menucmd.mp3");
-            yield enviarImagem("assets/imgs/menu.jpg", (0, caption_1.menuCaption)(fromUser));
+            yield enviarImagem("assets/imgs/menu.png", (0, caption_1.menuCaption)(fromUser));
         }
         catch (error) {
             console.log("errror");

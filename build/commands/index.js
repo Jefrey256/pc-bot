@@ -34,7 +34,12 @@ function handleMenuCommand(pico, from, messageDetails) {
             ft: ftperfil_1.alterarP,
             d: dow_1.videoDow,
             ping: ping_1.ping,
-            s: sticker_1.createSticker
+            //comandos de figurinha
+            s: sticker_1.createSticker,
+            sticker: sticker_1.createSticker,
+            stk: sticker_1.createSticker,
+            f: sticker_1.createSticker,
+            //fim
         };
         console.log(`Comando recebido: ${commandName} de ${fromUser}`);
         console.log(userName);
@@ -53,7 +58,7 @@ function handleMenuCommand(pico, from, messageDetails) {
             }
             else {
                 // Envia mensagem caso o comando não seja encontrado
-                yield enviarTexto(`Comando ${commandName} não encontrado. Comandos válidos: ${Object.keys(commands).join(", ")}`);
+                yield enviarTexto(`Comando ${commandName} não encontrado. `);
             }
         }
     });
