@@ -12,11 +12,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.menu = menu;
 const messages_1 = require("../../exports/messages");
 const caption_1 = require("../caption");
-function menu(pico, from, messageDetails, userName) {
+function menu(pico, from, messageDetails, userName, fromUser) {
     return __awaiter(this, void 0, void 0, function* () {
         const { enviarTexto, enviarImagem } = (0, messages_1.setupMessagingServices)(pico, from, messageDetails);
         try {
-            yield enviarImagem("assets/img/menu.jpg", (0, caption_1.menuCaption)(userName));
+            yield enviarImagem("assets/img/menu.jpg", (0, caption_1.menuCaption)(fromUser));
         }
         catch (error) {
             console.log("errror");

@@ -31,7 +31,7 @@ const extractMessage = (messageDetails) => {
             commandName: "",
             args: [],
             userName: "Desconhecido",
-            participant: "Desconhecido",
+            participant: null,
         };
     }
     // Captura todas as possíveis fontes de texto (mensagem simples, legenda ou texto citado)
@@ -55,6 +55,7 @@ const extractMessage = (messageDetails) => {
     // Extrai o nome do comando e argumentos
     const commandName = isCommand ? fullMessage.slice(config_1.PREFIX.length).split(" ")[0] : "";
     const args = isCommand ? fullMessage.slice(config_1.PREFIX.length).split(" ").slice(1) : [];
+    const key = messageDetails.key || null;
     // Verificação de mídia (direta ou marcada)
     const media = ((_v = messageDetails.message) === null || _v === void 0 ? void 0 : _v.imageMessage) ||
         ((_w = messageDetails.message) === null || _w === void 0 ? void 0 : _w.videoMessage) ||
@@ -68,6 +69,7 @@ const extractMessage = (messageDetails) => {
         ((_19 = (_18 = (_17 = (_16 = messageDetails.message) === null || _16 === void 0 ? void 0 : _16.extendedTextMessage) === null || _17 === void 0 ? void 0 : _17.contextInfo) === null || _18 === void 0 ? void 0 : _18.quotedMessage) === null || _19 === void 0 ? void 0 : _19.documentMessage) ||
         undefined;
     return {
+        key,
         media,
         mentions,
         fullMessage,

@@ -15,7 +15,7 @@ const menu_1 = require("./users/menu");
 function handleMenuCommand(pico, from, messageDetails) {
     return __awaiter(this, void 0, void 0, function* () {
         const { enviarTexto } = (0, messages_1.setupMessagingServices)(pico, from, messageDetails);
-        const { fullMessage, commandName, fromUser, media, isCommand, from: messageFrom } = (0, messages_1.extractMessage)(messageDetails);
+        const { fullMessage, commandName, fromUser, media, isCommand, from: messageFrom, userName } = (0, messages_1.extractMessage)(messageDetails);
         // Verifica se a mensagem foi enviada pelo próprio bot para evitar loops
         if (messageFrom === pico) {
             console.log("Mensagem do bot");
@@ -26,6 +26,7 @@ function handleMenuCommand(pico, from, messageDetails) {
             help: menu_1.menu,
         };
         console.log(`Comando recebido: ${commandName} de ${fromUser}`);
+        console.log(userName);
         if (isCommand) {
             if (commands[commandName]) {
                 try {

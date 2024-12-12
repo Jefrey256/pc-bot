@@ -2,11 +2,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.menuCaption = menuCaption;
 const config_1 = require("../../config");
-function menuCaption(userName) {
+function menuCaption(fromUser) {
     return `╭─═════༻-༺════─╮
 [ ✧ ]  Me: ${config_1.BOT_NAME}
-[ ✧ ]  Prefix: ﹙${config_1.PREFIX} )
+[ ✧ ]  Prefix: (${config_1.PREFIX})
 [ ✧ ]  Status: Online
-[ ✧ ]  Usuário: ${userName}
-╰─═════༻-༺═══──╯`;
+[ ✧ ]  Usuário: ${fromUser}
+╰─═════༻-༺════─╯`;
 }
