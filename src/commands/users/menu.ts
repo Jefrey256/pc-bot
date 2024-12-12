@@ -3,10 +3,11 @@ import { menuCaption } from "../caption";
 
 
 export async function menu(pico, from, messageDetails: any, userName: string, fromUser) {
-    const {enviarTexto, enviarImagem} = setupMessagingServices(pico, from, messageDetails)
+    const {enviarTexto, enviarImagem, enviarAudioGravacao} = setupMessagingServices(pico, from, messageDetails)
 
     try{
-    await enviarImagem("assets/img/menu.jpg", menuCaption(fromUser))
+        await enviarAudioGravacao("assets/audios/menucmd.mp3")
+    await enviarImagem("assets/imgs/menu.jpg", menuCaption(fromUser))
 
     } catch (error){
      console.log("errror")

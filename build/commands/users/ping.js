@@ -9,18 +9,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.menu = menu;
+exports.ping = ping;
 const messages_1 = require("../../exports/messages");
-const caption_1 = require("../caption");
-function menu(pico, from, messageDetails, userName, fromUser) {
+function ping(pico, from, messageDetails) {
     return __awaiter(this, void 0, void 0, function* () {
-        const { enviarTexto, enviarImagem, enviarAudioGravacao } = (0, messages_1.setupMessagingServices)(pico, from, messageDetails);
-        try {
-            yield enviarAudioGravacao("assets/audios/menucmd.mp3");
-            yield enviarImagem("assets/imgs/menu.jpg", (0, caption_1.menuCaption)(fromUser));
-        }
-        catch (error) {
-            console.log("errror");
-        }
+        const { enviarTexto } = (0, messages_1.setupMessagingServices)(pico, from, messageDetails);
+        yield enviarTexto("Pong!!!");
     });
 }

@@ -9,5 +9,9 @@ export  function menuCaption(fromUser) {
 [ ✧ ]  Prefix: (${PREFIX})
 [ ✧ ]  Status: Online
 [ ✧ ]  Usuário: ${fromUser}
+         
+[ ✧ ]  Comandos: s
+[ ✧ ]  Comandos: ping
+[ ✧ ]  Comandos: help
 ╰─═════༻-༺════─╯`;
 }

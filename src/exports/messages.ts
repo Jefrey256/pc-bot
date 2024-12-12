@@ -1,7 +1,12 @@
-import makeWASocket from "baileys"
+import makeWASocket, { downloadMediaMessage } from "baileys"
 import { PREFIX } from "../config"
 import fs from "fs";
-
+import { writeFile } from "fs/promises";
+import pino, { Logger } from "pino";
+import { logger } from ".";
+import { getMediaContent } from "./dowMedia";
+import path from "path";
+import { proto } from "baileys";
 export const extractMessage = (messageDetails: any) => {
     // Verificação de que messageDetails está definido e possui uma estrutura válida
     if (!messageDetails || !messageDetails.message) {
@@ -81,6 +86,7 @@ export const extractMessage = (messageDetails: any) => {
     };
   };
   
+
 
 
   

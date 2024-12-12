@@ -5458,3 +5458,3119 @@
     process: true
     id: "C9F9A0F9308B294E2CA9E15D81F8F1B5"
     isLatest: false
+[17:59:56] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "cPCVGxJSC2AoECA0JfJgS2tOqtJUUDDqdF9ec6oN/yM="
+      }
+    }
+[17:59:57] INFO: not logged in, attempting registration...
+    node: {
+      "passive": false,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "devicePairingData": {
+        "eRegid": "AAAAAg==",
+        "eKeytype": "BQ==",
+        "eIdent": "O2A5Me/P6D14B2T60AxOJ6vicsBCpglf+AX6PPTS+CI=",
+        "eSkeyId": "AAAB",
+        "eSkeyVal": "aun7Y2F1Ak2PZrfLE6/v6v7VhPfKxa42czA1j1UR4ww=",
+        "eSkeySig": "WYBg8xpuCUKmdZAC/OMpUhk5H913fUWD+DgJVIC/bULM+dqCBAVGShReXAqk5vwUtDC1GjjQfz3i5ROKe2EqAA==",
+        "buildHash": "xEauBiqjwsZJtQsy2Yl8zg==",
+        "deviceProps": "CgZVYnVudHUYASAA"
+      }
+    }
+[18:01:11] INFO: pairing configured successfully, expect to restart the connection...
+    me: {
+      "id": "559492365718:5@s.whatsapp.net"
+    }
+    platform: "android"
+[18:01:12] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {
+        "code": "515"
+      }
+    }
+[18:01:12] INFO: connection errored
+    trace: "Error: Stream Errored (restart required)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[18:01:17] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "zcevgBBNkACp7s8mvzvm8d7qbjlaiuOGDm8Ws5fkcQo="
+      }
+    }
+[18:01:18] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 5
+    }
+[18:01:18] INFO: 0 pre-keys found on server
+[18:01:18] INFO: uploading pre-keys
+    count: 30
+[18:01:19] INFO: uploaded pre-keys
+    count: 30
+[18:01:19] INFO: opened connection to WA
+[18:01:19] WARN: no name present, ignoring presence update request...
+[18:01:19] WARN: no name present, ignoring presence update request...
+[18:01:19] INFO: handled 0 offline messages/notifications
+[18:01:19] INFO: injecting new app state sync keys
+    newAppStateSyncKeyId: "AAAAABnp"
+    newKeys: [
+      "AAAAABnn",
+      "AAAAABno",
+      "AAAAABnp"
+    ]
+[18:01:19] INFO: doing initial app state sync
+[18:01:19] INFO: got history notification
+    histNotification: {
+      "fileSha256": "elxkJ43CuRV/UPf/pJhUQPYlpQclW5ZtYDVDJOtUjL8=",
+      "fileLength": "1899",
+      "mediaKey": "MzDv5O6+g+KuWgyUzHWvvJBFFtYQEwdu0Bn5jzUILJ4=",
+      "fileEncSha256": "65nfHtS+Mv4B5vgn3qyWK/alzOt46mSVcZXC53LcN9k=",
+      "directPath": "/v/t62.31111-24/31273368_445680448581986_3546257001956256412_n.enc?ccb=11-4&oh=01_Q5AaIEr1Xrzgz9I7_mzHZndCrM3cTkg28_Lh_bNq2wt0sYt1&oe=678294FF&_nc_sid=5e03e0",
+      "syncType": "INITIAL_STATUS_V3"
+    }
+    process: false
+    id: "494EFE41E8C14EBE47EF1DB9B34E74F7"
+    isLatest: true
+[18:01:19] INFO: resyncing critical_block from v0
+[18:01:19] INFO: resyncing critical_unblock_low from v0
+[18:01:19] INFO: resyncing regular_high from v0
+[18:01:19] INFO: resyncing regular_low from v0
+[18:01:19] INFO: resyncing regular from v0
+[18:01:20] INFO: restored state of critical_block from snapshot to v3 with mutations
+[18:01:20] INFO: restored state of regular from snapshot to v3 with mutations
+[18:01:20] INFO: restored state of regular_low from snapshot to v9 with mutations
+[18:01:20] INFO: synced regular_low to v12
+[18:01:20] INFO: restored state of regular_high from snapshot to v3 with mutations
+[18:01:20] INFO: restored state of critical_unblock_low from snapshot to v29 with mutations
+[18:01:20] INFO: archive setting updated => 'false'
+[18:01:20] INFO: got history notification
+    histNotification: {
+      "fileSha256": "CbiJvguNeWTTpMQ4jg/GgBAlKhnM1uAA4hsxn56/QA8=",
+      "fileLength": "10422",
+      "mediaKey": "jhA7TVCgbL09a7uj9o1egyHbB+1jEclMQuHAprgfBuA=",
+      "fileEncSha256": "+Hwi/EZHlO3emDYgU1WzyvksD+B+u9ZmvpqnE+C1zs8=",
+      "directPath": "/v/t62.31111-24/19480828_893923189520218_4567864218350612461_n.enc?ccb=11-4&oh=01_Q5AaIEYOuSd_TDBZn0ssi_iBU9CUhv7v4PM-wFwrxiDYgaki&oe=67828811&_nc_sid=5e03e0",
+      "syncType": "INITIAL_BOOTSTRAP"
+    }
+    process: true
+    id: "1CCABCCC35C926582ED898B633292224"
+    isLatest: true
+[18:01:20] INFO: got history notification
+    histNotification: {
+      "fileSha256": "jrkF2fdhTS/fOshdz3/SE0oSb949c1XotFhMgz/VQ6Y=",
+      "fileLength": "238",
+      "mediaKey": "SsYsM6kCwaiSz25D03wrvSpc+zHywrxCiHskrB0PcIw=",
+      "fileEncSha256": "adWkEt7U6RvTw+Hi/wu2vff2z5xhAqWe7YP79IS27PY=",
+      "directPath": "/v/t62.31111-24/23654039_937612391804202_4398920500887536903_n.enc?ccb=11-4&oh=01_Q5AaIIqVLbw_94psnb9dDpwIVxm3WsMG0Jub8g_8bJ_fx0JP&oe=678296B7&_nc_sid=5e03e0",
+      "syncType": "PUSH_NAME",
+      "chunkOrder": 1
+    }
+    process: true
+    id: "25F1319C1DB80AF1A8FF0AE89311CFE0"
+    isLatest: false
+[18:01:20] INFO: got history notification
+    histNotification: {
+      "fileSha256": "47wVXp/rBL+Hu3n/DfBLTT3v5GKfJB07lIXpD4cMiiY=",
+      "fileLength": "2247",
+      "mediaKey": "tqw8qmmYy/2o6aW44ImIr/aSe508Cnkyl42lXrLiWZI=",
+      "fileEncSha256": "OZv/eDsDWVksNmiC58H1KFZEJe7J1wxFZcKWXp2J1TE=",
+      "directPath": "/v/t62.31111-24/11848361_956380373064647_3463723243210231872_n.enc?ccb=11-4&oh=01_Q5AaIA12IGwtq0OW6TsRKajAyw8wUtbGtd_UW-1cEknHh9hQ&oe=6782A218&_nc_sid=5e03e0",
+      "syncType": "NON_BLOCKING_DATA"
+    }
+    process: false
+    id: "0EB078F9647A5B7A6CC4ACC2CB5E7F4F"
+    isLatest: false
+[18:01:20] INFO: resyncing regular_low from v12
+[18:01:47] WARN: failed to obtain extra info
+    msgId: "3EB0F803E878E5AE3C6590"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[18:01:48] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0F803E878E5AE3C6590",
+      "phash": "2:lw0pxXVk",
+      "count": "3",
+      "t": "1734026508"
+    }
+[18:01:48] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0F803E878E5AE3C6590",
+      "phash": "2:lw0pxXVk",
+      "count": "3",
+      "t": "1734026508"
+    }
+[18:02:34] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "XG8GArlP8ZIGTcex0gIxUKIH/Vdyw9s8xs8b1hOSxzU="
+      }
+    }
+[18:02:35] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 5
+    }
+[18:02:35] INFO: clean dirty bits account_sync
+    fromTimestamp: 1734026478
+[18:02:35] INFO: 30 pre-keys found on server
+[18:02:35] INFO: opened connection to WA
+[18:02:36] INFO: handled 0 offline messages/notifications
+[18:15:13] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "3yV1dNfP7XB0D9eyqaIjaKfuHSishEQlfnK4XU249go="
+      }
+    }
+[18:15:13] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 5
+    }
+[18:15:14] INFO: 28 pre-keys found on server
+[18:15:14] INFO: opened connection to WA
+[18:15:14] INFO: handled 1 offline messages/notifications
+[18:32:50] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "7FqtzNXtb4uaisE17zqhJgQEezYkGIWEPwMNMWQIuns="
+      }
+    }
+[18:32:50] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 5
+    }
+[18:32:51] INFO: 27 pre-keys found on server
+[18:32:51] INFO: opened connection to WA
+[18:32:51] INFO: handled 0 offline messages/notifications
+[18:34:34] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "NMI310DrdG4ptJVWI+AAMranCSWYUlWnDeo1x+b8wmY="
+      }
+    }
+[18:34:34] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 5
+    }
+[18:34:35] INFO: 27 pre-keys found on server
+[18:34:35] INFO: opened connection to WA
+[18:34:35] INFO: handled 0 offline messages/notifications
+[18:37:13] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "jxB1xYZIsiC/gnnriJ3xfG8vs+ODDblam7MajtJvEy0="
+      }
+    }
+[18:37:13] INFO: not logged in, attempting registration...
+    node: {
+      "passive": false,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "devicePairingData": {
+        "eRegid": "AAAAWA==",
+        "eKeytype": "BQ==",
+        "eIdent": "jXhwIq3yMwi2yT7AbtzC63yMqhhrLlmeeamynPVevgU=",
+        "eSkeyId": "AAAB",
+        "eSkeyVal": "kTqrPQAS1aLiJBWLG5Go994K3d2JGCNmvXgV06qJSxQ=",
+        "eSkeySig": "tZb8vkYUllBs5MsivR99qHpNPuadThteQ2vDwBqAfEffH31OSoOWIF5ZMzHh/PV/UjBvB1kJFReUmCMAWSXtgg==",
+        "buildHash": "xEauBiqjwsZJtQsy2Yl8zg==",
+        "deviceProps": "CgZVYnVudHUYASAA"
+      }
+    }
+[18:38:52] INFO: pairing configured successfully, expect to restart the connection...
+    me: {
+      "id": "559492365718:6@s.whatsapp.net"
+    }
+    platform: "android"
+[18:38:53] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {
+        "code": "515"
+      }
+    }
+[18:38:53] INFO: connection errored
+    trace: "Error: Stream Errored (restart required)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[18:38:58] WARN: no name present, ignoring presence update request...
+[18:38:59] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "iabZMzggFWpUxf6ppgeprnOU1pkZq1saKI+LaESlAzs="
+      }
+    }
+[18:38:59] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 6
+    }
+[18:39:00] INFO: 0 pre-keys found on server
+[18:39:00] INFO: uploading pre-keys
+    count: 30
+[18:39:01] INFO: uploaded pre-keys
+    count: 30
+[18:39:01] INFO: opened connection to WA
+[18:39:01] WARN: no name present, ignoring presence update request...
+[18:39:01] WARN: no name present, ignoring presence update request...
+[18:39:01] INFO: handled 0 offline messages/notifications
+[18:39:01] INFO: injecting new app state sync keys
+    newAppStateSyncKeyId: "AAAAABnp"
+    newKeys: [
+      "AAAAABnn",
+      "AAAAABno",
+      "AAAAABnp"
+    ]
+[18:39:01] INFO: doing initial app state sync
+[18:39:01] INFO: got history notification
+    histNotification: {
+      "fileSha256": "nM8jmjD3fZEyCDpw4Ve4O3eBdnoPIWYMwnClTQ5FgKc=",
+      "fileLength": "261",
+      "mediaKey": "Qgufvw6L4mkzk+UPv0cmw0Y35b69xeNpNGqMUHLLw50=",
+      "fileEncSha256": "v9Bgy09NBM50N3mJiEX+Y6HZLT2L38abuzueofzplU4=",
+      "directPath": "/v/t62.31111-24/21315142_608473041618244_2096412004366061765_n.enc?ccb=11-4&oh=01_Q5AaIIP-K9EM__tZNqpYWZHIxUYdgfGlFHaXL8L2lHtzvIAc&oe=678298FE&_nc_sid=5e03e0",
+      "syncType": "PUSH_NAME",
+      "chunkOrder": 1
+    }
+    process: true
+    id: "742114D4A29203DB0C923FEF81DE0239"
+    isLatest: true
+[18:39:01] INFO: resyncing critical_block from v0
+[18:39:01] INFO: resyncing critical_unblock_low from v0
+[18:39:01] INFO: resyncing regular_high from v0
+[18:39:01] INFO: resyncing regular_low from v0
+[18:39:01] INFO: resyncing regular from v0
+[18:39:02] INFO: restored state of critical_block from snapshot to v3 with mutations
+[18:39:02] INFO: restored state of regular from snapshot to v3 with mutations
+[18:39:02] INFO: restored state of regular_low from snapshot to v9 with mutations
+[18:39:02] INFO: synced regular_low to v12
+[18:39:02] INFO: restored state of regular_high from snapshot to v3 with mutations
+[18:39:02] INFO: restored state of critical_unblock_low from snapshot to v29 with mutations
+[18:39:03] INFO: archive setting updated => 'false'
+[18:39:03] INFO: got history notification
+    histNotification: {
+      "fileSha256": "CXsKB0rToiaKiYNnOiy5stTHcFQggg0ZalcRrhTBH7k=",
+      "fileLength": "1830",
+      "mediaKey": "VHW1yXH9ti3cNKZN6uYuXsOkCoQ7gmaPK7FwW+1bHFQ=",
+      "fileEncSha256": "B+IOberib3DTXHI93bcu0q4vfjGv1Y8/u7P0MyS62Oo=",
+      "directPath": "/v/t62.31111-24/34765217_538251432540696_2082016489417446314_n.enc?ccb=11-4&oh=01_Q5AaIHTQfWcDuE-Q3PyMmOegddSXjme4WRl__CfL-BE6F44n&oe=678298FB&_nc_sid=5e03e0",
+      "syncType": "INITIAL_STATUS_V3"
+    }
+    process: false
+    id: "1FAB01472A8402D7C14DF1758CDC2586"
+    isLatest: false
+[18:39:03] INFO: got history notification
+    histNotification: {
+      "fileSha256": "mYtbOghYGFlTclXvYOUNjBKw27dc///Ae/+aSNub3Fo=",
+      "fileLength": "10866",
+      "mediaKey": "5U4jyzTW+fLatd2CGKQrO86eBrzkN8hqWVqja5aFzxs=",
+      "fileEncSha256": "vbz0X2uguuM9O+4HAnVB5ELjjwfR5VhqiD1G2KFMW2I=",
+      "directPath": "/v/t62.31111-24/23477934_3838870989714875_7137200971041604718_n.enc?ccb=11-4&oh=01_Q5AaIEoMtv_IzfjRISX6p-0YfvMWD8PI51jjvkjOApsrMrIB&oe=6782B137&_nc_sid=5e03e0",
+      "syncType": "INITIAL_BOOTSTRAP"
+    }
+    process: true
+    id: "383844F163F3996A6C4D759A65706B23"
+    isLatest: false
+[18:39:03] INFO: resyncing regular_low from v12
+[18:39:03] INFO: synced regular_low to v13
+[18:39:03] INFO: got history notification
+    histNotification: {
+      "fileSha256": "47wVXp/rBL+Hu3n/DfBLTT3v5GKfJB07lIXpD4cMiiY=",
+      "fileLength": "2247",
+      "mediaKey": "/UvEVQpgdhnb2IPMHsnt11SMoFZeC4jvtr+baxPQxWA=",
+      "fileEncSha256": "0bwj/k2II3CdMMkt+VBfZVLGRVlHeTyTDKrOnwmOdqE=",
+      "directPath": "/v/t62.31111-24/12148854_1831420480996986_4791932905628137715_n.enc?ccb=11-4&oh=01_Q5AaIBFO-XPygkyyg_szjkspHwLeGdsDgCYnLEAjwNTRpBGq&oe=67828706&_nc_sid=5e03e0",
+      "syncType": "NON_BLOCKING_DATA"
+    }
+    process: false
+    id: "88D2CAB47E74D358F994E728F118E9CC"
+    isLatest: false
+[18:39:06] INFO: resyncing critical_block from v3
+[18:39:07] INFO: synced critical_block to v4
+[18:39:08] INFO: injecting new app state sync keys
+    newAppStateSyncKeyId: "AAAAABnq"
+    newKeys: [
+      "AAAAABnq"
+    ]
+[18:39:08] INFO: resyncing regular_low from v13
+[18:39:08] INFO: synced regular_low to v15
+[18:39:28] INFO: resyncing critical_block from v4
+[18:39:28] INFO: synced critical_block to v5
+[18:39:29] INFO: injecting new app state sync keys
+    newAppStateSyncKeyId: "AAAAABnr"
+    newKeys: [
+      "AAAAABnr"
+    ]
+[18:39:29] INFO: resyncing regular_low from v15
+[18:39:29] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:575:33"
+[18:39:29] INFO: resyncing regular_low from v0
+[18:39:30] INFO: restored state of regular_low from snapshot to v9 with mutations
+[18:39:30] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:575:33"
+[18:39:30] INFO: resyncing regular_low from v0
+[18:39:30] INFO: restored state of regular_low from snapshot to v9 with mutations
+[18:39:30] INFO (regular_low): failed to sync state from version
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)"
+[18:39:34] INFO: resyncing critical_block from v5
+[18:39:34] INFO: synced critical_block to v6
+[18:39:35] INFO: injecting new app state sync keys
+    newAppStateSyncKeyId: "AAAAABns"
+    newKeys: [
+      "AAAAABns"
+    ]
+[18:39:35] INFO: resyncing regular_low from v0
+[18:39:36] INFO: restored state of regular_low from snapshot to v9 with mutations
+[18:39:36] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:575:33"
+[18:39:36] INFO: resyncing regular_low from v0
+[18:39:36] INFO: restored state of regular_low from snapshot to v9 with mutations
+[18:39:36] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)"
+[18:39:36] INFO: resyncing regular_low from v0
+[18:39:37] INFO: restored state of regular_low from snapshot to v9 with mutations
+[18:39:37] INFO (regular_low): failed to sync state from version
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)"
+[18:39:37] INFO: archive setting updated => 'false'
+[18:39:47] INFO: resyncing regular_low from v0
+[18:39:47] INFO: restored state of regular_low from snapshot to v9 with mutations
+[18:39:47] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:575:33"
+[18:39:47] INFO: resyncing regular_low from v0
+[18:39:48] INFO: restored state of regular_low from snapshot to v9 with mutations
+[18:39:48] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)"
+[18:39:48] INFO: resyncing regular_low from v0
+[18:39:48] INFO: restored state of regular_low from snapshot to v9 with mutations
+[18:39:48] INFO (regular_low): failed to sync state from version
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)"
+[18:39:48] INFO: archive setting updated => 'false'
+[18:39:48] INFO: resyncing regular_low from v0
+[18:39:48] INFO: restored state of regular_low from snapshot to v9 with mutations
+[18:39:48] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:575:33"
+[18:39:48] INFO: resyncing regular_low from v0
+[18:39:49] INFO: restored state of regular_low from snapshot to v9 with mutations
+[18:39:49] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)"
+[18:39:49] INFO: resyncing regular_low from v0
+[18:39:50] INFO: restored state of regular_low from snapshot to v9 with mutations
+[18:39:50] INFO (regular_low): failed to sync state from version
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)"
+[18:39:50] INFO: archive setting updated => 'false'
+[18:40:03] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB06E9F2D44AFF9572BD6",
+      "phash": "2:Z+91UdkS",
+      "count": "3",
+      "t": "1734028803"
+    }
+[18:40:03] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB06E9F2D44AFF9572BD6",
+      "phash": "2:Z+91UdkS",
+      "count": "3",
+      "t": "1734028803"
+    }
+[18:40:11] WARN: failed to obtain extra info
+    msgId: "3EB08F939FE09C4105171E"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[18:40:12] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB08F939FE09C4105171E",
+      "phash": "2:Z+91UdkS",
+      "count": "3",
+      "t": "1734028813"
+    }
+[18:40:12] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB08F939FE09C4105171E",
+      "phash": "2:Z+91UdkS",
+      "count": "3",
+      "t": "1734028813"
+    }
+[19:01:29] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "njtjtpf44ZWvDfsrVm/o79vkEzr/MGfI6BXD/ey0knk="
+      }
+    }
+[19:01:29] INFO: not logged in, attempting registration...
+    node: {
+      "passive": false,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "devicePairingData": {
+        "eRegid": "AAAA3g==",
+        "eKeytype": "BQ==",
+        "eIdent": "tKvCze/70Ba9bhy/+xEgF9Fh984h7Ca3FzBBenpcuio=",
+        "eSkeyId": "AAAB",
+        "eSkeyVal": "PgF7V7kosVFmOztqGFJidYnP6z9X6zd16F4NCglsRwk=",
+        "eSkeySig": "46ec5jMiOMQO4M/oOiqgyiWp709TxDnAqAaCBGigDPWG8Rgg9q07JIBddk3lRkWzKoC7nKyRfY8W7KfuUlm/BA==",
+        "buildHash": "xEauBiqjwsZJtQsy2Yl8zg==",
+        "deviceProps": "CgZVYnVudHUYASAA"
+      }
+    }
+[19:02:33] INFO: pairing configured successfully, expect to restart the connection...
+    me: {
+      "id": "559492365718:8@s.whatsapp.net"
+    }
+    platform: "android"
+[19:02:34] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {
+        "code": "515"
+      }
+    }
+[19:02:34] INFO: connection errored
+    trace: "Error: Stream Errored (restart required)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:02:39] WARN: no name present, ignoring presence update request...
+[19:02:39] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "9j1VVvpnS2fXRvph4H1qP2YhIvS6glcjse2mSfh4J30="
+      }
+    }
+[19:02:39] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 8
+    }
+[19:02:40] INFO: 0 pre-keys found on server
+[19:02:40] INFO: uploading pre-keys
+    count: 30
+[19:02:40] INFO: uploaded pre-keys
+    count: 30
+[19:02:41] INFO: opened connection to WA
+[19:02:41] WARN: no name present, ignoring presence update request...
+[19:02:41] WARN: no name present, ignoring presence update request...
+[19:02:41] INFO: handled 0 offline messages/notifications
+[19:02:41] INFO: injecting new app state sync keys
+    newAppStateSyncKeyId: "AAAAABnn"
+    newKeys: [
+      "AAAAABns",
+      "AAAAABnq",
+      "AAAAABnr",
+      "AAAAABno",
+      "AAAAABnp",
+      "AAAAABnn"
+    ]
+[19:02:41] INFO: doing initial app state sync
+[19:02:41] INFO: got history notification
+    histNotification: {
+      "fileSha256": "47wVXp/rBL+Hu3n/DfBLTT3v5GKfJB07lIXpD4cMiiY=",
+      "fileLength": "2247",
+      "mediaKey": "cXRwHf8h2BRT2/sjtsupSkFEZGyzfi+t52yWGStznys=",
+      "fileEncSha256": "UIoPnRUaqzvR9Cw5P3uj6kPfgeOVr6/iAIvSJo89eV4=",
+      "directPath": "/v/t62.31111-24/21320221_2401498906862895_974000704783144376_n.enc?ccb=11-4&oh=01_Q5AaIO7lh7jFEt3espwZra1TaI5xsOTZGKvSs54Hv9oeiQhv&oe=6782AA4C&_nc_sid=5e03e0",
+      "syncType": "NON_BLOCKING_DATA"
+    }
+    process: false
+    id: "E2B30F5CB7BC228B0BC8E73692DBDD9B"
+    isLatest: true
+[19:02:41] INFO: resyncing critical_block from v0
+[19:02:41] INFO: resyncing critical_unblock_low from v0
+[19:02:41] INFO: resyncing regular_high from v0
+[19:02:41] INFO: resyncing regular_low from v0
+[19:02:41] INFO: resyncing regular from v0
+[19:02:42] INFO: restored state of regular from snapshot to v3 with mutations
+[19:02:42] INFO: synced regular to v6
+[19:02:42] INFO: restored state of critical_block from snapshot to v3 with mutations
+[19:02:42] INFO: synced critical_block to v6
+[19:02:42] INFO: restored state of regular_high from snapshot to v3 with mutations
+[19:02:42] INFO: synced regular_high to v6
+[19:02:42] INFO: restored state of regular_low from snapshot to v9 with mutations
+[19:02:42] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async doAppStateSync (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:790:17)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:768:21"
+[19:02:42] INFO: restored state of critical_unblock_low from snapshot to v29 with mutations
+[19:02:42] INFO: synced critical_unblock_low to v32
+[19:02:42] INFO: resyncing regular_low from v0
+[19:02:43] INFO: restored state of regular_low from snapshot to v9 with mutations
+[19:02:43] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async doAppStateSync (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:790:17)"
+[19:02:43] INFO: resyncing regular_low from v0
+[19:02:43] INFO: restored state of regular_low from snapshot to v9 with mutations
+[19:02:43] INFO (regular_low): failed to sync state from version
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async doAppStateSync (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:790:17)"
+[19:02:43] INFO: archive setting updated => 'false'
+[19:02:43] INFO: got history notification
+    histNotification: {
+      "fileSha256": "CXsKB0rToiaKiYNnOiy5stTHcFQggg0ZalcRrhTBH7k=",
+      "fileLength": "1830",
+      "mediaKey": "gQLBCsrAfp+WG4K+C0L6tckgkz8hxEYjk11pFLGKdAY=",
+      "fileEncSha256": "XIUA5Y6kG71rPMtBbJ1g7mBdKRvrb4nAYzldqc/qxWU=",
+      "directPath": "/v/t62.31111-24/20047863_1093692972014724_967532548123664123_n.enc?ccb=11-4&oh=01_Q5AaIPbB74hx7sTujAb54H8eqfw3757SbESKI4XlrzwD5jTk&oe=6782C03A&_nc_sid=5e03e0",
+      "syncType": "INITIAL_STATUS_V3"
+    }
+    process: false
+    id: "8F0528E07492D8F423BD83C015364207"
+    isLatest: true
+[19:02:43] INFO: got history notification
+    histNotification: {
+      "fileSha256": "pv/2msrTdh/LZUvJxWLvPKOEht/z3OxU7/BQHo64aIA=",
+      "fileLength": "11131",
+      "mediaKey": "+aQnhL6otAHOeykDJoHCkkUx7kqpLG6/4OWrrSJLU6o=",
+      "fileEncSha256": "0DbVJaDhOtslhR0sKTYfyOreTcQWgkRJTTENo6LdgaA=",
+      "directPath": "/v/t62.31111-24/32345439_458638123955229_2292680315698408650_n.enc?ccb=11-4&oh=01_Q5AaIFG-BV4geI6V_kQCOSijEwVDKZ0c6pXKpeaKvCyr6u6D&oe=6782A7B4&_nc_sid=5e03e0",
+      "syncType": "INITIAL_BOOTSTRAP"
+    }
+    process: true
+    id: "136DC54AD1D643DADE127BA1EA1C9F9F"
+    isLatest: true
+[19:02:43] INFO: got history notification
+    histNotification: {
+      "fileSha256": "nM8jmjD3fZEyCDpw4Ve4O3eBdnoPIWYMwnClTQ5FgKc=",
+      "fileLength": "261",
+      "mediaKey": "EhhTQ4JZjlqnje/Ov8BhXdlKQxEaDOtQcp656Ul7/oY=",
+      "fileEncSha256": "ZEMyA3Xe6iuPzD48nQOZqMXWjsnPocZuF8k/Fk7T0iE=",
+      "directPath": "/v/t62.31111-24/19935051_607641505035446_7495347810708852651_n.enc?ccb=11-4&oh=01_Q5AaION5s9KiW_CJCjui-OcyDiglwPza8xJ62zGbcKQbvRmv&oe=6782A0FF&_nc_sid=5e03e0",
+      "syncType": "PUSH_NAME",
+      "chunkOrder": 1
+    }
+    process: true
+    id: "FC10535685139673659E2DBADAD6C098"
+    isLatest: false
+[19:02:43] INFO: resyncing regular_low from v0
+[19:02:43] INFO: restored state of regular_low from snapshot to v9 with mutations
+[19:02:43] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:575:33"
+[19:02:43] INFO: resyncing regular_low from v0
+[19:02:44] INFO: restored state of regular_low from snapshot to v9 with mutations
+[19:02:44] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)"
+[19:02:44] INFO: resyncing regular_low from v0
+[19:02:44] INFO: restored state of regular_low from snapshot to v9 with mutations
+[19:02:44] INFO (regular_low): failed to sync state from version
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)"
+[19:02:44] INFO: archive setting updated => 'false'
+[19:02:52] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0E7DC727A85C66BF0D7",
+      "phash": "2:YmRi+HCU",
+      "count": "3",
+      "t": "1734030172"
+    }
+[19:02:52] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0E7DC727A85C66BF0D7",
+      "phash": "2:YmRi+HCU",
+      "count": "3",
+      "t": "1734030172"
+    }
+[19:02:59] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB023F2B327AB7A110130",
+      "phash": "2:YmRi+HCU",
+      "count": "3",
+      "t": "1734030179"
+    }
+[19:02:59] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB023F2B327AB7A110130",
+      "phash": "2:YmRi+HCU",
+      "count": "3",
+      "t": "1734030179"
+    }
+[19:03:29] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB06653F662DCB7E94C64",
+      "phash": "2:YmRi+HCU",
+      "count": "3",
+      "t": "1734030210"
+    }
+[19:03:29] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB06653F662DCB7E94C64",
+      "phash": "2:YmRi+HCU",
+      "count": "3",
+      "t": "1734030210"
+    }
+[19:07:32] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "Kj4MupDRTxLgnJj38uULxpmCXJ0tWMHtqk7Fid7d3m8="
+      }
+    }
+[19:07:32] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "DKa7XwxHn+c1fk33Z8g9YGHXMjVOCucxQHf4ABov1UU="
+      }
+    }
+[19:07:32] INFO: not logged in, attempting registration...
+    node: {
+      "passive": false,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "devicePairingData": {
+        "eRegid": "AAAA+A==",
+        "eKeytype": "BQ==",
+        "eIdent": "B+ps87riARyi4ik4vvz/cDQHqjUk7mBX6ulLugzVxSc=",
+        "eSkeyId": "AAAB",
+        "eSkeyVal": "GVun/byM01m6i4YfBIcMIiCS+xlGRSJp5I0MtDJf5w8=",
+        "eSkeySig": "LgLvJHSXFMRZGv7RgEGjWUfze4LdCss3Nti+hRhkS71cnp6fjqQPgUgp+x9kGslUc3JqPAaUqUcEuoJY94YyAA==",
+        "buildHash": "xEauBiqjwsZJtQsy2Yl8zg==",
+        "deviceProps": "CgZVYnVudHUYASAA"
+      }
+    }
+[19:07:32] INFO: not logged in, attempting registration...
+    node: {
+      "passive": false,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "devicePairingData": {
+        "eRegid": "AAAAxQ==",
+        "eKeytype": "BQ==",
+        "eIdent": "CxyTM36Cjquk9JMXwjQsfbuVeczOmrBPHyUeoEi1bCo=",
+        "eSkeyId": "AAAB",
+        "eSkeyVal": "L+RtWqlrJl9KDPT66ZFHdrDhSzWP61vbuGfn1Pb1SRM=",
+        "eSkeySig": "ogObORdt7d5mcNcEHdMcZQYfd20r4InuMoNMR1q3wq874XjZ282/zV2ev7NHuRMgvTncjvkqluWsrS3AF4eBDA==",
+        "buildHash": "xEauBiqjwsZJtQsy2Yl8zg==",
+        "deviceProps": "CgZVYnVudHUYASAA"
+      }
+    }
+[19:08:39] INFO: pairing configured successfully, expect to restart the connection...
+    me: {
+      "id": "559492365718:9@s.whatsapp.net"
+    }
+    platform: "android"
+[19:08:40] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {
+        "code": "515"
+      }
+    }
+[19:08:40] INFO: connection errored
+    trace: "Error: Stream Errored (restart required)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:08:45] WARN: no name present, ignoring presence update request...
+[19:08:46] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "eedbMp6bfCEDaVUpPbkcq5CP75Vf3bxkQZrkXqJoORU="
+      }
+    }
+[19:08:46] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:08:47] INFO: 0 pre-keys found on server
+[19:08:47] INFO: uploading pre-keys
+    count: 30
+[19:08:48] INFO: uploaded pre-keys
+    count: 30
+[19:08:48] INFO: opened connection to WA
+[19:08:48] WARN: no name present, ignoring presence update request...
+[19:08:48] WARN: no name present, ignoring presence update request...
+[19:08:48] INFO: handled 0 offline messages/notifications
+[19:08:48] WARN: skipping app state sync, as myAppStateKeyId is not set
+[19:08:48] INFO: got history notification
+    histNotification: {
+      "fileSha256": "nM8jmjD3fZEyCDpw4Ve4O3eBdnoPIWYMwnClTQ5FgKc=",
+      "fileLength": "261",
+      "mediaKey": "aSELGr+opqyNTth5MCxRzo10iituFOp36s1A/tr7bbs=",
+      "fileEncSha256": "cCEPgvTglrnMcBGdtx3fLzUNY45dlSASjN8TmSa7e3c=",
+      "directPath": "/v/t62.31111-24/31243690_1164541842046549_6466843172959209515_n.enc?ccb=11-4&oh=01_Q5AaIBgBYuC8elORYMz0HP77Rb0qGepjtdm1658cPiQGjwpk&oe=67829A8D&_nc_sid=5e03e0",
+      "syncType": "PUSH_NAME",
+      "chunkOrder": 1
+    }
+    process: true
+    id: "BFD685EF0667E921D696D7C77C7B8A17"
+    isLatest: true
+[19:08:48] INFO: injecting new app state sync keys
+    newAppStateSyncKeyId: "AAAAABnn"
+    newKeys: [
+      "AAAAABnu",
+      "AAAAABns",
+      "AAAAABnt",
+      "AAAAABnq",
+      "AAAAABnr",
+      "AAAAABno",
+      "AAAAABnp",
+      "AAAAABnn"
+    ]
+[19:08:48] INFO: doing initial app state sync
+[19:08:48] INFO: resyncing critical_block from v0
+[19:08:48] INFO: resyncing critical_unblock_low from v0
+[19:08:48] INFO: resyncing regular_high from v0
+[19:08:48] INFO: resyncing regular_low from v0
+[19:08:48] INFO: resyncing regular from v0
+[19:08:49] INFO: restored state of critical_block from snapshot to v3 with mutations
+[19:08:49] INFO: synced critical_block to v8
+[19:08:49] INFO: restored state of regular_low from snapshot to v9 with mutations
+[19:08:49] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async doAppStateSync (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:790:17)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:784:13"
+[19:08:49] INFO: restored state of regular_high from snapshot to v3 with mutations
+[19:08:49] INFO: synced regular_high to v8
+[19:08:49] INFO: restored state of regular from snapshot to v3 with mutations
+[19:08:49] INFO: synced regular to v8
+[19:08:49] INFO: restored state of critical_unblock_low from snapshot to v29 with mutations
+[19:08:49] INFO: synced critical_unblock_low to v34
+[19:08:49] INFO: resyncing regular_low from v0
+[19:08:50] INFO: restored state of regular_low from snapshot to v9 with mutations
+[19:08:50] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async doAppStateSync (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:790:17)"
+[19:08:50] INFO: resyncing regular_low from v0
+[19:08:50] INFO: restored state of regular_low from snapshot to v9 with mutations
+[19:08:50] INFO (regular_low): failed to sync state from version
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async doAppStateSync (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:790:17)"
+[19:08:50] INFO: archive setting updated => 'false'
+[19:08:50] INFO: got history notification
+    histNotification: {
+      "fileSha256": "CXsKB0rToiaKiYNnOiy5stTHcFQggg0ZalcRrhTBH7k=",
+      "fileLength": "1830",
+      "mediaKey": "3YISGEXj0WHqN5pr6jJxAsCapSvzcKDrePlxuJ1Y8lc=",
+      "fileEncSha256": "m5fqTryzhwSRKQl/17FOv4iOgggky1s21To0jmMzTKw=",
+      "directPath": "/v/t62.31111-24/34640265_888247713110861_9220582243150190827_n.enc?ccb=11-4&oh=01_Q5AaIK_eqdmUyaCmQuzYIqXWYEFnEP4bEdfjybvlT72SnBNP&oe=6782A9FF&_nc_sid=5e03e0",
+      "syncType": "INITIAL_STATUS_V3"
+    }
+    process: false
+    id: "498FB6984E0F57FEEDDEEF78DA8F8F10"
+    isLatest: false
+[19:08:50] INFO: got history notification
+    histNotification: {
+      "fileSha256": "47wVXp/rBL+Hu3n/DfBLTT3v5GKfJB07lIXpD4cMiiY=",
+      "fileLength": "2247",
+      "mediaKey": "GRGi6TQFS/lww+02gZg8Pzl7HpA8bBcHYTo2rGy85cc=",
+      "fileEncSha256": "bE3X5Md5BS4c5TIFAXispV1bQ0JNWHAn0PuU/MkU0dY=",
+      "directPath": "/v/t62.31111-24/28874104_1493560907985687_9075808663492388357_n.enc?ccb=11-4&oh=01_Q5AaIE0eOP8BqIzJ_M5LYpncZGIDNeGfyHLwC0dIhqnBXJFd&oe=6782C148&_nc_sid=5e03e0",
+      "syncType": "NON_BLOCKING_DATA"
+    }
+    process: false
+    id: "C8D4A8B7C90E25E640F3CC4706E220CF"
+    isLatest: false
+[19:08:50] INFO: got history notification
+    histNotification: {
+      "fileSha256": "5sGkTHLqwkQgsJaj2a831SnS2o5mzGLrB/YXJlSHrRQ=",
+      "fileLength": "10818",
+      "mediaKey": "IesvZdYaN/6w7FiPJfwpbkEBeXecx/phPReXr88GD88=",
+      "fileEncSha256": "jndI3QTrSKTiWQ7jHYfc1ESjO+SUAlRAhmPsniiI7JE=",
+      "directPath": "/v/t62.31111-24/40117210_1648403969446036_3690570329048643104_n.enc?ccb=11-4&oh=01_Q5AaIOS8WyKzBTLwsR9qMnMo_tGqFrdePbhl76obWDa8RWez&oe=6782A186&_nc_sid=5e03e0",
+      "syncType": "INITIAL_BOOTSTRAP"
+    }
+    process: true
+    id: "4C101EE3EC408A93BD9B372EB13FF152"
+    isLatest: false
+[19:08:51] INFO: resyncing regular_low from v0
+[19:08:51] INFO: restored state of regular_low from snapshot to v9 with mutations
+[19:08:51] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:575:33"
+[19:08:51] INFO: resyncing regular_low from v0
+[19:08:52] INFO: restored state of regular_low from snapshot to v9 with mutations
+[19:08:52] INFO (regular_low): failed to sync state from version, removing and trying from scratch
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)"
+[19:08:52] INFO: resyncing regular_low from v0
+[19:08:52] INFO: restored state of regular_low from snapshot to v9 with mutations
+[19:08:52] INFO (regular_low): failed to sync state from version
+    error: "Error: tried remove, but no previous op\n    at Object.mix (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:58:27)\n    at decodeSyncdMutations (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:181:21)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async decodeSyncdPatch (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:212:20)\n    at async decodePatches (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\chat-utils.js:319:30)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:425:70\n    at async Object.transaction (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\auth-utils.js:135:26)\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\chats.js:361:9\n    at async C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Utils\\event-buffer.js:105:36\n    at async processNotification (C:\\Users\\reism\\Desktop\\bot\\node_modules\\baileys\\lib\\Socket\\messages-recv.js:316:21)"
+[19:08:52] INFO: archive setting updated => 'false'
+[19:09:05] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0D76E6F337BBCC8CD34",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734030545"
+    }
+[19:09:05] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0D76E6F337BBCC8CD34",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734030545"
+    }
+[19:09:09] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB051DA2F7D88A241A8FA",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734030549"
+    }
+[19:09:09] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB051DA2F7D88A241A8FA",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734030549"
+    }
+[19:09:25] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0C32265863AEFCDE0E6",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734030565"
+    }
+[19:09:25] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0C32265863AEFCDE0E6",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734030565"
+    }
+[19:09:25] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0DACFDC42584D338BF6",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734030566"
+    }
+[19:09:25] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0DACFDC42584D338BF6",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734030566"
+    }
+[19:09:43] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0769F2B1BC84467144D",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734030584"
+    }
+[19:09:43] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0769F2B1BC84467144D",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734030584"
+    }
+[19:09:44] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0886D847F1471177736",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734030585"
+    }
+[19:09:44] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0886D847F1471177736",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734030585"
+    }
+[19:10:12] INFO: connection errored
+    trace: "Error: QR refs attempts ended\n    at Timeout.genPairQR [as _onTimeout] (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:480:21)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)"
+[19:16:35] INFO: connection errored
+    trace: "Error: Connection Terminated\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:454:30)\n    at WebSocketClient.emit (node:events:532:35)\n    at WebSocket.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\Client\websocket.js:46:100)\n    at WebSocket.emit (node:events:520:28)\n    at WebSocket.emitClose (C:\Users\reism\Desktop\bot\node_modules\ws\lib\websocket.js:272:10)\n    at Receiver.receiverOnFinish (C:\Users\reism\Desktop\bot\node_modules\ws\lib\websocket.js:1209:20)\n    at Receiver.emit (node:events:520:28)\n    at finish (node:internal/streams/writable:946:10)\n    at node:internal/streams/writable:927:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+[19:16:35] ERROR: error in sending keep alive
+[19:46:25] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "asrB2OUIVSRqB/oM2KngzJfyj81eQZhkK0tn4E957Ug="
+      }
+    }
+[19:46:25] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "3uXiBO2/Q0RQOa8fWTa0mTjXTlMMnbova4tJvBSiHRs="
+      }
+    }
+[19:46:25] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:46:25] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:46:26] INFO: clean dirty bits account_sync
+    fromTimestamp: 1734030527
+[19:46:26] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {},
+      "content": [
+        {
+          "tag": "conflict",
+          "attrs": {
+            "type": "replaced"
+          }
+        }
+      ]
+    }
+[19:46:26] INFO: connection errored
+    trace: "Error: Stream Errored (conflict)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:46:26] INFO: clean dirty bits account_sync
+    fromTimestamp: 1734030527
+[19:46:26] INFO: 28 pre-keys found on server
+[19:46:26] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "8LoQUNm72bmdTJOzuaEztm2egR6c+cSFGeAhzNCiDTk="
+      }
+    }
+[19:46:26] INFO: opened connection to WA
+[19:46:26] INFO: handled 0 offline messages/notifications
+[19:46:26] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:46:27] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {},
+      "content": [
+        {
+          "tag": "conflict",
+          "attrs": {
+            "type": "replaced"
+          }
+        }
+      ]
+    }
+[19:46:27] INFO: connection errored
+    trace: "Error: Stream Errored (conflict)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:46:27] INFO: 28 pre-keys found on server
+[19:46:27] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "ppd33V3u7TbZagl0j1etZNMfCslJldx2cISXnXz19VA="
+      }
+    }
+[19:46:28] INFO: opened connection to WA
+[19:46:28] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:46:28] INFO: handled 0 offline messages/notifications
+[19:46:28] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {},
+      "content": [
+        {
+          "tag": "conflict",
+          "attrs": {
+            "type": "replaced"
+          }
+        }
+      ]
+    }
+[19:46:28] INFO: connection errored
+    trace: "Error: Stream Errored (conflict)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:46:28] INFO: 28 pre-keys found on server
+[19:46:28] INFO: opened connection to WA
+[19:46:28] INFO: handled 0 offline messages/notifications
+[19:46:29] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "u2we5f0/Lp4XtzG4VMJyvnCEayJ5owKgkJYi5AIm1wA="
+      }
+    }
+[19:46:29] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:46:29] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {},
+      "content": [
+        {
+          "tag": "conflict",
+          "attrs": {
+            "type": "replaced"
+          }
+        }
+      ]
+    }
+[19:46:29] INFO: connection errored
+    trace: "Error: Stream Errored (conflict)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:46:29] INFO: 28 pre-keys found on server
+[19:46:30] INFO: opened connection to WA
+[19:46:30] INFO: handled 0 offline messages/notifications
+[19:46:30] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "sBo8ggihSqzsuN1hYUH0QnXDju6OKR5A9OdUC65cWBw="
+      }
+    }
+[19:46:30] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:46:31] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {},
+      "content": [
+        {
+          "tag": "conflict",
+          "attrs": {
+            "type": "replaced"
+          }
+        }
+      ]
+    }
+[19:46:31] INFO: connection errored
+    trace: "Error: Stream Errored (conflict)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:46:31] INFO: 28 pre-keys found on server
+[19:46:31] INFO: opened connection to WA
+[19:46:31] INFO: handled 0 offline messages/notifications
+[19:46:31] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "hs/3TjUDI9LIW0zz75pKsyiwktaMx8b8xcfyP0aomV4="
+      }
+    }
+[19:46:31] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:46:32] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {},
+      "content": [
+        {
+          "tag": "conflict",
+          "attrs": {
+            "type": "replaced"
+          }
+        }
+      ]
+    }
+[19:46:32] INFO: connection errored
+    trace: "Error: Stream Errored (conflict)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:46:32] INFO: 28 pre-keys found on server
+[19:46:32] INFO: opened connection to WA
+[19:46:32] INFO: handled 0 offline messages/notifications
+[19:46:35] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "5oUZyyUYRlpyXzYePf5N2bIL9yWG4hxQQR4PL7DISCU="
+      }
+    }
+[19:46:35] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:46:35] INFO: 28 pre-keys found on server
+[19:46:36] INFO: opened connection to WA
+[19:46:36] INFO: handled 0 offline messages/notifications
+[19:46:55] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {},
+      "content": [
+        {
+          "tag": "conflict",
+          "attrs": {
+            "type": "replaced"
+          }
+        }
+      ]
+    }
+[19:46:55] INFO: connection errored
+    trace: "Error: Stream Errored (conflict)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:46:56] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "QKaf8AlVP9xDvNyfi2NM67ZRuja71v/yhRdGZH/OPiw="
+      }
+    }
+[19:46:56] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:46:56] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {},
+      "content": [
+        {
+          "tag": "conflict",
+          "attrs": {
+            "type": "replaced"
+          }
+        }
+      ]
+    }
+[19:46:56] INFO: connection errored
+    trace: "Error: Stream Errored (conflict)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:46:57] INFO: 28 pre-keys found on server
+[19:46:57] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "3Mzby6tmAgGBnzA3muQU9cUlf4l7SWiPmMmsK6oNiQM="
+      }
+    }
+[19:46:57] INFO: opened connection to WA
+[19:46:57] INFO: handled 0 offline messages/notifications
+[19:46:57] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:46:57] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {},
+      "content": [
+        {
+          "tag": "conflict",
+          "attrs": {
+            "type": "replaced"
+          }
+        }
+      ]
+    }
+[19:46:57] INFO: connection errored
+    trace: "Error: Stream Errored (conflict)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:46:58] INFO: 28 pre-keys found on server
+[19:46:58] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "goxGGzKYTaJyQUuYLaOchvgabQriKGuG8vKJ6R09fi8="
+      }
+    }
+[19:46:58] INFO: opened connection to WA
+[19:46:58] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:46:58] INFO: handled 0 offline messages/notifications
+[19:46:58] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {},
+      "content": [
+        {
+          "tag": "conflict",
+          "attrs": {
+            "type": "replaced"
+          }
+        }
+      ]
+    }
+[19:46:58] INFO: connection errored
+    trace: "Error: Stream Errored (conflict)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:46:58] INFO: 28 pre-keys found on server
+[19:46:59] INFO: opened connection to WA
+[19:46:59] INFO: handled 0 offline messages/notifications
+[19:46:59] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "1FvaCgiZv+qygGCIf1irnh6BwlPz6/N4FPuBKQkpwgQ="
+      }
+    }
+[19:46:59] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:46:59] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {},
+      "content": [
+        {
+          "tag": "conflict",
+          "attrs": {
+            "type": "replaced"
+          }
+        }
+      ]
+    }
+[19:46:59] INFO: connection errored
+    trace: "Error: Stream Errored (conflict)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:46:59] INFO: 28 pre-keys found on server
+[19:47:00] INFO: opened connection to WA
+[19:47:00] INFO: handled 0 offline messages/notifications
+[19:47:00] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "rjqFmLDjAMzxuNjUEdruoSF3MkSm+VfVxyGfOScCaxQ="
+      }
+    }
+[19:47:00] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:47:00] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {},
+      "content": [
+        {
+          "tag": "conflict",
+          "attrs": {
+            "type": "replaced"
+          }
+        }
+      ]
+    }
+[19:47:00] INFO: connection errored
+    trace: "Error: Stream Errored (conflict)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:47:00] INFO: 28 pre-keys found on server
+[19:47:01] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "U/1uXTYOBjMJb+Cr5mjn/9L6a/4trJKrkplZt97VtAg="
+      }
+    }
+[19:47:01] INFO: opened connection to WA
+[19:47:01] INFO: handled 0 offline messages/notifications
+[19:47:01] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:47:02] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {},
+      "content": [
+        {
+          "tag": "conflict",
+          "attrs": {
+            "type": "replaced"
+          }
+        }
+      ]
+    }
+[19:47:02] INFO: connection errored
+    trace: "Error: Stream Errored (conflict)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:47:02] INFO: 28 pre-keys found on server
+[19:47:03] INFO: opened connection to WA
+[19:47:03] INFO: handled 0 offline messages/notifications
+[19:47:03] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "q/d7Wytzq8WqXUYROo4UiA6ocFr+nT/T4UldoMdGk3w="
+      }
+    }
+[19:47:03] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:47:03] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {},
+      "content": [
+        {
+          "tag": "conflict",
+          "attrs": {
+            "type": "replaced"
+          }
+        }
+      ]
+    }
+[19:47:03] INFO: connection errored
+    trace: "Error: Stream Errored (conflict)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:47:03] INFO: 28 pre-keys found on server
+[19:47:04] INFO: opened connection to WA
+[19:47:04] INFO: handled 0 offline messages/notifications
+[19:47:04] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "LZmrILYBylagi/XtDsV+OioMT0RxmJME5QWrpCIx62w="
+      }
+    }
+[19:47:04] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:47:04] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {},
+      "content": [
+        {
+          "tag": "conflict",
+          "attrs": {
+            "type": "replaced"
+          }
+        }
+      ]
+    }
+[19:47:04] INFO: connection errored
+    trace: "Error: Stream Errored (conflict)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:47:04] INFO: 28 pre-keys found on server
+[19:47:05] INFO: opened connection to WA
+[19:47:05] INFO: handled 0 offline messages/notifications
+[19:47:11] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "YfO6NhlnWqnAoaGchDDJo/OFJqyso4n+yA4l+d/N60g="
+      }
+    }
+[19:47:11] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:47:11] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "d7Za34S5w4B+Ex0tp446H7WX0HWR+UcJdCOcZc3OwRU="
+      }
+    }
+[19:47:12] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:47:12] INFO: 28 pre-keys found on server
+[19:47:12] ERROR: stream errored out
+    node: {
+      "tag": "stream:error",
+      "attrs": {},
+      "content": [
+        {
+          "tag": "conflict",
+          "attrs": {
+            "type": "replaced"
+          }
+        }
+      ]
+    }
+[19:47:12] INFO: connection errored
+    trace: "Error: Stream Errored (conflict)\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:519:13)\n    at WebSocketClient.emit (node:events:520:28)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:236:35\n    at Object.decodeFrame (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\noise-handler.js:144:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+[19:47:12] INFO: 28 pre-keys found on server
+[19:47:12] INFO: opened connection to WA
+[19:47:12] INFO: handled 0 offline messages/notifications
+[19:47:32] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0A65FEDC2A1AE69ECEA",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734032853"
+    }
+[19:47:32] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0A65FEDC2A1AE69ECEA",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734032853"
+    }
+[19:47:40] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB016D3AFA12D4CE2F41A",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734032861"
+    }
+[19:47:40] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB016D3AFA12D4CE2F41A",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734032861"
+    }
+[19:52:53] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "ug7RRZPThLpIFbDwuj7jSUFf03onK5LFwjbc3wKXJCo="
+      }
+    }
+[19:52:53] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:52:54] INFO: 28 pre-keys found on server
+[19:52:54] INFO: opened connection to WA
+[19:52:54] INFO: handled 0 offline messages/notifications
+[19:53:07] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0FD03022BFEC5510089",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734033188"
+    }
+[19:53:07] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0FD03022BFEC5510089",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734033188"
+    }
+[19:53:43] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0C0643D6D375B3663C1",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734033224"
+    }
+[19:53:43] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0C0643D6D375B3663C1",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734033224"
+    }
+[19:54:15] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0ECFA94F6082AD691EB",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734033256"
+    }
+[19:54:15] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0ECFA94F6082AD691EB",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734033256"
+    }
+[19:55:32] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB028B447B2C3B60AE6CE",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734033333"
+    }
+[19:55:32] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB028B447B2C3B60AE6CE",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734033333"
+    }
+[19:55:53] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "Jo2Iqq5fXbIxx14zagPoWGNZBfgTbNBv7WlTgnRYUBE="
+      }
+    }
+[19:55:53] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:55:54] INFO: 28 pre-keys found on server
+[19:55:54] INFO: opened connection to WA
+[19:55:54] INFO: handled 0 offline messages/notifications
+[19:56:03] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB048807FFB0C6964CA04",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734033363"
+    }
+[19:56:03] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB048807FFB0C6964CA04",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734033363"
+    }
+[19:56:42] INFO: connection errored
+    trace: "Error: Connection Terminated\n    at WebSocketClient.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\socket.js:454:30)\n    at WebSocketClient.emit (node:events:532:35)\n    at WebSocket.<anonymous> (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\Client\websocket.js:46:100)\n    at WebSocket.emit (node:events:520:28)\n    at WebSocket.emitClose (C:\Users\reism\Desktop\bot\node_modules\ws\lib\websocket.js:272:10)\n    at Receiver.receiverOnFinish (C:\Users\reism\Desktop\bot\node_modules\ws\lib\websocket.js:1209:20)\n    at Receiver.emit (node:events:520:28)\n    at finish (node:internal/streams/writable:946:10)\n    at node:internal/streams/writable:927:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+[19:56:42] ERROR: error in sending keep alive
+[19:56:43] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "Bq+NECjLu2b1UALObAhUtISqG5/bIkl6TrnqPm3zqj0="
+      }
+    }
+[19:56:43] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:56:44] INFO: 28 pre-keys found on server
+[19:56:44] INFO: opened connection to WA
+[19:56:44] INFO: handled 0 offline messages/notifications
+[19:57:17] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "V51VxrqLXMNxgCPXxWLDY3dkp0bb1tKkmIMjM4DfJlw="
+      }
+    }
+[19:57:18] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:57:18] INFO: 28 pre-keys found on server
+[19:57:18] INFO: opened connection to WA
+[19:57:18] INFO: handled 0 offline messages/notifications
+[19:58:37] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "7I49njuh1Y6+ODSc3jdEkcAzVRX6Nnj3q0ozYH4dIWI="
+      }
+    }
+[19:58:37] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[19:58:37] INFO: 28 pre-keys found on server
+[19:58:38] INFO: opened connection to WA
+[19:58:38] INFO: handled 0 offline messages/notifications
+[19:58:54] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB053B8D908D56A306062",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734033535"
+    }
+[19:58:54] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB053B8D908D56A306062",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734033535"
+    }
+[20:02:06] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "CWC6TSXFC6OvMNWt1nYGlX6J9GUbbUBG/f/BkwEn9RE="
+      }
+    }
+[20:02:06] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[20:02:06] INFO: 28 pre-keys found on server
+[20:02:07] INFO: opened connection to WA
+[20:02:07] INFO: handled 0 offline messages/notifications
+[20:05:57] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "EKfU06uua+wOPHi1foOQ2H+dKC3k2IlZjroGkdYVMkA="
+      }
+    }
+[20:05:57] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[20:05:58] INFO: 28 pre-keys found on server
+[20:05:58] INFO: opened connection to WA
+[20:05:59] INFO: handled 0 offline messages/notifications
+[20:06:07] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB07F68812E8BEE9D2082",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734033968"
+    }
+[20:06:07] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB07F68812E8BEE9D2082",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734033968"
+    }
+[20:06:33] WARN: url generation failed
+    msgId: "3EB03AAD52BADF1714197C"
+    trace: "Error: Cannot find module 'link-preview-js'\nRequire stack:\n- C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\link-preview.js\n- C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\index.js\n- C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Signal\libsignal.js\n- C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Defaults\index.js\n- C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\index.js\n- C:\Users\reism\Desktop\bot\node_modules\baileys\lib\index.js\n- C:\Users\reism\Desktop\bot\build\connection.js\n- C:\Users\reism\Desktop\bot\build\index.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)\n    at Module._load (node:internal/modules/cjs/loader:1027:27)\n    at Module.require (node:internal/modules/cjs/loader:1290:19)\n    at require (node:internal/modules/helpers:188:18)\n    at C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\link-preview.js:51:84\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async getUrlInfo (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\link-preview.js:51:36)\n    at async generateLinkPreviewIfRequired (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:44:29)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:246:23)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)"
+[20:06:34] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB03AAD52BADF1714197C",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734033994"
+    }
+[20:06:34] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB03AAD52BADF1714197C",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734033994"
+    }
+[20:08:35] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "QZ7pc7hVBIeF3PMZGqQNNK2RBIGoghVf5ZQ7zZDvO38="
+      }
+    }
+[20:08:35] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[20:08:36] INFO: 28 pre-keys found on server
+[20:08:36] INFO: opened connection to WA
+[20:08:36] INFO: handled 0 offline messages/notifications
+[20:08:46] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0671F223B9882C4EAAC",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034127"
+    }
+[20:08:46] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0671F223B9882C4EAAC",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034127"
+    }
+[20:09:05] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0744979585B8A734146",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034146"
+    }
+[20:09:05] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0744979585B8A734146",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034146"
+    }
+[20:11:10] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "7+BQL0CQSjlJsl0bMUeCyn+d+Z2cChb4dxg2nzwX7mA="
+      }
+    }
+[20:11:10] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[20:11:11] INFO: 28 pre-keys found on server
+[20:11:11] INFO: opened connection to WA
+[20:11:11] INFO: handled 0 offline messages/notifications
+[20:11:25] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0A55F8EB8FC69786207",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034286"
+    }
+[20:11:25] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0A55F8EB8FC69786207",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034286"
+    }
+[20:11:53] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0795B2084D2D7230D47",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034314"
+    }
+[20:11:53] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0795B2084D2D7230D47",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034314"
+    }
+[20:15:49] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "5ivxJeU5AENpTkiVamLwtUBfkXi2eAkdVqeCNAnR1iM="
+      }
+    }
+[20:15:49] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[20:15:50] INFO: 28 pre-keys found on server
+[20:15:50] INFO: opened connection to WA
+[20:15:50] INFO: handled 0 offline messages/notifications
+[20:16:28] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "BwvQA0mdBQL8PzkwYdLyB56xtgJw2CxcCS+nSVYcMnE="
+      }
+    }
+[20:16:29] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[20:16:29] INFO: 28 pre-keys found on server
+[20:16:29] INFO: opened connection to WA
+[20:16:29] INFO: handled 0 offline messages/notifications
+[20:16:46] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0ABDC8FDCC33C9CE47A",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034607"
+    }
+[20:16:46] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0ABDC8FDCC33C9CE47A",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034607"
+    }
+[20:17:31] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "WUM9MErmrYJ9L59jimHCKc5Jox2kMax376oFdJr3uiU="
+      }
+    }
+[20:17:32] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[20:17:32] INFO: 28 pre-keys found on server
+[20:17:32] INFO: opened connection to WA
+[20:17:32] INFO: handled 0 offline messages/notifications
+[20:17:45] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0DAA1DEC6E339DECF34",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034666"
+    }
+[20:17:45] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0DAA1DEC6E339DECF34",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034666"
+    }
+[20:18:50] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "QGx9V/pakmiSf1GM7g+HjD9aTx7OwsO6QCxfCZwYU1k="
+      }
+    }
+[20:18:51] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[20:18:51] INFO: 28 pre-keys found on server
+[20:18:52] INFO: opened connection to WA
+[20:18:52] INFO: handled 0 offline messages/notifications
+[20:18:56] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0E5C0C8FEF7875A2C1E",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034737"
+    }
+[20:18:56] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB0E5C0C8FEF7875A2C1E",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034737"
+    }
+[20:19:07] WARN: failed to obtain extra info
+    msgId: "3EB04F4A08E12FBCA84CD9"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[20:19:09] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB04F4A08E12FBCA84CD9",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034750"
+    }
+[20:19:09] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB04F4A08E12FBCA84CD9",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034750"
+    }
+[20:21:04] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "5wfzMJ2Ox/ycdL4S5PCk9YhybcY7mbAl80zneb1vxyI="
+      }
+    }
+[20:21:04] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 9
+    }
+[20:21:05] INFO: 28 pre-keys found on server
+[20:21:05] INFO: opened connection to WA
+[20:21:05] INFO: handled 0 offline messages/notifications
+[20:21:08] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB072DECB7155DCFEC2F0",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034869"
+    }
+[20:21:08] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB072DECB7155DCFEC2F0",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034869"
+    }
+[20:21:17] WARN: failed to obtain extra info
+    msgId: "3EB04531A38DD405222536"
+    trace: "Error: No image processing library available\n    at getImageProcessingLibrary (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:63:11)\n    at async extractImageThumb (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:104:17)\n    at async generateThumbnail (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages-media.js:290:38)\n    at async C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:129:68\n    at async Promise.all (index 1)\n    at async prepareWAMessageMedia (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:120:40)\n    at async generateWAMessageContent (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:415:13)\n    at async generateWAMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Utils\messages.js:507:59)\n    at async Object.sendMessage (C:\Users\reism\Desktop\bot\node_modules\baileys\lib\Socket\messages-send.js:626:33)"
+[20:21:20] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB04531A38DD405222536",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034881"
+    }
+[20:21:20] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB04531A38DD405222536",
+      "phash": "2:pH5rQXIU",
+      "count": "3",
+      "t": "1734034881"
+    }

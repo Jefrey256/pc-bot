@@ -11,7 +11,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.handleMenuCommand = handleMenuCommand;
 const messages_1 = require("../exports/messages");
+// Comandos
 const menu_1 = require("./users/menu");
+const ping_1 = require("./users/ping");
+const sticker_1 = require("./users/sticker");
+const ftperfil_1 = require("./owner/ftperfil");
+const dow_1 = require("./users/dow");
+//fim comandos
 function handleMenuCommand(pico, from, messageDetails) {
     return __awaiter(this, void 0, void 0, function* () {
         const { enviarTexto } = (0, messages_1.setupMessagingServices)(pico, from, messageDetails);
@@ -24,6 +30,11 @@ function handleMenuCommand(pico, from, messageDetails) {
         // Mapeamento de comandos disponíveis
         const commands = {
             help: menu_1.menu,
+            menu: menu_1.menu,
+            ft: ftperfil_1.alterarP,
+            d: dow_1.videoDow,
+            ping: ping_1.ping,
+            s: sticker_1.createSticker
         };
         console.log(`Comando recebido: ${commandName} de ${fromUser}`);
         console.log(userName);

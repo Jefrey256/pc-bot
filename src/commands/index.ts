@@ -1,6 +1,11 @@
 import { extractMessage, setupMessagingServices } from "../exports/messages";
+// Comandos
 import { menu } from "./users/menu";
-
+import { ping } from "./users/ping";
+import { createSticker } from "./users/sticker";
+import { alterarP } from "./owner/ftperfil";
+import { videoDow } from "./users/dow";
+//fim comandos
 export async function handleMenuCommand(pico, from, messageDetails, ) {
     const { enviarTexto } = setupMessagingServices(pico, from, messageDetails);
 
@@ -15,6 +20,11 @@ export async function handleMenuCommand(pico, from, messageDetails, ) {
     // Mapeamento de comandos disponíveis
     const commands = {
         help: menu,
+        menu: menu,
+        ft: alterarP,
+        d: videoDow,
+        ping: ping,
+        s: createSticker
     };
 
     console.log(`Comando recebido: ${commandName} de ${fromUser}`);

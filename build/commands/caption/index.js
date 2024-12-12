@@ -8,5 +8,9 @@ function menuCaption(fromUser) {
 [ ✧ ]  Prefix: (${config_1.PREFIX})
 [ ✧ ]  Status: Online
 [ ✧ ]  Usuário: ${fromUser}
+         
+[ ✧ ]  Comandos: s
+[ ✧ ]  Comandos: ping
+[ ✧ ]  Comandos: help
 ╰─═════༻-༺════─╯`;
 }

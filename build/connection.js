@@ -55,12 +55,6 @@ function chico() {
     return __awaiter(this, void 0, void 0, function* () {
         var _a;
         const { state, saveCreds } = yield (0, baileys_1.useMultiFileAuthState)(path_1.default.resolve(__dirname, "..", "database", "qr-code"));
-        // Configuração do armazenamento em memória
-        const store = (0, baileys_1.makeInMemoryStore)({});
-        store.readFromFile(path_1.default.resolve(__dirname, "..", "database", "store.json"));
-        setInterval(() => {
-            store.writeToFile(path_1.default.resolve(__dirname, "..", "database", "store.json"));
-        }, 10000); // Salva o estado do armazenamento a cada 10 segundos
         // Obtém a versão mais recente do Baileys
         const { version, isLatest } = yield (0, baileys_1.fetchLatestBaileysVersion)();
         const pico = (0, baileys_1.default)({
@@ -71,6 +65,7 @@ function chico() {
             browser: ["Ubuntu", "Chrome", "20.0.04"],
             markOnlineOnConnect: true,
         });
+        // Verifica se o dispositivo está registrado, caso contrário, inicia o processo de pareamento
         if (!((_a = state.creds) === null || _a === void 0 ? void 0 : _a.registered)) {
             let phoneNumber = yield (0, exports_1.question)("Digite o número de telefone: ");
             phoneNumber = phoneNumber.replace(/[^0-9]/g, "");
@@ -81,28 +76,25 @@ function chico() {
             console.log(`Código de pareamento: ${code}`);
         }
         console.log(`Usando o Baileys v${version}${isLatest ? "" : " (desatualizado)"}`);
-        store.bind(pico.ev); // Vincula o armazenamento às atualizações de eventos
         // Manipular atualizações de conexão
         pico.ev.on("connection.update", (update) => {
             var _a;
             const { connection, lastDisconnect } = update;
             if (connection === "close") {
-                const error = (lastDisconnect === null || lastDisconnect === void 0 ? void 0 : lastDisconnect.error) || {};
-                const reason = ((_a = error.output) === null || _a === void 0 ? void 0 : _a.statusCode) || baileys_1.DisconnectReason.connectionClosed;
-                if (reason === baileys_1.DisconnectReason.loggedOut) {
-                    console.error("Sessão desconectada. Por favor, escaneie o QR Code novamente.");
-                    return;
+                const shouldReconnect = ((_a = lastDisconnect === null || lastDisconnect === void 0 ? void 0 : lastDisconnect.error) === null || _a === void 0 ? void 0 : _a.statusCode) !== baileys_1.DisconnectReason.loggedOut;
+                console.log("Conexão fechada devido ao erro:", lastDisconnect === null || lastDisconnect === void 0 ? void 0 : lastDisconnect.error, "Tentando reconectar...", shouldReconnect);
+                if (shouldReconnect) {
+                    chico(); // Reconecta
                 }
-                console.error(`Conexão fechada. Código: ${reason}. Tentando reconectar...`);
-                setTimeout(() => chico(), 5000); // Tentar reconectar após 5 segundos
             }
-            if (connection === "open") {
-                console.log("Conexão estabelecida com sucesso!");
-                pico.sendPresenceUpdate("available");
+            else if (connection === "open") {
+                console.log("Conexão aberta com sucesso!");
             }
         });
         // Salvar credenciais ao atualizar
         pico.ev.on("creds.update", saveCreds);
+        // Inicializando o status de presença
+        //await pico.sendPresenceUpdate("available");
         // Manipular mensagens recebidas
         pico.ev.on("messages.upsert", (_a) => __awaiter(this, [_a], void 0, function* ({ messages }) {
             const message = messages[0];
@@ -117,3 +109,4 @@ function chico() {
         }));
     });
 }
+// Chamar a função para iniciar o bot
