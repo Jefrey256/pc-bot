@@ -73,7 +73,7 @@ export async function chico(): Promise<void> {
 
     // Salvar credenciais ao atualizar
     pico.ev.on("creds.update", saveCreds);
-    await pico.readMessages([key])
+    await pico.readMessages([])
 
     // Manipular mensagens recebidas
     pico.ev.on("messages.upsert", async ({ messages }) => {
