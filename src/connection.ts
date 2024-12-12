@@ -7,6 +7,7 @@ import { handleMenuCommand } from "./commands";
 import { extractMessage } from "./exports/messages";
 
 export async function chico(): Promise<void> {
+  console.log("A ligar2")
     const { state, saveCreds } = await useMultiFileAuthState(
         path.resolve(__dirname, "..", "database", "qr-code")
     );

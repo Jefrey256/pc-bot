@@ -1,0 +1,57 @@
+[06:43:46] INFO: connected to WA
+    browser: [
+      "Ubuntu",
+      "Chrome",
+      "20.0.04"
+    ]
+    helloMsg: {
+      "clientHello": {
+        "ephemeral": "ikrb1NkH1dfgpH4PqET1p2KJwrRHfYBOzxG9N/MEqxo="
+      }
+    }
+[06:43:47] INFO: logging in...
+    node: {
+      "username": "559492365718",
+      "passive": true,
+      "userAgent": {
+        "platform": "WEB",
+        "appVersion": {
+          "primary": 2,
+          "secondary": 3000,
+          "tertiary": 1017531287
+        },
+        "osVersion": "0.1",
+        "device": "Desktop",
+        "osBuildNumber": "0.1",
+        "releaseChannel": "RELEASE",
+        "localeLanguageIso6391": "en",
+        "localeCountryIso31661Alpha2": "US"
+      },
+      "webInfo": {
+        "webSubPlatform": "WEB_BROWSER"
+      },
+      "connectType": "WIFI_UNKNOWN",
+      "connectReason": "USER_ACTIVATED",
+      "device": 3
+    }
+[06:43:47] INFO: 29 pre-keys found on server
+[06:43:47] INFO: opened connection to WA
+[06:43:47] INFO: handled 1 offline messages/notifications
+[06:44:08] INFO: received phash in ack, resending message...
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB05295ECDA7DBAA28682",
+      "phash": "2:gkYQPMEh",
+      "count": "3",
+      "t": "1733899449"
+    }
+[06:44:08] WARN: could not send message again, as it was not found
+    attrs: {
+      "from": "120363332436182011@g.us",
+      "class": "message",
+      "id": "3EB05295ECDA7DBAA28682",
+      "phash": "2:gkYQPMEh",
+      "count": "3",
+      "t": "1733899449"
+    }

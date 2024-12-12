@@ -65,6 +65,8 @@ export const extractMessage = (messageDetails: any) => {
       messageDetails.message?.extendedTextMessage?.contextInfo?.quotedMessage?.stickerMessage ||
       messageDetails.message?.extendedTextMessage?.contextInfo?.quotedMessage?.documentMessage ||
       undefined;
+      
+      console.log(userName)
   
     return {
       key,

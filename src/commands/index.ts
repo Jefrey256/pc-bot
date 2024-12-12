@@ -4,7 +4,11 @@ import { menu } from "./users/menu";
 export async function handleMenuCommand(pico, from, messageDetails, ) {
     const { enviarTexto } = setupMessagingServices(pico, from, messageDetails);
 
+<<<<<<< HEAD
+    const { fullMessage,userName, commandName, fromUser, media, isCommand, from: messageFrom } = extractMessage(messageDetails);
+=======
     const { fullMessage, commandName, fromUser, media, isCommand, from: messageFrom, userName } = extractMessage(messageDetails);
+>>>>>>> a47e49dcef713a24a8c215fe71a475a315269cbc
 
     // Verifica se a mensagem foi enviada pelo próprio bot para evitar loops
     if (messageFrom === pico) {
@@ -14,11 +18,16 @@ export async function handleMenuCommand(pico, from, messageDetails, ) {
 
     // Mapeamento de comandos disponíveis
     const commands = {
-        help: menu,
+        p: menu,
     };
 
+<<<<<<< HEAD
+    console.log(`${userName}>Comando: ${commandName}  `);
+    console.log(fullMessage)
+=======
     console.log(`Comando recebido: ${commandName} de ${fromUser}`);
     console.log(userName)
+>>>>>>> a47e49dcef713a24a8c215fe71a475a315269cbc
 
     if (isCommand) {
         if (commands[commandName]) {
