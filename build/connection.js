@@ -100,6 +100,8 @@ function chico() {
             const message = messages[0];
             if (!message.key.remoteJid)
                 return;
+            if (!message.key.remoteJid || message.key.fromMe)
+                return; // Ignora mensagens enviadas pelo próprio bot
             try {
                 yield (0, commands_1.handleMenuCommand)(pico, message.key.remoteJid, message);
             }

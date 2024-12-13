@@ -76,8 +76,8 @@ function createSticker(pico, from, messageDetails) {
             }
             // Converter mídia para figurinha
             const command = isVideo
-                ? `ffmpeg -i ${inputPath} -vf "scale=512:512:force_original_aspect_ratio=decrease,pad=512:512:0:0:0x000000,fps=15" -c:v libwebp -qscale 50 -preset default -loop 0 -an -vsync 0 ${stickerPath}`
-                : `ffmpeg -i ${inputPath} -vf "scale=512:512:force_original_aspect_ratio=decrease,pad=512:512:0:0:0x000000" -c:v libwebp -qscale 50 -preset default -loop 0 -an -vsync 0 ${stickerPath}`;
+                ? `ffmpeg -i "${inputPath}" -vcodec libwebp -vf "scale=512:512:force_original_aspect_ratio=increase,crop=512:512,setsar=1" -loop 0 -preset default -an -vsync 0 -s 512x512 -y "${stickerPath}"`
+                : `ffmpeg -i "${inputPath}" -vcodec libwebp -vf "scale=512:512:force_original_aspect_ratio=increase,crop=512:512,setsar=1" -loop 0 -preset default -an -vsync 0 -s 512x512 -y "${stickerPath}"`;
             yield execPromise(command);
             // Enviar figurinha
             yield pico.sendMessage(from, { sticker: { url: stickerPath } });

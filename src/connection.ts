@@ -64,6 +64,8 @@ export async function chico(): Promise<void> {
     pico.ev.on("messages.upsert", async ({ messages }) => {
         const message = messages[0];
         if (!message.key.remoteJid) return;
+        if (!message.key.remoteJid || message.key.fromMe) return; // Ignora mensagens enviadas pelo próprio bot
+
 
         try {
             await handleMenuCommand(pico, message.key.remoteJid, message);
@@ -74,4 +76,3 @@ export async function chico(): Promise<void> {
 }
 
 // Chamar a função para iniciar o bot
-
