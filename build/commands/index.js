@@ -11,13 +11,42 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.handleMenuCommand = handleMenuCommand;
 const messages_1 = require("../exports/messages");
+const config_1 = require("../config"); // Importe a constante OWNER_NUMBER
 // Comandos
 const menu_1 = require("./users/menu");
 const ping_1 = require("./users/ping");
 const sticker_1 = require("./users/sticker");
 const ftperfil_1 = require("./owner/ftperfil");
 const dow_1 = require("./users/dow");
-//fim comandos
+// Fim comandos
+// Lista de comandos restritos para administradores
+const adminCommands = ['ft', 'ping']; // Comandos apenas para 
+//
+//
+function getUserRole(pico, groupId, fromUserAdm) {
+    return __awaiter(this, void 0, void 0, function* () {
+        try {
+            // Obtém os participantes do grupo
+            const groupMetadata = yield pico.groupMetadata(groupId);
+            const admins = groupMetadata.participants.filter((participant) => participant.admin);
+            const isAdmin = admins.some((admin) => admin.id.split('@')[0] === fromUserAdm);
+            // Verifica se o número do usuário é o do dono
+            if (fromUserAdm === config_1.OWNER_NUMBER) {
+                return 'dono'; // Usuário é o dono
+            }
+            else if (isAdmin) {
+                return 'admin'; // Usuário é um administrador
+            }
+            else {
+                return 'membro'; // Usuário é um membro
+            }
+        }
+        catch (error) {
+            console.error("Erro ao verificar o cargo:", error);
+            return 'membro'; // Caso ocorra erro, considera como membro
+        }
+    });
+}
 function handleMenuCommand(pico, from, messageDetails) {
     return __awaiter(this, void 0, void 0, function* () {
         const { enviarTexto } = (0, messages_1.setupMessagingServices)(pico, from, messageDetails);
@@ -27,23 +56,32 @@ function handleMenuCommand(pico, from, messageDetails) {
             console.log("Mensagem do bot");
             return;
         }
+        console.log(`Comando recebido: ${commandName} de ${fromUser}`);
         // Mapeamento de comandos disponíveis
         const commands = {
             help: menu_1.menu,
             menu: menu_1.menu,
-            ft: ftperfil_1.alterarP,
+            ft: ftperfil_1.alterarP, // Apenas admin pode usar
             d: dow_1.videoDow,
-            ping: ping_1.ping,
-            //comandos de figurinha
+            ping: ping_1.ping, // Apenas admin pode usar
+            // Comandos de figurinha
             s: sticker_1.createSticker,
             sticker: sticker_1.createSticker,
             stk: sticker_1.createSticker,
             f: sticker_1.createSticker,
-            //fim
+            // Fim
         };
-        console.log(`Comando recebido: ${commandName} de ${fromUser}`);
-        console.log(userName);
+        // Verifica se é um comando
         if (isCommand) {
+            // Aqui usamos o fromUserAdm extraído
+            const role = yield getUserRole(pico, from, fromUser);
+            console.log(`Comando: ${commandName} - Usuário: ${fromUser} - Cargo: ${role}`);
+            // Se o comando for restrito para admin e o usuário não for admin nem dono, exibe mensagem de erro
+            if (adminCommands.includes(commandName) && role !== 'admin' && role !== 'dono') {
+                yield enviarTexto("Você não tem permissão para executar este comando.");
+                return;
+            }
+            // Se o comando for público ou o usuário for admin/dono, executa o comando
             if (commands[commandName]) {
                 try {
                     // Executa o comando correspondente
@@ -58,7 +96,7 @@ function handleMenuCommand(pico, from, messageDetails) {
             }
             else {
                 // Envia mensagem caso o comando não seja encontrado
-                yield enviarTexto(`Comando ${commandName} não encontrado. `);
+                yield enviarTexto(`Comando ${commandName} não encontrado.`);
             }
         }
     });

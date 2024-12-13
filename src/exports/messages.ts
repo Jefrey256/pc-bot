@@ -21,9 +21,11 @@ export const extractMessage = (messageDetails: any) => {
         commandName: "",
         args: [],
         userName: "Desconhecido",
+         userRole: "membro",
         participant: null,
       };
     }
+
   
     // Captura todas as possíveis fontes de texto (mensagem simples, legenda ou texto citado)
     const textMessage = messageDetails.message?.conversation || ""; // Mensagem simples
@@ -42,12 +44,24 @@ export const extractMessage = (messageDetails: any) => {
     
     // Extrai o nome do usuário ou identificador
     const fromUser = messageDetails.key?.participant?.split("@")[0] || messageDetails.key?.remoteJid?.split("@")[0];
+    //
+    //
+    const fromUserAdm = messageDetails.key?.participant 
+    ? messageDetails.key?.participant.split('@')[0]  // Se for de um grupo, usa o participant
+    : messageDetails.key?.remoteJid.split('@')[0];   // Se for de um canal ou PV, usa o remoteJid
+
+    //
+    const groupId = messageDetails.key?.remoteJid || null;
+    //
     
     // Extrai o identificador do remetente
     const from = messageDetails.key?.remoteJid || "Remetente desconhecido";
     
     // Extrai o nome de exibição do usuário
     const userName = messageDetails?.pushName || "Usuário Desconhecido";
+    const phoneNumber = messageDetails?.key?.participant?.replace(   
+      /:[0-9][0-9]|:[0-9]/g,
+      "");
     
     // Verifica se a mensagem é um comando (com base no prefixo)
     const isCommand = fullMessage.startsWith(PREFIX);
@@ -77,17 +91,20 @@ export const extractMessage = (messageDetails: any) => {
       mentions,
       fullMessage,
       from,
+      phoneNumber,
       fromUser,
       isCommand,
       commandName,
       args,
       userName,
+      groupId,
       participant: messageDetails.key?.participant || messageDetails.key?.remoteJid,
     };
+    console.log(`ola: ${phoneNumber}`)
+
+
+
   };
-  
-
-
 
   
 export function setupMessagingServices(pico, from, messageDetails) {

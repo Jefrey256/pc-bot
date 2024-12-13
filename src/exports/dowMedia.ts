@@ -15,7 +15,8 @@ export const getMediaContent = async <AllowBuffer extends boolean = false>(
 ): Promise<AllowBuffer extends true ? Buffer : internal.Transform> => {
   
   // Extração da mídia se não for fornecida diretamente
-  const { media } = extractMessage(messageDetails);  // Usando a função `extractMessage` para pegar a mídia da mensagem.
+  const { media } = extractMessage(messageDetails)
+  const {} = extractMessage(messageDetails)  // Usando a função `extractMessage` para pegar a mídia da mensagem.
 
   // Verifique se a mídia foi extraída corretamente
   if (!media) {

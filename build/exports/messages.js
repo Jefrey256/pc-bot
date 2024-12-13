@@ -17,7 +17,7 @@ exports.setupMessagingServices = setupMessagingServices;
 const config_1 = require("../config");
 const fs_1 = __importDefault(require("fs"));
 const extractMessage = (messageDetails) => {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24, _25, _26, _27;
     // Verificação de que messageDetails está definido e possui uma estrutura válida
     if (!messageDetails || !messageDetails.message) {
         console.error("Detalhes da mensagem não encontrados ou estão mal formatados");
@@ -31,6 +31,7 @@ const extractMessage = (messageDetails) => {
             commandName: "",
             args: [],
             userName: "Desconhecido",
+            userRole: "membro",
             participant: null,
         };
     }
@@ -46,10 +47,19 @@ const extractMessage = (messageDetails) => {
     const mentions = ((_p = (_o = (_m = messageDetails.message) === null || _m === void 0 ? void 0 : _m.extendedTextMessage) === null || _o === void 0 ? void 0 : _o.contextInfo) === null || _p === void 0 ? void 0 : _p.mentionedJid) || [];
     // Extrai o nome do usuário ou identificador
     const fromUser = ((_r = (_q = messageDetails.key) === null || _q === void 0 ? void 0 : _q.participant) === null || _r === void 0 ? void 0 : _r.split("@")[0]) || ((_t = (_s = messageDetails.key) === null || _s === void 0 ? void 0 : _s.remoteJid) === null || _t === void 0 ? void 0 : _t.split("@")[0]);
+    //
+    //
+    const fromUserAdm = ((_u = messageDetails.key) === null || _u === void 0 ? void 0 : _u.participant)
+        ? (_v = messageDetails.key) === null || _v === void 0 ? void 0 : _v.participant.split('@')[0] // Se for de um grupo, usa o participant
+        : (_w = messageDetails.key) === null || _w === void 0 ? void 0 : _w.remoteJid.split('@')[0]; // Se for de um canal ou PV, usa o remoteJid
+    //
+    const groupId = ((_x = messageDetails.key) === null || _x === void 0 ? void 0 : _x.remoteJid) || null;
+    //
     // Extrai o identificador do remetente
-    const from = ((_u = messageDetails.key) === null || _u === void 0 ? void 0 : _u.remoteJid) || "Remetente desconhecido";
+    const from = ((_y = messageDetails.key) === null || _y === void 0 ? void 0 : _y.remoteJid) || "Remetente desconhecido";
     // Extrai o nome de exibição do usuário
     const userName = (messageDetails === null || messageDetails === void 0 ? void 0 : messageDetails.pushName) || "Usuário Desconhecido";
+    const phoneNumber = (_0 = (_z = messageDetails === null || messageDetails === void 0 ? void 0 : messageDetails.key) === null || _z === void 0 ? void 0 : _z.participant) === null || _0 === void 0 ? void 0 : _0.replace(/:[0-9][0-9]|:[0-9]/g, "");
     // Verifica se a mensagem é um comando (com base no prefixo)
     const isCommand = fullMessage.startsWith(config_1.PREFIX);
     // Extrai o nome do comando e argumentos
@@ -57,16 +67,16 @@ const extractMessage = (messageDetails) => {
     const args = isCommand ? fullMessage.slice(config_1.PREFIX.length).split(" ").slice(1) : [];
     const key = messageDetails.key || null;
     // Verificação de mídia (direta ou marcada)
-    const media = ((_v = messageDetails.message) === null || _v === void 0 ? void 0 : _v.imageMessage) ||
-        ((_w = messageDetails.message) === null || _w === void 0 ? void 0 : _w.videoMessage) ||
-        ((_x = messageDetails.message) === null || _x === void 0 ? void 0 : _x.audioMessage) ||
-        ((_y = messageDetails.message) === null || _y === void 0 ? void 0 : _y.stickerMessage) ||
-        ((_z = messageDetails.message) === null || _z === void 0 ? void 0 : _z.documentMessage) ||
-        ((_3 = (_2 = (_1 = (_0 = messageDetails.message) === null || _0 === void 0 ? void 0 : _0.extendedTextMessage) === null || _1 === void 0 ? void 0 : _1.contextInfo) === null || _2 === void 0 ? void 0 : _2.quotedMessage) === null || _3 === void 0 ? void 0 : _3.imageMessage) ||
-        ((_7 = (_6 = (_5 = (_4 = messageDetails.message) === null || _4 === void 0 ? void 0 : _4.extendedTextMessage) === null || _5 === void 0 ? void 0 : _5.contextInfo) === null || _6 === void 0 ? void 0 : _6.quotedMessage) === null || _7 === void 0 ? void 0 : _7.videoMessage) ||
-        ((_11 = (_10 = (_9 = (_8 = messageDetails.message) === null || _8 === void 0 ? void 0 : _8.extendedTextMessage) === null || _9 === void 0 ? void 0 : _9.contextInfo) === null || _10 === void 0 ? void 0 : _10.quotedMessage) === null || _11 === void 0 ? void 0 : _11.audioMessage) ||
-        ((_15 = (_14 = (_13 = (_12 = messageDetails.message) === null || _12 === void 0 ? void 0 : _12.extendedTextMessage) === null || _13 === void 0 ? void 0 : _13.contextInfo) === null || _14 === void 0 ? void 0 : _14.quotedMessage) === null || _15 === void 0 ? void 0 : _15.stickerMessage) ||
-        ((_19 = (_18 = (_17 = (_16 = messageDetails.message) === null || _16 === void 0 ? void 0 : _16.extendedTextMessage) === null || _17 === void 0 ? void 0 : _17.contextInfo) === null || _18 === void 0 ? void 0 : _18.quotedMessage) === null || _19 === void 0 ? void 0 : _19.documentMessage) ||
+    const media = ((_1 = messageDetails.message) === null || _1 === void 0 ? void 0 : _1.imageMessage) ||
+        ((_2 = messageDetails.message) === null || _2 === void 0 ? void 0 : _2.videoMessage) ||
+        ((_3 = messageDetails.message) === null || _3 === void 0 ? void 0 : _3.audioMessage) ||
+        ((_4 = messageDetails.message) === null || _4 === void 0 ? void 0 : _4.stickerMessage) ||
+        ((_5 = messageDetails.message) === null || _5 === void 0 ? void 0 : _5.documentMessage) ||
+        ((_9 = (_8 = (_7 = (_6 = messageDetails.message) === null || _6 === void 0 ? void 0 : _6.extendedTextMessage) === null || _7 === void 0 ? void 0 : _7.contextInfo) === null || _8 === void 0 ? void 0 : _8.quotedMessage) === null || _9 === void 0 ? void 0 : _9.imageMessage) ||
+        ((_13 = (_12 = (_11 = (_10 = messageDetails.message) === null || _10 === void 0 ? void 0 : _10.extendedTextMessage) === null || _11 === void 0 ? void 0 : _11.contextInfo) === null || _12 === void 0 ? void 0 : _12.quotedMessage) === null || _13 === void 0 ? void 0 : _13.videoMessage) ||
+        ((_17 = (_16 = (_15 = (_14 = messageDetails.message) === null || _14 === void 0 ? void 0 : _14.extendedTextMessage) === null || _15 === void 0 ? void 0 : _15.contextInfo) === null || _16 === void 0 ? void 0 : _16.quotedMessage) === null || _17 === void 0 ? void 0 : _17.audioMessage) ||
+        ((_21 = (_20 = (_19 = (_18 = messageDetails.message) === null || _18 === void 0 ? void 0 : _18.extendedTextMessage) === null || _19 === void 0 ? void 0 : _19.contextInfo) === null || _20 === void 0 ? void 0 : _20.quotedMessage) === null || _21 === void 0 ? void 0 : _21.stickerMessage) ||
+        ((_25 = (_24 = (_23 = (_22 = messageDetails.message) === null || _22 === void 0 ? void 0 : _22.extendedTextMessage) === null || _23 === void 0 ? void 0 : _23.contextInfo) === null || _24 === void 0 ? void 0 : _24.quotedMessage) === null || _25 === void 0 ? void 0 : _25.documentMessage) ||
         undefined;
     return {
         key,
@@ -74,13 +84,16 @@ const extractMessage = (messageDetails) => {
         mentions,
         fullMessage,
         from,
+        phoneNumber,
         fromUser,
         isCommand,
         commandName,
         args,
         userName,
-        participant: ((_20 = messageDetails.key) === null || _20 === void 0 ? void 0 : _20.participant) || ((_21 = messageDetails.key) === null || _21 === void 0 ? void 0 : _21.remoteJid),
+        groupId,
+        participant: ((_26 = messageDetails.key) === null || _26 === void 0 ? void 0 : _26.participant) || ((_27 = messageDetails.key) === null || _27 === void 0 ? void 0 : _27.remoteJid),
     };
+    console.log(`ola: ${phoneNumber}`);
 };
 exports.extractMessage = extractMessage;
 function setupMessagingServices(pico, from, messageDetails) {

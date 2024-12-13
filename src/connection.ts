@@ -10,6 +10,11 @@ export async function chico(): Promise<void> {
     const { state, saveCreds } = await useMultiFileAuthState(
         path.resolve(__dirname, "..", "database", "qr-code")
     );
+    //data store
+    // const store = makeInMemoryStore({})
+    // store.readFromFile(path.resolve(__dirname, "..", "database", "store.json"))
+    // setInterval(() => store.writeToFile(path.resolve(__dirname, "..", "database", "store.json")), 10_000 )
+    //fim
 
     // Obtém a versão mais recente do Baileys
     const { version, isLatest } = await fetchLatestBaileysVersion();
@@ -38,6 +43,7 @@ export async function chico(): Promise<void> {
 
     console.log(`Usando o Baileys v${version}${isLatest ? "" : " (desatualizado)"}`);
 
+
     // Manipular atualizações de conexão
     pico.ev.on("connection.update", (update) => {
         const { connection, lastDisconnect } = update;
@@ -61,10 +67,13 @@ export async function chico(): Promise<void> {
    //await pico.sendPresenceUpdate("available");
 
     // Manipular mensagens recebidas
-    pico.ev.on("messages.upsert", async ({ messages }) => {
+    pico.ev.on("messages.upsert",  async ({ messages }) => {
+        const {isCommand} = extractMessage(messages[0]);
         const message = messages[0];
+        const from = message.key.remoteJid;
+        
         if (!message.key.remoteJid) return;
-        if (!message.key.remoteJid || message.key.fromMe) return; // Ignora mensagens enviadas pelo próprio bot
+        //if ( message.key.fromMe || !isCommand) return; // Ignora mensagens enviadas pelo próprio bot
 
 
         try {
@@ -73,6 +82,8 @@ export async function chico(): Promise<void> {
             console.error("Erro ao processar a mensagem:", error);
         }
     });
+    
+    //.bind(pico.ev);
 }
 
 // Chamar a função para iniciar o bot

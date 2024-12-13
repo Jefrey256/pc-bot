@@ -30,7 +30,8 @@ const getMediaContent = (...args_1) => __awaiter(void 0, [...args_1], void 0, fu
 ) {
     var _a, e_1, _b, _c;
     // Extração da mídia se não for fornecida diretamente
-    const { media } = (0, messages_1.extractMessage)(messageDetails); // Usando a função `extractMessage` para pegar a mídia da mensagem.
+    const { media } = (0, messages_1.extractMessage)(messageDetails);
+    const {} = (0, messages_1.extractMessage)(messageDetails); // Usando a função `extractMessage` para pegar a mídia da mensagem.
     // Verifique se a mídia foi extraída corretamente
     if (!media) {
         console.log("Nenhuma mídia encontrada. Detalhes da mensagem:", messageDetails); // Log para verificar os detalhes

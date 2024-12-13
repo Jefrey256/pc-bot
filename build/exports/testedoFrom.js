@@ -9,18 +9,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.menu = menu;
-const messages_1 = require("../../exports/messages");
-const caption_1 = require("../caption");
-function menu(pico, from, messageDetails, userName, fromUser, messages) {
+exports.formatFrom = formatFrom;
+function formatFrom(messageDetails) {
     return __awaiter(this, void 0, void 0, function* () {
-        const { enviarTexto, enviarImagem, enviarAudioGravacao } = (0, messages_1.setupMessagingServices)(pico, from, messageDetails);
-        try {
-            yield enviarAudioGravacao("assets/audios/menucmd.mp3");
-            yield enviarImagem("assets/imgs/menu.png", (0, caption_1.menuCaption)(fromUser));
-        }
-        catch (error) {
-            console.log("errror");
-        }
+        const message = messageDetails[0];
+        const fromt = message.key.remoteJid;
+        return {
+            fromt
+        };
     });
 }

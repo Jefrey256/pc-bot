@@ -51,10 +51,16 @@ const path_1 = __importDefault(require("path"));
 const exports_1 = require("./exports");
 const exports_2 = require("./exports");
 const commands_1 = require("./commands");
+const messages_1 = require("./exports/messages");
 function chico() {
     return __awaiter(this, void 0, void 0, function* () {
         var _a;
         const { state, saveCreds } = yield (0, baileys_1.useMultiFileAuthState)(path_1.default.resolve(__dirname, "..", "database", "qr-code"));
+        //data store
+        // const store = makeInMemoryStore({})
+        // store.readFromFile(path.resolve(__dirname, "..", "database", "store.json"))
+        // setInterval(() => store.writeToFile(path.resolve(__dirname, "..", "database", "store.json")), 10_000 )
+        //fim
         // Obtém a versão mais recente do Baileys
         const { version, isLatest } = yield (0, baileys_1.fetchLatestBaileysVersion)();
         const pico = (0, baileys_1.default)({
@@ -97,11 +103,12 @@ function chico() {
         //await pico.sendPresenceUpdate("available");
         // Manipular mensagens recebidas
         pico.ev.on("messages.upsert", (_a) => __awaiter(this, [_a], void 0, function* ({ messages }) {
+            const { isCommand } = (0, messages_1.extractMessage)(messages[0]);
             const message = messages[0];
+            const from = message.key.remoteJid;
             if (!message.key.remoteJid)
                 return;
-            if (!message.key.remoteJid || message.key.fromMe)
-                return; // Ignora mensagens enviadas pelo próprio bot
+            //if ( message.key.fromMe || !isCommand) return; // Ignora mensagens enviadas pelo próprio bot
             try {
                 yield (0, commands_1.handleMenuCommand)(pico, message.key.remoteJid, message);
             }
@@ -109,6 +116,7 @@ function chico() {
                 console.error("Erro ao processar a mensagem:", error);
             }
         }));
+        //.bind(pico.ev);
     });
 }
 // Chamar a função para iniciar o bot
