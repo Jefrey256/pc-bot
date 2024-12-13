@@ -1,6 +1,8 @@
 import { WASocket } from 'baileys';
+import { setupMessagingServices } from '../../exports/messages';
 
 export async function delMarkedMessage(pico: WASocket, from: string, quotedKey: { id: string; remoteJid: string; participant?: string }) {
+    const { enviarTexto } = setupMessagingServices(pico, from, quotedKey);
     if (quotedKey) {
         await pico.sendMessage(from, {
             delete: {
@@ -10,12 +12,14 @@ export async function delMarkedMessage(pico: WASocket, from: string, quotedKey: 
             },
         });
     } else {
-        console.error('Nenhuma mensagem marcada para apagar.');
+        await enviarTexto('Nenhuma mensagem marcada para apagar.');
+        //console.error('Nenhuma mensagem marcada para apagar.');
     }
 }
 
 export async function testeDel(pico: WASocket, from: string, quoted: any) {
-    console.log(`Dados recebidos para exclusão:`, quoted);
+    const { enviarTexto } = setupMessagingServices(pico, from, quoted);
+    //console.log(`Dados recebidos para exclusão:`, quoted);
 
     // Verificar se a mensagem contém contextInfo com a mensagem citada
     if (quoted?.message?.extendedTextMessage?.contextInfo?.quotedMessage) {
@@ -27,9 +31,10 @@ export async function testeDel(pico: WASocket, from: string, quoted: any) {
             participant: contextInfo.participant, // Para mensagens em grupos
         };
 
-        console.log(`Excluindo mensagem citada: ${quotedKey.id}`);
+        //console.log(`Excluindo mensagem citada: ${quotedKey.id}`);
         await delMarkedMessage(pico, from, quotedKey);
     } else {
-        console.error('Nenhuma mensagem citada foi encontrada para exclusão.');
+        await enviarTexto('Nenhuma mensagem citada foi encontrada para exclusão.');
+       // console.error('Nenhuma mensagem citada foi encontrada para exclusão.');
     }
 }

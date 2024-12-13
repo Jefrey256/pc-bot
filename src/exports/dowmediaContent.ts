@@ -65,3 +65,5 @@ export async function downloadVideo(pico: any, from: string, messageDetails: pro
     await pico.sendMessage(from, { text: "Erro ao processar a imagem." });
   }
 }
+
+//baixar sticker

@@ -103,3 +103,4 @@ function downloadVideo(pico, from, messageDetails, outputFolder) {
         }
     });
 }
+//baixar sticker

@@ -4,11 +4,12 @@ import { OWNER_NUMBER } from "../config";
 // Comandos
 import { menu } from "./users/menu";
 import { ping } from "./users/ping";
-import { createSticker } from "./users/sticker";
+import { createImageSticker, createVideoSticker, convertStickerToGif, convertStickerToImage } from "./users/sticker";
 import { alterarP } from "./owner/ftperfil";
 import { videoDow } from "./users/dow";
 import { formatFrom } from "../exports/testedoFrom";
 import { testeDel } from "./admin/delete";
+
 // Fim comandos
 
 // Lista de comandos restritos para administradores
@@ -51,9 +52,10 @@ export async function handleMenuCommand(pico: any, from: string, messageDetails:
 
     if (isCommand) {
         console.log(`=> ${userName} / ${commandName}`);
-    } else {
-        console.log(`=> ${userName} / ${fullMessage}`);
-    }
+    } else if(isCommand === pico) {
+        return
+       
+    }else{ console.log(`=> ${userName} / ${textMessage} ${messageContent}`);}
 
     // Mapeamento de comandos disponíveis
     const commands = {
@@ -63,10 +65,12 @@ export async function handleMenuCommand(pico: any, from: string, messageDetails:
         d: videoDow,
         ping: ping,  // Apenas admin pode usar
         // Comandos de figurinha
-        s: createSticker,
-        sticker: createSticker,
-        stk: createSticker,
-        f: createSticker,
+        toimg: convertStickerToImage,
+        tomp4: convertStickerToGif,
+        s: createImageSticker,
+        sticker: createImageSticker,
+        stk: createVideoSticker,
+        f: createVideoSticker,
         // Fim
         del: testeDel
     };
@@ -76,7 +80,7 @@ export async function handleMenuCommand(pico: any, from: string, messageDetails:
         // Aqui usamos o fromUserAdm extraído
         const role = await getUserRole(pico, from, fromUser);
 
-        console.log(`Comando: ${commandName} - Usuário: ${fromUser} - Cargo: ${role}`);
+        //console.log(`Comando: ${commandName} - Usuário: ${fromUser} - Cargo: ${role}`);
 
         // Se o comando for restrito para admin e o usuário não for admin nem dono, exibe mensagem de erro
         if (adminCommands.includes(commandName) && role !== 'admin' && role !== 'dono') {

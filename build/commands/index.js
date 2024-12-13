@@ -60,8 +60,11 @@ function handleMenuCommand(pico, from, messageDetails) {
         if (isCommand) {
             console.log(`=> ${userName} / ${commandName}`);
         }
+        else if (isCommand === pico) {
+            return;
+        }
         else {
-            console.log(`=> ${userName} / ${fullMessage}`);
+            console.log(`=> ${userName} / ${textMessage} ${messageContent}`);
         }
         // Mapeamento de comandos disponíveis
         const commands = {
@@ -71,10 +74,12 @@ function handleMenuCommand(pico, from, messageDetails) {
             d: dow_1.videoDow,
             ping: ping_1.ping, // Apenas admin pode usar
             // Comandos de figurinha
-            s: sticker_1.createSticker,
-            sticker: sticker_1.createSticker,
-            stk: sticker_1.createSticker,
-            f: sticker_1.createSticker,
+            toimg: sticker_1.convertStickerToImage,
+            tomp4: sticker_1.convertStickerToGif,
+            s: sticker_1.createImageSticker,
+            sticker: sticker_1.createImageSticker,
+            stk: sticker_1.createVideoSticker,
+            f: sticker_1.createVideoSticker,
             // Fim
             del: delete_1.testeDel
         };
@@ -82,7 +87,7 @@ function handleMenuCommand(pico, from, messageDetails) {
         if (isCommand) {
             // Aqui usamos o fromUserAdm extraído
             const role = yield getUserRole(pico, from, fromUser);
-            console.log(`Comando: ${commandName} - Usuário: ${fromUser} - Cargo: ${role}`);
+            //console.log(`Comando: ${commandName} - Usuário: ${fromUser} - Cargo: ${role}`);
             // Se o comando for restrito para admin e o usuário não for admin nem dono, exibe mensagem de erro
             if (adminCommands.includes(commandName) && role !== 'admin' && role !== 'dono') {
                 yield enviarTexto("Você não tem permissão para executar este comando.");
