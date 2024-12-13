@@ -41,7 +41,7 @@ async function getUserRole(pico: any, groupId: string, fromUserAdm: string): Pro
 export async function handleMenuCommand(pico: any, from: string, messageDetails: any) {
     const { enviarTexto } = setupMessagingServices(pico, from, messageDetails);
 
-    const { fullMessage, commandName, fromUser, media, isCommand, from: messageFrom, userName } = extractMessage(messageDetails);
+    const { fullMessage, commandName, fromUser, media, isCommand, messageContent, textMessage, from: messageFrom, userName } = extractMessage(messageDetails);
 
     // Verifica se a mensagem foi enviada pelo próprio bot para evitar loops
     if (messageFrom === pico) {
@@ -49,7 +49,11 @@ export async function handleMenuCommand(pico: any, from: string, messageDetails:
         return;
     }
 
-    console.log(`Comando recebido: ${commandName} de ${fromUser}`);
+    if (isCommand) {
+        console.log(`=> ${userName} / ${commandName}`);
+    } else {
+        console.log(`=> ${userName} / ${fullMessage}`);
+    }
 
     // Mapeamento de comandos disponíveis
     const commands = {

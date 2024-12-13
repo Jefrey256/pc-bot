@@ -29,7 +29,8 @@ export const extractMessage = (messageDetails: any) => {
   
     // Captura todas as possíveis fontes de texto (mensagem simples, legenda ou texto citado)
     const textMessage = messageDetails.message?.conversation || ""; // Mensagem simples
-    const extendedTextMessage = messageDetails.message?.extendedTextMessage?.text || ""; // Texto estendido
+    const extendedTextMessage = messageDetails.message?.extendedTextMessage?.text ||
+    messageDetails.message?.extendedTextMessage?.text || ""; // Texto estendido
     const imageTextMessage = messageDetails.message?.imageMessage?.caption || ""; // Legenda da imagem
     const videoTextMessage = messageDetails.message?.videoMessage?.caption || ""; // Legenda do vídeo
     const quotedMessage =
@@ -44,6 +45,7 @@ export const extractMessage = (messageDetails: any) => {
     
     // Extrai o nome do usuário ou identificador
     const fromUser = messageDetails.key?.participant?.split("@")[0] || messageDetails.key?.remoteJid?.split("@")[0];
+      const userName = messageDetails.pushName || fromUser;
     //
     //
     const fromUserAdm = messageDetails.key?.participant 
@@ -58,7 +60,7 @@ export const extractMessage = (messageDetails: any) => {
     const from = messageDetails.key?.remoteJid || "Remetente desconhecido";
     
     // Extrai o nome de exibição do usuário
-    const userName = messageDetails?.pushName || "Usuário Desconhecido";
+    //const userName = messageDetails?.pushName || "Usuário Desconhecido";
     const phoneNumber = messageDetails?.key?.participant?.replace(   
       /:[0-9][0-9]|:[0-9]/g,
       "");
@@ -77,7 +79,12 @@ export const extractMessage = (messageDetails: any) => {
                messageDetails.message?.videoMessage?.contextInfo?.quotedMessage ||
                messageDetails.message?.audioMessage?.contextInfo?.quotedMessage ||
                messageDetails.message?.documentMessage?.contextInfo?.quotedMessage;
+               
 
+    //
+    //
+    const messageContent = messageDetails.message?.extendedTextMessage?.text || 
+    messageDetails.message?.text
     //
   
     // Verificação de mídia (direta ou marcada)
@@ -98,6 +105,7 @@ export const extractMessage = (messageDetails: any) => {
       undefined;
   
     return {
+      messageContent,
       key,
       quoted,
       quotedKey,
@@ -110,6 +118,7 @@ export const extractMessage = (messageDetails: any) => {
       isCommand,
       commandName,
       args,
+      textMessage,
       userName,
       groupId,
       participant: messageDetails.key?.participant || messageDetails.key?.remoteJid,

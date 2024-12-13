@@ -51,13 +51,18 @@ function getUserRole(pico, groupId, fromUserAdm) {
 function handleMenuCommand(pico, from, messageDetails) {
     return __awaiter(this, void 0, void 0, function* () {
         const { enviarTexto } = (0, messages_1.setupMessagingServices)(pico, from, messageDetails);
-        const { fullMessage, commandName, fromUser, media, isCommand, from: messageFrom, userName } = (0, messages_1.extractMessage)(messageDetails);
+        const { fullMessage, commandName, fromUser, media, isCommand, messageContent, textMessage, from: messageFrom, userName } = (0, messages_1.extractMessage)(messageDetails);
         // Verifica se a mensagem foi enviada pelo próprio bot para evitar loops
         if (messageFrom === pico) {
             console.log("Mensagem do bot");
             return;
         }
-        console.log(`Comando recebido: ${commandName} de ${fromUser}`);
+        if (isCommand) {
+            console.log(`=> ${userName} / ${commandName}`);
+        }
+        else {
+            console.log(`=> ${userName} / ${fullMessage}`);
+        }
         // Mapeamento de comandos disponíveis
         const commands = {
             help: menu_1.menu,

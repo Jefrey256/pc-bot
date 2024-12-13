@@ -105,11 +105,21 @@ function chico() {
         //await pico.sendPresenceUpdate("available");
         // Manipular mensagens recebidas
         pico.ev.on("messages.upsert", (_a) => __awaiter(this, [_a], void 0, function* ({ messages }) {
+            var _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v;
             const { isCommand } = (0, messages_1.extractMessage)(messages[0]);
             const message = messages[0];
             const from = message.key.remoteJid;
-            // const quotedKey = message.message?.extendedTextMessage?.contextInfo?.quotedMessage
-            //console.log(`ele e o quotedKey: ${quotedKey}`);
+            const fromUser = ((_c = (_b = message.key) === null || _b === void 0 ? void 0 : _b.participant) === null || _c === void 0 ? void 0 : _c.split("@")[0]) || ((_e = (_d = message.key) === null || _d === void 0 ? void 0 : _d.remoteJid) === null || _e === void 0 ? void 0 : _e.split("@")[0]);
+            const userName = message.pushName || fromUser;
+            const quoted = ((_h = (_g = (_f = message.message) === null || _f === void 0 ? void 0 : _f.extendedTextMessage) === null || _g === void 0 ? void 0 : _g.contextInfo) === null || _h === void 0 ? void 0 : _h.quotedMessage) ||
+                ((_l = (_k = (_j = message.message) === null || _j === void 0 ? void 0 : _j.imageMessage) === null || _k === void 0 ? void 0 : _k.contextInfo) === null || _l === void 0 ? void 0 : _l.quotedMessage) ||
+                ((_p = (_o = (_m = message.message) === null || _m === void 0 ? void 0 : _m.videoMessage) === null || _o === void 0 ? void 0 : _o.contextInfo) === null || _p === void 0 ? void 0 : _p.quotedMessage) ||
+                ((_s = (_r = (_q = message.message) === null || _q === void 0 ? void 0 : _q.audioMessage) === null || _r === void 0 ? void 0 : _r.contextInfo) === null || _s === void 0 ? void 0 : _s.quotedMessage) ||
+                ((_v = (_u = (_t = message.message) === null || _t === void 0 ? void 0 : _t.documentMessage) === null || _u === void 0 ? void 0 : _u.contextInfo) === null || _v === void 0 ? void 0 : _v.quotedMessage);
+            const { fullMessage } = (0, messages_1.extractMessage)(messages[0]);
+            //console.log(`aki e o quoted: ${userName}`);
+            //console.log(`Mensagem recebida: ${fullMessage}`);
+            //console.log(`ele e o from: ${from}`);
             if (!message.key.remoteJid)
                 return;
             //if ( message.key.fromMe || !isCommand) return; // Ignora mensagens enviadas pelo próprio bot

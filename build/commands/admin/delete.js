@@ -11,55 +11,39 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.delMarkedMessage = delMarkedMessage;
 exports.testeDel = testeDel;
-function delMarkedMessage(pico, messageDetails) {
+function delMarkedMessage(pico, from, quotedKey) {
     return __awaiter(this, void 0, void 0, function* () {
-        var _a, _b;
-        try {
-            // Verifica se a mensagem marcada está presente
-            const contextInfo = (_b = (_a = messageDetails.message) === null || _a === void 0 ? void 0 : _a.extendedTextMessage) === null || _b === void 0 ? void 0 : _b.contextInfo;
-            const quotedMessage = contextInfo === null || contextInfo === void 0 ? void 0 : contextInfo.quotedMessage;
-            const quotedKey = contextInfo === null || contextInfo === void 0 ? void 0 : contextInfo.stanzaId;
-            const remoteJid = messageDetails.key.remoteJid;
-            const participant = contextInfo === null || contextInfo === void 0 ? void 0 : contextInfo.participant;
-            console.log(quotedKey, remoteJid, participant);
-            if (!quotedMessage || !quotedKey) {
-                console.error('Nenhuma mensagem marcada para apagar.');
-                yield pico.sendMessage(remoteJid, {
-                    text: '⚠️ Por favor, marque a mensagem que deseja deletar.',
-                });
-                return;
-            }
-            console.log(`ID da mensagem a ser deletada: ${quotedKey}`);
-            // Deleta a mensagem marcada
-            yield pico.sendMessage(remoteJid, {
+        if (quotedKey) {
+            yield pico.sendMessage(from, {
                 delete: {
-                    remoteJid: remoteJid,
-                    id: quotedKey,
-                    participant: participant || undefined, // Necessário em grupos
+                    remoteJid: quotedKey.remoteJid,
+                    id: quotedKey.id,
+                    participant: quotedKey.participant || undefined, // Necessário para grupos
                 },
             });
-            console.log('Mensagem marcada deletada com sucesso.');
         }
-        catch (error) {
-            console.error('Erro ao deletar a mensagem marcada:', error);
-            yield pico.sendMessage(messageDetails.key.remoteJid, {
-                text: '❌ Ocorreu um erro ao tentar deletar a mensagem marcada.',
-            });
+        else {
+            console.error('Nenhuma mensagem marcada para apagar.');
         }
     });
 }
-function testeDel(pico, messageDetails, from, quoted) {
+function testeDel(pico, from, quoted) {
     return __awaiter(this, void 0, void 0, function* () {
-        // Log para depuração
+        var _a, _b, _c;
         console.log(`Dados recebidos para exclusão:`, quoted);
-        if (quoted && quoted.key) {
-            // Passar apenas a chave para delMarkedMessage
-            yield delMarkedMessage(pico, messageDetails);
-            console.log(`aqui o key: ${quoted}`);
-            console.log('Comando del executado com sucesso.');
+        // Verificar se a mensagem contém contextInfo com a mensagem citada
+        if ((_c = (_b = (_a = quoted === null || quoted === void 0 ? void 0 : quoted.message) === null || _a === void 0 ? void 0 : _a.extendedTextMessage) === null || _b === void 0 ? void 0 : _b.contextInfo) === null || _c === void 0 ? void 0 : _c.quotedMessage) {
+            const contextInfo = quoted.message.extendedTextMessage.contextInfo;
+            const quotedKey = {
+                id: contextInfo.stanzaId, // ID da mensagem marcada
+                remoteJid: contextInfo.participant || from, // JID do remetente da mensagem marcada
+                participant: contextInfo.participant, // Para mensagens em grupos
+            };
+            console.log(`Excluindo mensagem citada: ${quotedKey.id}`);
+            yield delMarkedMessage(pico, from, quotedKey);
         }
         else {
-            console.error('Nenhuma mensagem foi marcada para ser apagada.');
+            console.error('Nenhuma mensagem citada foi encontrada para exclusão.');
         }
     });
 }

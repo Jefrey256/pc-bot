@@ -75,6 +75,8 @@ export async function chico(): Promise<void> {
       const {isCommand} = extractMessage(messages[0]);
       const message = messages[0];
       const from = message.key.remoteJid;
+      const fromUser = message.key?.participant?.split("@")[0] || message.key?.remoteJid?.split("@")[0];
+      const userName = message.pushName || fromUser;
       const quoted = message.message?.extendedTextMessage?.contextInfo?.quotedMessage || 
                message.message?.imageMessage?.contextInfo?.quotedMessage ||
                message.message?.videoMessage?.contextInfo?.quotedMessage ||
@@ -83,7 +85,7 @@ export async function chico(): Promise<void> {
 
       const {fullMessage} = extractMessage(messages[0]);
 
-      console.log(`aki e o quoted: ${quoted}`);
+      //console.log(`aki e o quoted: ${userName}`);
 
       //console.log(`Mensagem recebida: ${fullMessage}`);
       
