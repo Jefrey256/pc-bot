@@ -26,6 +26,8 @@ export async function chico(): Promise<void> {
         auth: state,
         browser: ["Ubuntu", "Chrome", "20.0.04"],
         markOnlineOnConnect: true,
+        browser: Browsers.macOS('Desktop'),
+        syncFullHistory: true
     });
 
     // Verifica se o dispositivo está registrado, caso contrário, inicia o processo de pareamento
@@ -71,9 +73,9 @@ export async function chico(): Promise<void> {
         const {isCommand} = extractMessage(messages[0]);
         const message = messages[0];
         const from = message.key.remoteJid;
-        
+        console.log(from)
         if (!message.key.remoteJid) return;
-        //if ( message.key.fromMe || !isCommand) return; // Ignora mensagens enviadas pelo próprio bot
+      //if ( message.key.fromMe || !isCommand) return; // Ignora mensagens enviadas pelo próprio bot
 
 
         try {
