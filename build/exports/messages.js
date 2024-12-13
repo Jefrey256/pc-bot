@@ -17,7 +17,7 @@ exports.setupMessagingServices = setupMessagingServices;
 const config_1 = require("../config");
 const fs_1 = __importDefault(require("fs"));
 const extractMessage = (messageDetails) => {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24, _25, _26, _27;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24, _25, _26, _27, _28, _29, _30;
     // Verificação de que messageDetails está definido e possui uma estrutura válida
     if (!messageDetails || !messageDetails.message) {
         console.error("Detalhes da mensagem não encontrados ou estão mal formatados");
@@ -66,20 +66,22 @@ const extractMessage = (messageDetails) => {
     const commandName = isCommand ? fullMessage.slice(config_1.PREFIX.length).split(" ")[0] : "";
     const args = isCommand ? fullMessage.slice(config_1.PREFIX.length).split(" ").slice(1) : [];
     const key = messageDetails.key || null;
+    const quotedKey = ((_3 = (_2 = (_1 = messageDetails === null || messageDetails === void 0 ? void 0 : messageDetails.message) === null || _1 === void 0 ? void 0 : _1.extendedTextMessage) === null || _2 === void 0 ? void 0 : _2.contextInfo) === null || _3 === void 0 ? void 0 : _3.quotedMessage) || null;
     // Verificação de mídia (direta ou marcada)
-    const media = ((_1 = messageDetails.message) === null || _1 === void 0 ? void 0 : _1.imageMessage) ||
-        ((_2 = messageDetails.message) === null || _2 === void 0 ? void 0 : _2.videoMessage) ||
-        ((_3 = messageDetails.message) === null || _3 === void 0 ? void 0 : _3.audioMessage) ||
-        ((_4 = messageDetails.message) === null || _4 === void 0 ? void 0 : _4.stickerMessage) ||
-        ((_5 = messageDetails.message) === null || _5 === void 0 ? void 0 : _5.documentMessage) ||
-        ((_9 = (_8 = (_7 = (_6 = messageDetails.message) === null || _6 === void 0 ? void 0 : _6.extendedTextMessage) === null || _7 === void 0 ? void 0 : _7.contextInfo) === null || _8 === void 0 ? void 0 : _8.quotedMessage) === null || _9 === void 0 ? void 0 : _9.imageMessage) ||
-        ((_13 = (_12 = (_11 = (_10 = messageDetails.message) === null || _10 === void 0 ? void 0 : _10.extendedTextMessage) === null || _11 === void 0 ? void 0 : _11.contextInfo) === null || _12 === void 0 ? void 0 : _12.quotedMessage) === null || _13 === void 0 ? void 0 : _13.videoMessage) ||
-        ((_17 = (_16 = (_15 = (_14 = messageDetails.message) === null || _14 === void 0 ? void 0 : _14.extendedTextMessage) === null || _15 === void 0 ? void 0 : _15.contextInfo) === null || _16 === void 0 ? void 0 : _16.quotedMessage) === null || _17 === void 0 ? void 0 : _17.audioMessage) ||
-        ((_21 = (_20 = (_19 = (_18 = messageDetails.message) === null || _18 === void 0 ? void 0 : _18.extendedTextMessage) === null || _19 === void 0 ? void 0 : _19.contextInfo) === null || _20 === void 0 ? void 0 : _20.quotedMessage) === null || _21 === void 0 ? void 0 : _21.stickerMessage) ||
-        ((_25 = (_24 = (_23 = (_22 = messageDetails.message) === null || _22 === void 0 ? void 0 : _22.extendedTextMessage) === null || _23 === void 0 ? void 0 : _23.contextInfo) === null || _24 === void 0 ? void 0 : _24.quotedMessage) === null || _25 === void 0 ? void 0 : _25.documentMessage) ||
+    const media = ((_4 = messageDetails.message) === null || _4 === void 0 ? void 0 : _4.imageMessage) ||
+        ((_5 = messageDetails.message) === null || _5 === void 0 ? void 0 : _5.videoMessage) ||
+        ((_6 = messageDetails.message) === null || _6 === void 0 ? void 0 : _6.audioMessage) ||
+        ((_7 = messageDetails.message) === null || _7 === void 0 ? void 0 : _7.stickerMessage) ||
+        ((_8 = messageDetails.message) === null || _8 === void 0 ? void 0 : _8.documentMessage) ||
+        ((_12 = (_11 = (_10 = (_9 = messageDetails.message) === null || _9 === void 0 ? void 0 : _9.extendedTextMessage) === null || _10 === void 0 ? void 0 : _10.contextInfo) === null || _11 === void 0 ? void 0 : _11.quotedMessage) === null || _12 === void 0 ? void 0 : _12.imageMessage) ||
+        ((_16 = (_15 = (_14 = (_13 = messageDetails.message) === null || _13 === void 0 ? void 0 : _13.extendedTextMessage) === null || _14 === void 0 ? void 0 : _14.contextInfo) === null || _15 === void 0 ? void 0 : _15.quotedMessage) === null || _16 === void 0 ? void 0 : _16.videoMessage) ||
+        ((_20 = (_19 = (_18 = (_17 = messageDetails.message) === null || _17 === void 0 ? void 0 : _17.extendedTextMessage) === null || _18 === void 0 ? void 0 : _18.contextInfo) === null || _19 === void 0 ? void 0 : _19.quotedMessage) === null || _20 === void 0 ? void 0 : _20.audioMessage) ||
+        ((_24 = (_23 = (_22 = (_21 = messageDetails.message) === null || _21 === void 0 ? void 0 : _21.extendedTextMessage) === null || _22 === void 0 ? void 0 : _22.contextInfo) === null || _23 === void 0 ? void 0 : _23.quotedMessage) === null || _24 === void 0 ? void 0 : _24.stickerMessage) ||
+        ((_28 = (_27 = (_26 = (_25 = messageDetails.message) === null || _25 === void 0 ? void 0 : _25.extendedTextMessage) === null || _26 === void 0 ? void 0 : _26.contextInfo) === null || _27 === void 0 ? void 0 : _27.quotedMessage) === null || _28 === void 0 ? void 0 : _28.documentMessage) ||
         undefined;
     return {
         key,
+        quotedKey,
         media,
         mentions,
         fullMessage,
@@ -91,7 +93,7 @@ const extractMessage = (messageDetails) => {
         args,
         userName,
         groupId,
-        participant: ((_26 = messageDetails.key) === null || _26 === void 0 ? void 0 : _26.participant) || ((_27 = messageDetails.key) === null || _27 === void 0 ? void 0 : _27.remoteJid),
+        participant: ((_29 = messageDetails.key) === null || _29 === void 0 ? void 0 : _29.participant) || ((_30 = messageDetails.key) === null || _30 === void 0 ? void 0 : _30.remoteJid),
     };
     console.log(`ola: ${phoneNumber}`);
 };

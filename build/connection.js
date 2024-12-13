@@ -68,8 +68,10 @@ function chico() {
             version,
             logger: exports_2.logger, // Nível de log ajustado para produção
             auth: state,
-            browser: ["Ubuntu", "Chrome", "20.0.04"],
+            //browser: ["Ubuntu", "Chrome", "20.0.04"],
             markOnlineOnConnect: true,
+            browser: baileys_1.Browsers.macOS("Desktop"),
+            syncFullHistory: true,
         });
         // Verifica se o dispositivo está registrado, caso contrário, inicia o processo de pareamento
         if (!((_a = state.creds) === null || _a === void 0 ? void 0 : _a.registered)) {
@@ -106,6 +108,8 @@ function chico() {
             const { isCommand } = (0, messages_1.extractMessage)(messages[0]);
             const message = messages[0];
             const from = message.key.remoteJid;
+            // const quotedKey = message.message?.extendedTextMessage?.contextInfo?.quotedMessage
+            //console.log(`ele e o quotedKey: ${quotedKey}`);
             if (!message.key.remoteJid)
                 return;
             //if ( message.key.fromMe || !isCommand) return; // Ignora mensagens enviadas pelo próprio bot
@@ -117,6 +121,7 @@ function chico() {
             }
         }));
         //.bind(pico.ev);
+        //await pico.sendPresenceUpdate("available");
     });
 }
 // Chamar a função para iniciar o bot

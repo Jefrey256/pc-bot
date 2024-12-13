@@ -70,6 +70,7 @@ export const extractMessage = (messageDetails: any) => {
     const commandName = isCommand ? fullMessage.slice(PREFIX.length).split(" ")[0] : "";
     const args = isCommand ? fullMessage.slice(PREFIX.length).split(" ").slice(1) : [];
     const key = messageDetails.key || null;
+    const quotedKey = messageDetails?.message?.extendedTextMessage?.contextInfo?.quotedMessage || null;
   
     // Verificação de mídia (direta ou marcada)
     const media =
@@ -87,6 +88,7 @@ export const extractMessage = (messageDetails: any) => {
   
     return {
       key,
+      quotedKey,
       media,
       mentions,
       fullMessage,

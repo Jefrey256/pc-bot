@@ -1,5 +1,5 @@
 import { extractMessage, setupMessagingServices } from "../exports/messages";
-import { OWNER_NUMBER } from "../config";  // Importe a constante OWNER_NUMBER
+import { OWNER_NUMBER } from "../config";  
 
 // Comandos
 import { menu } from "./users/menu";
@@ -8,10 +8,11 @@ import { createSticker } from "./users/sticker";
 import { alterarP } from "./owner/ftperfil";
 import { videoDow } from "./users/dow";
 import { formatFrom } from "../exports/testedoFrom";
+import { testeDel } from "./admin/delete";
 // Fim comandos
 
 // Lista de comandos restritos para administradores
-const adminCommands = ['ft', 'ping'];  // Comandos apenas para 
+const adminCommands = ['ft',"del", 'ping'];  // Comandos apenas para 
 
 //
 
@@ -63,6 +64,7 @@ export async function handleMenuCommand(pico: any, from: string, messageDetails:
         stk: createSticker,
         f: createSticker,
         // Fim
+        del: testeDel
     };
 
     // Verifica se é um comando

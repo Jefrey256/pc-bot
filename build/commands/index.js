@@ -11,16 +11,17 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.handleMenuCommand = handleMenuCommand;
 const messages_1 = require("../exports/messages");
-const config_1 = require("../config"); // Importe a constante OWNER_NUMBER
+const config_1 = require("../config");
 // Comandos
 const menu_1 = require("./users/menu");
 const ping_1 = require("./users/ping");
 const sticker_1 = require("./users/sticker");
 const ftperfil_1 = require("./owner/ftperfil");
 const dow_1 = require("./users/dow");
+const delete_1 = require("./admin/delete");
 // Fim comandos
 // Lista de comandos restritos para administradores
-const adminCommands = ['ft', 'ping']; // Comandos apenas para 
+const adminCommands = ['ft', "del", 'ping']; // Comandos apenas para 
 //
 //
 function getUserRole(pico, groupId, fromUserAdm) {
@@ -70,6 +71,7 @@ function handleMenuCommand(pico, from, messageDetails) {
             stk: sticker_1.createSticker,
             f: sticker_1.createSticker,
             // Fim
+            del: delete_1.testeDel
         };
         // Verifica se é um comando
         if (isCommand) {
