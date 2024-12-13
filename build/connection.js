@@ -68,9 +68,9 @@ function chico() {
             version,
             logger: exports_2.logger, // Nível de log ajustado para produção
             auth: state,
-            //browser: ["Ubuntu", "Chrome", "20.0.04"],
+            browser: ["Ubuntu", "Chrome", "20.0.04"],
             markOnlineOnConnect: true,
-            browser: baileys_1.Browsers.macOS("Desktop"),
+            //browser: Browsers.macOS("Desktop"),
             syncFullHistory: true,
         });
         // Verifica se o dispositivo está registrado, caso contrário, inicia o processo de pareamento

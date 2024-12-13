@@ -1,8 +1,6 @@
 import { WASocket } from 'baileys';
 
 export async function delMarkedMessage(pico: WASocket, from: string, quotedKey: { id: string; remoteJid: string; participant?: string }) {
-    // Deletar a mensagem marcada
-    console.log(`ID da mensagem a ser deletada: ${quotedKey.id}`);
     if (quotedKey) {
         await pico.sendMessage(from, {
             delete: {
@@ -17,15 +15,21 @@ export async function delMarkedMessage(pico: WASocket, from: string, quotedKey: 
 }
 
 export async function testeDel(pico: WASocket, from: string, quoted: any) {
-    // Log para depuração
     console.log(`Dados recebidos para exclusão:`, quoted);
 
-    if (quoted && quoted.key) {
-        // Passar apenas a chave para delMarkedMessage
-        await delMarkedMessage(pico, from, quoted.key);
-        console.log(`aqui o key: ${quoted}`);
-        console.log('Comando del executado com sucesso.');
+    // Verificar se a mensagem contém contextInfo com a mensagem citada
+    if (quoted?.message?.extendedTextMessage?.contextInfo?.quotedMessage) {
+        const contextInfo = quoted.message.extendedTextMessage.contextInfo;
+
+        const quotedKey = {
+            id: contextInfo.stanzaId, // ID da mensagem marcada
+            remoteJid: contextInfo.participant || from, // JID do remetente da mensagem marcada
+            participant: contextInfo.participant, // Para mensagens em grupos
+        };
+
+        console.log(`Excluindo mensagem citada: ${quotedKey.id}`);
+        await delMarkedMessage(pico, from, quotedKey);
     } else {
-        console.error('Nenhuma mensagem foi marcada para ser apagada.');
+        console.error('Nenhuma mensagem citada foi encontrada para exclusão.');
     }
 }

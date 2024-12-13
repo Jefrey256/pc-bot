@@ -1,4 +1,5 @@
 import makeWASocket, { useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, makeInMemoryStore, Browsers } from "baileys";
+
 import P from "pino";
 import path from "path";
 import { question } from "./exports";
@@ -24,9 +25,9 @@ export async function chico(): Promise<void> {
         version,
         logger, // Nível de log ajustado para produção
         auth: state,
-        //browser: ["Ubuntu", "Chrome", "20.0.04"],
+        browser: ["Ubuntu", "Chrome", "20.0.04"],
         markOnlineOnConnect: true,
-        browser: Browsers.macOS("Desktop"),
+        //browser: Browsers.macOS("Desktop"),
         syncFullHistory: true,
         
     });
@@ -71,13 +72,26 @@ export async function chico(): Promise<void> {
 
     // Manipular mensagens recebidas
     pico.ev.on("messages.upsert",  async ({ messages }) => {
-        const {isCommand} = extractMessage(messages[0]);
-        const message = messages[0];
-        const from = message.key.remoteJid;
-       // const quotedKey = message.message?.extendedTextMessage?.contextInfo?.quotedMessage
-       
+      const {isCommand} = extractMessage(messages[0]);
+      const message = messages[0];
+      const from = message.key.remoteJid;
+      const quoted = message.message?.extendedTextMessage?.contextInfo?.quotedMessage || 
+               message.message?.imageMessage?.contextInfo?.quotedMessage ||
+               message.message?.videoMessage?.contextInfo?.quotedMessage ||
+               message.message?.audioMessage?.contextInfo?.quotedMessage ||
+               message.message?.documentMessage?.contextInfo?.quotedMessage;
 
-        //console.log(`ele e o quotedKey: ${quotedKey}`);
+      const {fullMessage} = extractMessage(messages[0]);
+
+      console.log(`aki e o quoted: ${quoted}`);
+
+      //console.log(`Mensagem recebida: ${fullMessage}`);
+      
+     
+
+      //console.log(`ele e o from: ${from}`);
+      
+      
         if (!message.key.remoteJid) return;
       //if ( message.key.fromMe || !isCommand) return; // Ignora mensagens enviadas pelo próprio bot
 

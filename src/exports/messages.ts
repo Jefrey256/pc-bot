@@ -71,6 +71,14 @@ export const extractMessage = (messageDetails: any) => {
     const args = isCommand ? fullMessage.slice(PREFIX.length).split(" ").slice(1) : [];
     const key = messageDetails.key || null;
     const quotedKey = messageDetails?.message?.extendedTextMessage?.contextInfo?.quotedMessage || null;
+    //
+    const quoted = messageDetails.message?.extendedTextMessage?.contextInfo?.quotedMessage || 
+               messageDetails.message?.imageMessage?.contextInfo?.quotedMessage ||
+               messageDetails.message?.videoMessage?.contextInfo?.quotedMessage ||
+               messageDetails.message?.audioMessage?.contextInfo?.quotedMessage ||
+               messageDetails.message?.documentMessage?.contextInfo?.quotedMessage;
+
+    //
   
     // Verificação de mídia (direta ou marcada)
     const media =
@@ -84,10 +92,14 @@ export const extractMessage = (messageDetails: any) => {
       messageDetails.message?.extendedTextMessage?.contextInfo?.quotedMessage?.audioMessage ||
       messageDetails.message?.extendedTextMessage?.contextInfo?.quotedMessage?.stickerMessage ||
       messageDetails.message?.extendedTextMessage?.contextInfo?.quotedMessage?.documentMessage ||
+
+      messageDetails.message?.key?.contextInfo?.quotedMessage||
+
       undefined;
   
     return {
       key,
+      quoted,
       quotedKey,
       media,
       mentions,
