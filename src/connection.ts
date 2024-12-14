@@ -26,7 +26,7 @@ import { welkon } from "./exports";
 import { antifake } from "./exports";
 import { ppid } from "process";
 // import { ppimg } from "./exports";
-// fim
+// fim //
 
 export async function chico(): Promise<void> {
     const { state, saveCreds } = await useMultiFileAuthState(

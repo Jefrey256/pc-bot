@@ -2,7 +2,7 @@ import { getMediaContent } from './dowMedia';  // Importe a função getMediaCon
 import * as fs from 'fs';
 import * as path from 'path';
 import { proto } from 'baileys'; // Importa os tipos do baileys
-
+//
 /**
  * Função para baixar e salvar uma imagem (ou outro tipo de mídia).
  * @param pico Instância do cliente Baileys

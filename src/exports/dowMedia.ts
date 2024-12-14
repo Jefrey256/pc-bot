@@ -2,6 +2,8 @@ import { proto, downloadContentFromMessage } from 'baileys';
 //import { Buffer } from 'buffer';
 import { extractMessage } from './messages';
 import * as internal from 'stream'; // Importação para `internal.Transform`
+//
+
 
 /**
  * Faz o download de conteúdo de uma mensagem de mídia.
