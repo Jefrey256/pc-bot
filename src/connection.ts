@@ -1,13 +1,19 @@
-import makeWASocket, { useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, makeInMemoryStore, Browsers, WASocket } from "baileys";
+import makeWASocket, { useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, makeInMemoryStore, Browsers, WASocket, delay } from "baileys";
 import d from "../database/grupos/adeuscara.json"
 
 import P from "pino";
-import { adeuscara } from "./exports";
+import { adeuscara, antifake, bye_group, getBuffer, getRandom, time, welcome_group, welkom } from "./exports";
 import path from "path";
 import { question } from "./exports";
 import { logger } from "./exports";
 import { handleMenuCommand } from "./commands";
 import { extractMessage } from "./exports/messages";
+import axios from "axios";
+import cheerio from "cheerio";
+import { PREFIX } from "./config";
+import fs from "fs";
+import encodeUrl from "encodeurl";
+import {fundo1} from "../database/neccessarios/necessarios.json"
 
 export async function chico(): Promise<void> {
     const { state, saveCreds } = await useMultiFileAuthState(
@@ -83,30 +89,93 @@ interface AdeuscaraItem {
 }
 
  async function setupParticipantHandler(pico: WASocket, adeuscara: AdeuscaraItem[]) {
-    pico.ev.on('group-participants.update', async (ale) => {
+    pico.ev.on('group-participants.update', async (pi) => {
         try {
-            const groupMetadata = await pico.groupMetadata(ale.id);
-            const dbackid = adeuscara.map(item => item.groupId);
-
-            console.log(ale);
-
-            if (dbackid.includes(ale.id)) {
-                if (ale.action === 'add') {
-                    const num = ale.participants[0];
-                    const ind = dbackid.indexOf(ale.id);
-
-                    if (adeuscara[ind].actived && adeuscara[ind].number.includes(num.split('@')[0])) {
-                        await pico.sendMessage(groupMetadata.id, { text: '*Olha quem deu as cara por aqui, sente o poder do ban cabaço*' });
-                        await pico.groupParticipantsUpdate(groupMetadata.id, [num], 'remove');
-                        return;
-                    }
+            const groupMetadata = await pico.groupMetadata(pi.id);
+            console.log(pi);
+    
+            // Lista de IDs para funcionalidades
+            const dbackid = [];
+            const antifake = [];
+            const welkom = [];
+    
+            if (dbackid.includes(pi.id) && pi.action === 'add') {
+                const num = pi.participants[0];
+                const ind = dbackid.indexOf(pi.id);
+    
+                if (adeuscara[ind]?.actived && adeuscara[ind]?.number.includes(num.split('@')[0])) {
+                    await pico.sendMessage(groupMetadata.id, { text: '*Olha quem deu as cara por aqui, sente o poder do ban cabaço*' });
+                    await pico.groupParticipantsUpdate(groupMetadata.id, [num], 'remove');
+                    return;
                 }
             }
-        } catch (error) {
-            console.error('Erro no evento group-participants.update:', error);
+    
+            if (antifake.includes(pi.id) && pi.action === 'add') {
+                const num = pi.participants[0];
+                const participantNumber = num.split('@')[0];
+    
+                if (!participantNumber.startsWith('55') || participantNumber.startsWith('55800')) {
+                    await pico.sendMessage(groupMetadata.id, { text: '⛹️⛹️Bye Bye Estrangeiro...👋🏌️' });
+                    await delay(1000);
+                    await pico.groupParticipantsUpdate(groupMetadata.id, [num], 'remove');
+                    return;
+                }
+            }
+    
+            if (welkom.includes(pi.id)) {
+                try {
+                    const groupDesc = groupMetadata.desc || 'Sem descrição';
+    
+                    const ppimg = await pico.profilePictureUrl(pi.participants[0]).catch(() => 'https://telegra.ph/file/b5427ea4b8701bc47e751.jpg');
+                    const ppgp = await pico.profilePictureUrl(pi.id).catch(() => 'https://image.flaticon.com/icons/png/512/124/124034.png');
+    
+                    const shortpc = await axios.get(`https://tinyurl.com/api-create.php?url=${ppimg}`).then(res => res.data).catch(() => ppimg);
+                    const shortgc = await axios.get(`https://tinyurl.com/api-create.php?url=${ppgp}`).then(res => res.data).catch(() => ppgp);
+    
+                    if (pi.action === 'add') {
+                        const teks = `Bem-vindo(a) @${pi.participants[0].split('@')[0]} ao grupo ${groupMetadata.subject}!\nDescrição: ${groupDesc}`;
+    
+                        const imgbuff = await getBuffer(`https://aleatoryapi.herokuapp.com/welcome?titulo=BEM%20VINDO(A)&nome=${pi.participants[0].split('@')[0]}&perfil=${shortpc}&fundo=https://example.com/background.jpg&grupo=${encodeURIComponent(groupMetadata.subject)}`);
+    
+                        await pico.sendMessage(groupMetadata.id, {
+                            image: imgbuff,
+                            mentions: [pi.participants[0]],
+                            caption: teks
+                        });
+                    } else if (pi.action === 'remove') {
+                        const teks = `Adeus, @${pi.participants[0].split('@')[0]}! Saiu do grupo ${groupMetadata.subject}.`; 
+    
+                        const imgbuff = await getBuffer(`https://aleatoryapi.herokuapp.com/welcome?titulo=Adeus&nome=${pi.participants[0].split('@')[0]}&perfil=${shortpc}&fundo=https://example.com/background.jpg&grupo=${encodeURIComponent(groupMetadata.subject)}`);
+    
+                        await pico.sendMessage(groupMetadata.id, {
+                            image: imgbuff,
+                            mentions: [pi.participants[0]],
+                            caption: teks
+                        });
+                    }
+                } catch (err) {
+                    console.error('Erro ao processar mensagem de boas-vindas ou despedida:', err);
+                }
+            }
+        } catch (err) {
+            console.error('Erro ao processar evento de participantes do grupo:', err);
         }
     });
-}
+    
+    function delay(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    
+    async function getBuffer(url) {
+        try {
+            const res = await axios.get(url, { responseType: 'arraybuffer' });
+            return Buffer.from(res.data, 'binary');
+        } catch (err) {
+            console.error('Erro ao obter buffer da imagem:', err);
+            throw err;
+        }
+    }
+    
 
 
 
@@ -138,42 +207,58 @@ interface AdeuscaraItem {
    //await pico.sendPresenceUpdate("available");
 
     // Manipular mensagens recebidas
-    pico.ev.on("messages.upsert",  async ({ messages }) => {
-      const {isCommand} = extractMessage(messages[0]);
-      const message = messages[0];
-      const from = message.key.remoteJid;
-      const fromUser = message.key?.participant?.split("@")[0] || message.key?.remoteJid?.split("@")[0];
-      const userName = message.pushName || fromUser;
-      const quoted = message.message?.extendedTextMessage?.contextInfo?.quotedMessage || 
-               message.message?.imageMessage?.contextInfo?.quotedMessage ||
-               message.message?.videoMessage?.contextInfo?.quotedMessage ||
-               message.message?.audioMessage?.contextInfo?.quotedMessage ||
-               message.message?.documentMessage?.contextInfo?.quotedMessage;
-
-      const {fullMessage} = extractMessage(messages[0]);
-
-      //console.log(`aki e o quoted: ${userName}`);
-
-      //console.log(`Mensagem recebida: ${fullMessage}`);
-      
-     
-
-      //console.log(`ele e o from: ${from}`);
-      
-      
-        if (!message.key.remoteJid) return;
-      //if ( message.key.fromMe || !isCommand) return; // Ignora mensagens enviadas pelo próprio bot
-
-
+    pico.ev.on("messages.upsert", async (pi) => {
         try {
-            await handleMenuCommand(pico, message.key.remoteJid, message);
+            const message = pi.messages[0];
+            if (!message || !message.key.remoteJid) return; // Ignora mensagens inválidas ou sem remetente
+    
+            const from = message.key.remoteJid; // Número ou grupo de origem da mensagem
+            const fromUser =
+                message.key?.participant?.split("@")[0] || message.key?.remoteJid?.split("@")[0];
+            const userName = message.pushName || fromUser; // Nome do usuário ou número
+            const messageType = message?.message ? Object.keys(message.message)[0] : null;
+    
+            const quoted =
+                message.message?.extendedTextMessage?.contextInfo?.quotedMessage ||
+                message.message?.imageMessage?.contextInfo?.quotedMessage ||
+                message.message?.videoMessage?.contextInfo?.quotedMessage ||
+                message.message?.audioMessage?.contextInfo?.quotedMessage ||
+                message.message?.documentMessage?.contextInfo?.quotedMessage;
+    
+            // Extraindo a mensagem completa e verificando se é um comando
+            const { fullMessage, isCommand } = extractMessage(message);
+    
+            console.log(`Mensagem recebida de ${userName}: ${fullMessage}`);
+            console.log(`Tipo de mensagem: ${messageType}`);
+            if (quoted) console.log("Mensagem citada:", quoted);
+    
+            // Ignora mensagens do próprio bot ou que não sejam comandos
+            if (message.key.fromMe || !isCommand) return;
+    
+            // Tratamento de comandos no menu
+            await handleMenuCommand(pico, from, message);
+    
+            // Resposta automática a "oi" ou "ola"
+            if (messageType === "conversation") {
+                const messageText = message.message.conversation;
+    
+                if (
+                    messageText.toLowerCase().includes("oi") ||
+                    messageText.toLowerCase().includes("olá")
+                ) {
+                    await pico.sendMessage(from, {
+                        text: `Olá ${userName}! Estou aqui para te ajudar a usar o bot!`,
+                    });
+                }
+            }
         } catch (error) {
             console.error("Erro ao processar a mensagem:", error);
         }
     });
     
+    
     //.bind(pico.ev);
     //await pico.sendPresenceUpdate("available");
 }
 
-// Chamar a função para iniciar o bot
+}// Chamar a função par
