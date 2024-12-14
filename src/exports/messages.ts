@@ -25,7 +25,6 @@ export const extractMessage = (messageDetails: any) => {
         participant: null,
       };
     }
-    //
 
   
     // Captura todas as possíveis fontes de texto (mensagem simples, legenda ou texto citado)
