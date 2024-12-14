@@ -1,6 +1,7 @@
-import makeWASocket, { useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, makeInMemoryStore, Browsers } from "baileys";
+import makeWASocket, { useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, makeInMemoryStore, Browsers, WASocket } from "baileys";
 
 import P from "pino";
+import { adeuscara } from "./exports";
 import path from "path";
 import { question } from "./exports";
 import { logger } from "./exports";
@@ -11,7 +12,17 @@ export async function chico(): Promise<void> {
     const { state, saveCreds } = await useMultiFileAuthState(
         path.resolve(__dirname, "..", "database", "qr-code")
     );
+    //komi
+    const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
+    + 'VERSION:3.0\n' 
+    + 'FN:Nero\n' // Nome completo
+    + 'ORG:Komi-bot;\n' // A organização do contato
+    + 'TEL;type=CELL;type=VOICE;waid=${numerodono}:${numerodono}\n' // WhatsApp ID + Número de telefone
+    + 'END:VCARD' // Fim do ctt
+//
     //data store
+    const store = makeInMemoryStore({})
+    store.readFromFile('./store.json')
     // const store = makeInMemoryStore({})
     // store.readFromFile(path.resolve(__dirname, "..", "database", "store.json"))
     // setInterval(() => store.writeToFile(path.resolve(__dirname, "..", "database", "store.json")), 10_000 )
@@ -19,6 +30,10 @@ export async function chico(): Promise<void> {
 
     // Obtém a versão mais recente do Baileys
     const { version, isLatest } = await fetchLatestBaileysVersion();
+    //komi
+    const teste = adeuscara
+    
+   //
 
     const pico = makeWASocket({
         printQRInTerminal: false,
@@ -44,6 +59,57 @@ export async function chico(): Promise<void> {
         const code: string = await pico.requestPairingCode(phoneNumber);
         console.log(`Código de pareamento: ${code}`);
     }
+    //dados da komi
+    
+    pico.ev.on('chats.upsert', () => {
+      //pode usar "store.chats" como quiser, mesmo depois que o soquete morre
+      // "chats" => uma instância keyedDB
+      console.log('Tem conversas', store.chats.all())
+      })
+
+      
+
+interface GroupUpdate {
+    id: string;
+    participants: string[];
+    action: 'add' | 'remove';
+}
+
+interface AdeuscaraItem {
+    groupId: string;
+    actived: boolean;
+    number: string[];
+}
+
+ async function setupParticipantHandler(pico: WASocket, adeuscara: AdeuscaraItem[]) {
+    pico.ev.on('group-participants.update', async (ale) => {
+        try {
+            const groupMetadata = await pico.groupMetadata(ale.id);
+            const dbackid = adeuscara.map(item => item.groupId);
+
+            console.log(ale);
+
+            if (dbackid.includes(ale.id)) {
+                if (ale.action === 'add') {
+                    const num = ale.participants[0];
+                    const ind = dbackid.indexOf(ale.id);
+
+                    if (adeuscara[ind].actived && adeuscara[ind].number.includes(num.split('@')[0])) {
+                        await pico.sendMessage(groupMetadata.id, { text: '*Olha quem deu as cara por aqui, sente o poder do ban cabaço*' });
+                        await pico.groupParticipantsUpdate(groupMetadata.id, [num], 'remove');
+                        return;
+                    }
+                }
+            }
+        } catch (error) {
+            console.error('Erro no evento group-participants.update:', error);
+        }
+    });
+}
+
+
+
+    //
 
     console.log(`Usando o Baileys v${version}${isLatest ? "" : " (desatualizado)"}`);
 

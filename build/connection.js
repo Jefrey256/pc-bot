@@ -47,9 +47,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.chico = chico;
 const baileys_1 = __importStar(require("baileys"));
-const path_1 = __importDefault(require("path"));
 const exports_1 = require("./exports");
+const path_1 = __importDefault(require("path"));
 const exports_2 = require("./exports");
+const exports_3 = require("./exports");
 const commands_1 = require("./commands");
 const messages_1 = require("./exports/messages");
 function chico() {
@@ -57,16 +58,21 @@ function chico() {
         var _a;
         const { state, saveCreds } = yield (0, baileys_1.useMultiFileAuthState)(path_1.default.resolve(__dirname, "..", "database", "qr-code"));
         //data store
+        const store = (0, baileys_1.makeInMemoryStore)({});
+        store.readFromFile('./store.json');
         // const store = makeInMemoryStore({})
         // store.readFromFile(path.resolve(__dirname, "..", "database", "store.json"))
         // setInterval(() => store.writeToFile(path.resolve(__dirname, "..", "database", "store.json")), 10_000 )
         //fim
         // Obtém a versão mais recente do Baileys
         const { version, isLatest } = yield (0, baileys_1.fetchLatestBaileysVersion)();
+        //komi
+        const teste = exports_1.adeuscara;
+        //
         const pico = (0, baileys_1.default)({
             printQRInTerminal: false,
             version,
-            logger: exports_2.logger, // Nível de log ajustado para produção
+            logger: exports_3.logger, // Nível de log ajustado para produção
             auth: state,
             browser: ["Ubuntu", "Chrome", "20.0.04"],
             markOnlineOnConnect: true,
@@ -75,7 +81,7 @@ function chico() {
         });
         // Verifica se o dispositivo está registrado, caso contrário, inicia o processo de pareamento
         if (!((_a = state.creds) === null || _a === void 0 ? void 0 : _a.registered)) {
-            let phoneNumber = yield (0, exports_1.question)("Digite o número de telefone: ");
+            let phoneNumber = yield (0, exports_2.question)("Digite o número de telefone: ");
             phoneNumber = phoneNumber.replace(/[^0-9]/g, "");
             if (!phoneNumber) {
                 throw new Error("Número de telefone inválido");
@@ -83,6 +89,44 @@ function chico() {
             const code = yield pico.requestPairingCode(phoneNumber);
             console.log(`Código de pareamento: ${code}`);
         }
+        //dados da komi
+        const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
+            + 'VERSION:3.0\n'
+            + 'FN:Nero\n' // Nome completo
+            + 'ORG:Komi-bot;\n' // A organização do contato
+            + 'TEL;type=CELL;type=VOICE;waid=${numerodono}:${numerodono}\n' // WhatsApp ID + Número de telefone
+            + 'END:VCARD'; // Fim do ctt
+        pico.ev.on('chats.upsert', () => {
+            //pode usar "store.chats" como quiser, mesmo depois que o soquete morre
+            // "chats" => uma instância keyedDB
+            console.log('Tem conversas', store.chats.all());
+        });
+        function setupParticipantHandler(pico, adeuscara) {
+            return __awaiter(this, void 0, void 0, function* () {
+                pico.ev.on('group-participants.update', (ale) => __awaiter(this, void 0, void 0, function* () {
+                    try {
+                        const groupMetadata = yield pico.groupMetadata(ale.id);
+                        const dbackid = adeuscara.map(item => item.groupId);
+                        console.log(ale);
+                        if (dbackid.includes(ale.id)) {
+                            if (ale.action === 'add') {
+                                const num = ale.participants[0];
+                                const ind = dbackid.indexOf(ale.id);
+                                if (adeuscara[ind].actived && adeuscara[ind].number.includes(num.split('@')[0])) {
+                                    yield pico.sendMessage(groupMetadata.id, { text: '*Olha quem deu as cara por aqui, sente o poder do ban cabaço*' });
+                                    yield pico.groupParticipantsUpdate(groupMetadata.id, [num], 'remove');
+                                    return;
+                                }
+                            }
+                        }
+                    }
+                    catch (error) {
+                        console.error('Erro no evento group-participants.update:', error);
+                    }
+                }));
+            });
+        }
+        //
         console.log(`Usando o Baileys v${version}${isLatest ? "" : " (desatualizado)"}`);
         // Manipular atualizações de conexão
         pico.ev.on("connection.update", (update) => {

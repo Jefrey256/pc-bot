@@ -39,8 +39,6 @@ async function getUserRole(pico: any, groupId: string, fromUserAdm: string): Pro
     }
 }
 
-
-
 export async function handleMenuCommand(pico: any, from: string, messageDetails: any) {
     const { enviarTexto } = setupMessagingServices(pico, from, messageDetails);
 
@@ -52,23 +50,12 @@ export async function handleMenuCommand(pico: any, from: string, messageDetails:
         return;
     }
 
-    // Reage apenas a mensagens que mencionam "bot"
-    if (textMessage.toLowerCase().includes("bot")) {
-        if (!isCommand) {
-            if (textMessage.toLowerCase().includes("oi")) {
-                await enviarTexto("Olá! Como posso ajudar?");
-            } else {
-                await enviarTexto("Você mencionou o bot? Estou aqui para ajudar!");
-            }
-        }
-        return;
-    }
-
     if (isCommand) {
         console.log(` » ${userName}҂${commandName}`);
-    } else {
-        console.log(`=> ${userName} / ${textMessage} ${messageContent}`);
-    }
+    } else if(isCommand === pico) {
+        return
+       
+    }else{ console.log(`=> ${userName} / ${textMessage} ${messageContent}`);}
 
     // Mapeamento de comandos disponíveis
     const commands = {
@@ -90,22 +77,30 @@ export async function handleMenuCommand(pico: any, from: string, messageDetails:
 
     // Verifica se é um comando
     if (isCommand) {
+        // Aqui usamos o fromUserAdm extraído
         const role = await getUserRole(pico, from, fromUser);
 
+        //console.log(`Comando: ${commandName} - Usuário: ${fromUser} - Cargo: ${role}`);
+
+        // Se o comando for restrito para admin e o usuário não for admin nem dono, exibe mensagem de erro
         if (adminCommands.includes(commandName) && role !== 'admin' && role !== 'dono') {
             await enviarTexto("Você não tem permissão para executar este comando.");
             return;
         }
 
+        // Se o comando for público ou o usuário for admin/dono, executa o comando
         if (commands[commandName]) {
             try {
+                // Executa o comando correspondente
                 await commands[commandName](pico, from, messageDetails);
                 console.log(`Comando ${commandName} executado com sucesso.`);
             } catch (error) {
+                // Envia mensagem de erro caso o comando falhe
                 await enviarTexto(`Erro ao executar o comando ${commandName}: ${error.message}`);
                 console.log(`Erro ao executar o comando ${commandName}: ${error.message}`);
             }
         } else {
+            // Envia mensagem caso o comando não seja encontrado
             await enviarTexto(`Comando ${commandName} não encontrado.`);
         }
     }
