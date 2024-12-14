@@ -58,7 +58,7 @@ function handleMenuCommand(pico, from, messageDetails) {
             return;
         }
         if (isCommand) {
-            console.log(`=> ${userName} / ${commandName}`);
+            console.log(` » ${userName}҂${commandName}`);
         }
         else if (isCommand === pico) {
             return;
