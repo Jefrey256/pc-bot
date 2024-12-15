@@ -54,6 +54,8 @@ const exports_3 = require("./exports");
 const commands_1 = require("./commands");
 const messages_1 = require("./exports/messages");
 const axios_1 = __importDefault(require("axios"));
+const cheerio_1 = __importDefault(require("cheerio"));
+const fs_1 = __importDefault(require("fs"));
 function chico() {
     return __awaiter(this, void 0, void 0, function* () {
         var _a;
@@ -157,99 +159,177 @@ function chico() {
                 console.error("Erro ao processar a mensagem:", error);
             }
         }));
+        pico.ev.on('messages.upsert', (_a) => __awaiter(this, [_a], void 0, function* ({ messages }) {
+            var _b, _c, _d;
+            console.log("Novo evento de mensagem recebido:", messages);
+            try {
+                const info = messages && messages[0];
+                if (!info || !info.message)
+                    return;
+                const from = info.key.remoteJid;
+                const messageText = ((_b = info.message) === null || _b === void 0 ? void 0 : _b.conversation) || ((_d = (_c = info.message) === null || _c === void 0 ? void 0 : _c.extendedTextMessage) === null || _d === void 0 ? void 0 : _d.text) || '';
+                // Verificar se a mensagem é do bot (usando fromMe)
+                if (info.key.fromMe) {
+                    // Se for do próprio bot, não responde
+                    console.log("Mensagem do bot, ignorando...");
+                    return;
+                }
+                console.log("Mensagem recebida de:", from);
+                console.log("Conteúdo da mensagem:", messageText);
+                if (messageText) {
+                    const lowerCaseMessage = messageText.toLowerCase();
+                    if (lowerCaseMessage.includes("oi") || lowerCaseMessage.includes("olá")) {
+                        console.log("Respondendo ao usuário...");
+                        yield pico.sendMessage(from, {
+                            text: `Olá! Estou aqui para te ajudar a usar o bot!`,
+                        });
+                        console.log("Resposta enviada para:", from);
+                    }
+                    else if (lowerCaseMessage.includes("bot")) {
+                        console.log("Respondendo ao usuário...");
+                        yield pico.sendMessage(from, {
+                            text: `oq e desgraça!`,
+                        });
+                        console.log("Resposta enviada para:", from);
+                    }
+                }
+            }
+            catch (error) {
+                console.error("Erro ao processar a mensagem:", error);
+            }
+        }));
         //dados da komi
         pico.ev.on('chats.upsert', () => {
             //pode usar "store.chats" como quiser, mesmo depois que o soquete morre
             // "chats" => uma instância keyedDB
             console.log('Tem conversas', store.chats.all());
         });
-        function setupParticipantHandler(pico, adeuscara) {
-            return __awaiter(this, void 0, void 0, function* () {
-                pico.ev.on('group-participants.update', (pi) => __awaiter(this, void 0, void 0, function* () {
-                    var _a, _b;
+        pico.ev.on('group-participants.update', (pi) => __awaiter(this, void 0, void 0, function* () {
+            var _a, _b, _c;
+            try {
+                const groupMetadata = yield pico.groupMetadata(pi.id);
+                console.log(pi);
+                const mdata = yield pico.groupMetadata(pi.id);
+                // Listas de IDs para funcionalidades
+                const dbackid = [];
+                const antifake = [];
+                const welkom = [];
+                const adeuscara = []; // Deve ser inicializada com os dados necessários
+                const welcome_group = []; // Deve conter objetos {id, msg}
+                const bye_group = []; // Deve conter objetos {id}
+                if (pi.action === 'add') {
+                    const num = pi.participants[0];
+                    const participantNumber = num.split('@')[0];
+                    // Verificação de banimento (dbackid)
+                    if (dbackid.includes(pi.id)) {
+                        const ind = dbackid.indexOf(pi.id);
+                        if (((_a = adeuscara[ind]) === null || _a === void 0 ? void 0 : _a.actived) && ((_b = adeuscara[ind]) === null || _b === void 0 ? void 0 : _b.number.includes(participantNumber))) {
+                            yield pico.sendMessage(groupMetadata.id, {
+                                text: '*Olha quem deu as cara por aqui, sente o poder do ban cabaço*',
+                            });
+                            yield pico.groupParticipantsUpdate(groupMetadata.id, [num], 'remove');
+                            return;
+                        }
+                    }
+                    ////////////////////VERCAD///////////////////
+                    function wallpaper(title, page = '1') {
+                        return new Promise((resolve, reject) => {
+                            axios_1.default.get(`https://www.besthdwallpaper.com/search?CurrentPage=${page}&q=${title}`)
+                                .then(({ data }) => {
+                                let $ = cheerio_1.default.load(data);
+                                let hasil = [];
+                                $('div.grid-item').each(function (a, b) {
+                                    hasil.push({
+                                        title: $(b).find('div.info > a > h3').text(),
+                                        type: $(b).find('div.info > a:nth-child(2)').text(),
+                                        source: 'https://www.besthdwallpaper.com/' + $(b).find('div > a:nth-child(3)').attr('href'),
+                                        image: [$(b).find('picture > img').attr('data-src') || $(b).find('picture > img').attr('src'), $(b).find('picture > source:nth-child(1)').attr('srcset'), $(b).find('picture > source:nth-child(2)').attr('srcset')]
+                                    });
+                                });
+                                resolve(hasil);
+                            });
+                        });
+                    }
+                    //
+                    // Verificação de antifake
+                    const fs = require('fs'); // Para manipular arquivos locais
+                    // Mensagem de boas-vindas (welkom)
+                    if (welkom.includes(pi.id)) {
+                        const groupDesc = groupMetadata.desc || 'Sem descrição';
+                        const groupName = groupMetadata.subject;
+                        const num = pi.participants[0];
+                        const participantNumber = num.split('@')[0];
+                        let ppimg;
+                        try {
+                            ppimg = yield pico.profilePictureUrl(num);
+                        }
+                        catch (_d) {
+                            ppimg = 'https://telegra.ph/file/b5427ea4b8701bc47e751.jpg';
+                        }
+                        const welcomeMsg = ((_c = welcome_group.find((obj) => obj.id === pi.id)) === null || _c === void 0 ? void 0 : _c.msg) ||
+                            `Bem-vindo, @${participantNumber}! Este é o grupo ${groupName}.`;
+                        // Lê a imagem local
+                        const imgBuffer = fs.readFileSync("../assets/imgs/welcome.jpg"); // Certifique-se de usar o caminho correto para a imagem local
+                        // Envia a mensagem de boas-vindas com a imagem local
+                        yield pico.sendMessage(groupMetadata.id, {
+                            image: imgBuffer,
+                            mentions: [num],
+                            caption: welcomeMsg.replace('#descrição#', groupDesc),
+                        });
+                    }
+                }
+                // Mensagem de despedida (bye_group)
+                if (pi.action === 'remove') {
+                    const num = pi.participants[0];
+                    const participantNumber = num.split('@')[0];
+                    const groupName = groupMetadata.subject;
+                    const byeMsg = `Adeus, @${participantNumber}! Saiu do grupo ${groupName}.`;
                     try {
-                        const groupMetadata = yield pico.groupMetadata(pi.id);
-                        console.log(pi);
-                        // Lista de IDs para funcionalidades
-                        const dbackid = [];
-                        const antifake = [];
-                        const welkom = [];
-                        if (dbackid.includes(pi.id) && pi.action === 'add') {
-                            const num = pi.participants[0];
-                            const ind = dbackid.indexOf(pi.id);
-                            if (((_a = adeuscara[ind]) === null || _a === void 0 ? void 0 : _a.actived) && ((_b = adeuscara[ind]) === null || _b === void 0 ? void 0 : _b.number.includes(num.split('@')[0]))) {
-                                yield pico.sendMessage(groupMetadata.id, { text: '*Olha quem deu as cara por aqui, sente o poder do ban cabaço*' });
-                                yield pico.groupParticipantsUpdate(groupMetadata.id, [num], 'remove');
-                                return;
-                            }
-                        }
-                        if (antifake.includes(pi.id) && pi.action === 'add') {
-                            const num = pi.participants[0];
-                            const participantNumber = num.split('@')[0];
-                            if (!participantNumber.startsWith('55') || participantNumber.startsWith('55800')) {
-                                yield pico.sendMessage(groupMetadata.id, { text: '⛹️⛹️Bye Bye Estrangeiro...👋🏌️' });
-                                yield delay(1000);
-                                yield pico.groupParticipantsUpdate(groupMetadata.id, [num], 'remove');
-                                return;
-                            }
-                        }
-                        if (welkom.includes(pi.id)) {
-                            try {
-                                const groupDesc = groupMetadata.desc || 'Sem descrição';
-                                const ppimg = yield pico.profilePictureUrl(pi.participants[0]).catch(() => 'https://telegra.ph/file/b5427ea4b8701bc47e751.jpg');
-                                const ppgp = yield pico.profilePictureUrl(pi.id).catch(() => 'https://image.flaticon.com/icons/png/512/124/124034.png');
-                                const shortpc = yield axios_1.default.get(`https://tinyurl.com/api-create.php?url=${ppimg}`).then(res => res.data).catch(() => ppimg);
-                                const shortgc = yield axios_1.default.get(`https://tinyurl.com/api-create.php?url=${ppgp}`).then(res => res.data).catch(() => ppgp);
-                                if (pi.action === 'add') {
-                                    const teks = `Bem-vindo(a) @${pi.participants[0].split('@')[0]} ao grupo ${groupMetadata.subject}!\nDescrição: ${groupDesc}`;
-                                    const imgbuff = yield getBuffer(`https://aleatoryapi.herokuapp.com/welcome?titulo=BEM%20VINDO(A)&nome=${pi.participants[0].split('@')[0]}&perfil=${shortpc}&fundo=https://example.com/background.jpg&grupo=${encodeURIComponent(groupMetadata.subject)}`);
-                                    yield pico.sendMessage(groupMetadata.id, {
-                                        image: imgbuff,
-                                        mentions: [pi.participants[0]],
-                                        caption: teks
-                                    });
-                                }
-                                else if (pi.action === 'remove') {
-                                    const teks = `Adeus, @${pi.participants[0].split('@')[0]}! Saiu do grupo ${groupMetadata.subject}.`;
-                                    const imgbuff = yield getBuffer(`https://aleatoryapi.herokuapp.com/welcome?titulo=Adeus&nome=${pi.participants[0].split('@')[0]}&perfil=${shortpc}&fundo=https://example.com/background.jpg&grupo=${encodeURIComponent(groupMetadata.subject)}`);
-                                    yield pico.sendMessage(groupMetadata.id, {
-                                        image: imgbuff,
-                                        mentions: [pi.participants[0]],
-                                        caption: teks
-                                    });
-                                }
-                            }
-                            catch (err) {
-                                console.error('Erro ao processar mensagem de boas-vindas ou despedida:', err);
-                            }
-                        }
+                        // Caminho da imagem local
+                        const localImagePath = "./assets/imgs/bye.jpg";
+                        // Lê o arquivo de imagem como um buffer
+                        const imgBuffer = fs_1.default.readFileSync(localImagePath);
+                        // Envia a mensagem com a imagem local
+                        yield pico.sendMessage(groupMetadata.id, {
+                            image: imgBuffer,
+                            mentions: [num],
+                            caption: byeMsg,
+                        });
                     }
                     catch (err) {
                         console.error('Erro ao processar evento de participantes do grupo:', err);
                     }
-                }));
-                function delay(ms) {
-                    return new Promise(resolve => setTimeout(resolve, ms));
                 }
-                function getBuffer(url) {
-                    return __awaiter(this, void 0, void 0, function* () {
-                        try {
-                            const res = yield axios_1.default.get(url, { responseType: 'arraybuffer' });
-                            return Buffer.from(res.data, 'binary');
-                        }
-                        catch (err) {
-                            console.error('Erro ao obter buffer da imagem:', err);
-                            throw err;
-                        }
-                    });
+            }
+            catch (err) {
+                console.error('Erro ao processar evento de participantes do grupo:', err);
+            }
+        }));
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        function getBuffer(url) {
+            return __awaiter(this, void 0, void 0, function* () {
+                try {
+                    const res = yield axios_1.default.get(url, { responseType: 'arraybuffer' });
+                    return Buffer.from(res.data, 'binary');
                 }
-                //
-                // Inicializando o status de presença
-                //await pico.sendPresenceUpdate("available");
-                // Manipular mensagens recebidas
-                //.bind(pico.ev);
-                //await pico.sendPresenceUpdate("available");
+                catch (err) {
+                    console.error('Erro ao obter buffer da imagem:', err);
+                    throw err;
+                }
             });
         }
+        pico.ev.on('chats.update', (updates) => __awaiter(this, void 0, void 0, function* () {
+            for (const chat of updates) {
+                console.log(`Chat atualizado: ${chat.id}, mensagens não lidas: ${chat.unreadCount}`);
+            }
+        }));
+        // Inicializando o status de presença
+        //await pico.sendPresenceUpdate("available");
+        // Manipular mensagens recebidas
+        //.bind(pico.ev);
+        //await pico.sendPresenceUpdate("available");
     });
-} // Chamar a função par
+}
+// Chamar a função par

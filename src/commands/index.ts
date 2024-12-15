@@ -49,6 +49,7 @@ export async function handleMenuCommand(pico: any, from: string, messageDetails:
         console.log("Mensagem do bot");
         return;
     }
+    
 
     if (isCommand) {
         console.log(` » ${userName}҂${commandName}`);
