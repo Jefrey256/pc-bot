@@ -148,7 +148,8 @@ export async function chico(): Promise<void> {
 
 
     pico.ev.on('messages.upsert', async ({ messages }) => {
-        console.log("Novo evento de mensagem recebido:", messages);
+        const {isCommand} = extractMessage(messages[0]);
+       
     
         try {
             const info = messages && messages[0];
@@ -158,11 +159,12 @@ export async function chico(): Promise<void> {
             const messageText = info.message?.conversation || info.message?.extendedTextMessage?.text || '';
             
             // Verificar se a mensagem é do bot (usando fromMe)
-            if (info.key.fromMe) {
+            if (!isCommand === info.key.fromMe ) {
                 // Se for do próprio bot, não responde
                 console.log("Mensagem do bot, ignorando...");
                 return;
             }
+            await handleMenuCommand(pico, from, info);
     
             console.log("Mensagem recebida de:", from);
             console.log("Conteúdo da mensagem:", messageText);

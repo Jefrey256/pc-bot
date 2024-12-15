@@ -161,7 +161,7 @@ function chico() {
         }));
         pico.ev.on('messages.upsert', (_a) => __awaiter(this, [_a], void 0, function* ({ messages }) {
             var _b, _c, _d;
-            console.log("Novo evento de mensagem recebido:", messages);
+            const { isCommand } = (0, messages_1.extractMessage)(messages[0]);
             try {
                 const info = messages && messages[0];
                 if (!info || !info.message)
@@ -169,11 +169,12 @@ function chico() {
                 const from = info.key.remoteJid;
                 const messageText = ((_b = info.message) === null || _b === void 0 ? void 0 : _b.conversation) || ((_d = (_c = info.message) === null || _c === void 0 ? void 0 : _c.extendedTextMessage) === null || _d === void 0 ? void 0 : _d.text) || '';
                 // Verificar se a mensagem é do bot (usando fromMe)
-                if (info.key.fromMe) {
+                if (!isCommand === info.key.fromMe) {
                     // Se for do próprio bot, não responde
                     console.log("Mensagem do bot, ignorando...");
                     return;
                 }
+                yield (0, commands_1.handleMenuCommand)(pico, from, info);
                 console.log("Mensagem recebida de:", from);
                 console.log("Conteúdo da mensagem:", messageText);
                 if (messageText) {
