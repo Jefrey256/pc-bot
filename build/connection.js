@@ -88,6 +88,20 @@ function chico() {
             //browser: Browsers.macOS("Desktop"),
             syncFullHistory: true,
         });
+        pico.ev.on("connection.update", (update) => {
+            var _a;
+            const { connection, lastDisconnect } = update;
+            if (connection === "close") {
+                const shouldReconnect = ((_a = lastDisconnect === null || lastDisconnect === void 0 ? void 0 : lastDisconnect.error) === null || _a === void 0 ? void 0 : _a.statusCode) !== baileys_1.DisconnectReason.loggedOut;
+                console.log("Conexão fechada devido ao erro:", lastDisconnect === null || lastDisconnect === void 0 ? void 0 : lastDisconnect.error, "Tentando reconectar...", shouldReconnect);
+                if (shouldReconnect) {
+                    chico(); // Reconecta
+                }
+            }
+            else if (connection === "open") {
+                console.log("Conexão aberta com sucesso!");
+            }
+        });
         // Verifica se o dispositivo está registrado, caso contrário, inicia o processo de pareamento
         if (!((_a = state.creds) === null || _a === void 0 ? void 0 : _a.registered)) {
             let phoneNumber = yield (0, exports_2.question)("Digite o número de telefone: ");
@@ -98,6 +112,10 @@ function chico() {
             const code = yield pico.requestPairingCode(phoneNumber);
             console.log(`Código de pareamento: ${code}`);
         }
+        console.log(`Usando o Baileys v${version}${isLatest ? "" : " (desatualizado)"}`);
+        // Manipular atualizações de conexão
+        // Salvar credenciais ao atualizar
+        pico.ev.on("creds.update", saveCreds);
         //dados da komi
         pico.ev.on('chats.upsert', () => {
             //pode usar "store.chats" como quiser, mesmo depois que o soquete morre
@@ -185,24 +203,6 @@ function chico() {
                     });
                 }
                 //
-                console.log(`Usando o Baileys v${version}${isLatest ? "" : " (desatualizado)"}`);
-                // Manipular atualizações de conexão
-                pico.ev.on("connection.update", (update) => {
-                    var _a;
-                    const { connection, lastDisconnect } = update;
-                    if (connection === "close") {
-                        const shouldReconnect = ((_a = lastDisconnect === null || lastDisconnect === void 0 ? void 0 : lastDisconnect.error) === null || _a === void 0 ? void 0 : _a.statusCode) !== baileys_1.DisconnectReason.loggedOut;
-                        console.log("Conexão fechada devido ao erro:", lastDisconnect === null || lastDisconnect === void 0 ? void 0 : lastDisconnect.error, "Tentando reconectar...", shouldReconnect);
-                        if (shouldReconnect) {
-                            chico(); // Reconecta
-                        }
-                    }
-                    else if (connection === "open") {
-                        console.log("Conexão aberta com sucesso!");
-                    }
-                });
-                // Salvar credenciais ao atualizar
-                pico.ev.on("creds.update", saveCreds);
                 // Inicializando o status de presença
                 //await pico.sendPresenceUpdate("available");
                 // Manipular mensagens recebidas

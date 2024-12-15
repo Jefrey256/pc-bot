@@ -10,7 +10,7 @@ const rl = readline.createInterface({
     output: process.stdout
 })
 
-export  const question = (text: string): Promise<string> => {
+  const question = (text: string): Promise<string> => {
 
     return new Promise((resolve) => {
         rl.question(text, resolve)
@@ -101,6 +101,7 @@ const getRandom = (ext) => {
 
 
 export  {
+    question,
     getRandom,
     getBuffer,
     time,

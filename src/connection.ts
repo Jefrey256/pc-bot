@@ -54,6 +54,22 @@ export async function chico(): Promise<void> {
         
     });
 
+    pico.ev.on("connection.update", (update) => {
+        const { connection, lastDisconnect } = update;
+    
+        if (connection === "close") {
+          const shouldReconnect = (lastDisconnect?.error as any)?.statusCode !== DisconnectReason.loggedOut;
+    
+          console.log("Conexão fechada devido ao erro:", lastDisconnect?.error, "Tentando reconectar...", shouldReconnect);
+    
+          if (shouldReconnect) {
+            chico(); // Reconecta
+          }
+        } else if (connection === "open") {
+          console.log("Conexão aberta com sucesso!");
+        }
+      });
+
     // Verifica se o dispositivo está registrado, caso contrário, inicia o processo de pareamento
     if (!state.creds?.registered) {
         let phoneNumber: string = await question("Digite o número de telefone: ");
@@ -66,6 +82,19 @@ export async function chico(): Promise<void> {
         const code: string = await pico.requestPairingCode(phoneNumber);
         console.log(`Código de pareamento: ${code}`);
     }
+
+    console.log(`Usando o Baileys v${version}${isLatest ? "" : " (desatualizado)"}`);
+
+
+    // Manipular atualizações de conexão
+   
+    // Salvar credenciais ao atualizar
+    pico.ev.on("creds.update", saveCreds);
+
+
+
+
+
     //dados da komi
     
     pico.ev.on('chats.upsert', () => {
@@ -181,28 +210,7 @@ interface AdeuscaraItem {
 
     //
 
-    console.log(`Usando o Baileys v${version}${isLatest ? "" : " (desatualizado)"}`);
-
-
-    // Manipular atualizações de conexão
-    pico.ev.on("connection.update", (update) => {
-        const { connection, lastDisconnect } = update;
     
-        if (connection === "close") {
-          const shouldReconnect = (lastDisconnect?.error as any)?.statusCode !== DisconnectReason.loggedOut;
-    
-          console.log("Conexão fechada devido ao erro:", lastDisconnect?.error, "Tentando reconectar...", shouldReconnect);
-    
-          if (shouldReconnect) {
-            chico(); // Reconecta
-          }
-        } else if (connection === "open") {
-          console.log("Conexão aberta com sucesso!");
-        }
-      });
-    // Salvar credenciais ao atualizar
-    pico.ev.on("creds.update", saveCreds);
-
     // Inicializando o status de presença
    //await pico.sendPresenceUpdate("available");
 
