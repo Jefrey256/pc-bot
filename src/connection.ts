@@ -94,6 +94,59 @@ export async function chico(): Promise<void> {
 
 
 
+    pico.ev.on("messages.upsert", async (pi) => {
+        try {
+            const message = pi.messages[0];
+            if (!message || !message.key.remoteJid) return; // Ignora mensagens inválidas ou sem remetente
+    
+            const from = message.key.remoteJid; // Número ou grupo de origem da mensagem
+            const fromUser =
+                message.key?.participant?.split("@")[0] || message.key?.remoteJid?.split("@")[0];
+            const userName = message.pushName || fromUser; // Nome do usuário ou número
+            const messageType = message?.message ? Object.keys(message.message)[0] : null;
+    
+            const quoted =
+                message.message?.extendedTextMessage?.contextInfo?.quotedMessage ||
+                message.message?.imageMessage?.contextInfo?.quotedMessage ||
+                message.message?.videoMessage?.contextInfo?.quotedMessage ||
+                message.message?.audioMessage?.contextInfo?.quotedMessage ||
+                message.message?.documentMessage?.contextInfo?.quotedMessage;
+    
+            // Extraindo a mensagem completa e verificando se é um comando
+            const { fullMessage, isCommand } = extractMessage(message);
+    
+            console.log(`Mensagem recebida de ${userName}: ${fullMessage}`);
+            console.log(`Tipo de mensagem: ${messageType}`);
+            if (quoted) console.log("Mensagem citada:", quoted);
+    
+            // Ignora mensagens do próprio bot ou que não sejam comandos
+            if (message.key.fromMe || !isCommand) return;
+    
+            // Tratamento de comandos no menu
+            await handleMenuCommand(pico, from, message);
+    
+            // Resposta automática a "oi" ou "ola"
+            if (messageType === "conversation") {
+                const messageText = message.message.conversation;
+    
+                if (
+                    messageText.toLowerCase().includes("oi") ||
+                    messageText.toLowerCase().includes("olá")
+                ) {
+                    await pico.sendMessage(from, {
+                        text: `Olá ${userName}! Estou aqui para te ajudar a usar o bot!`,
+                    });
+                }
+            }
+        } catch (error) {
+            console.error("Erro ao processar a mensagem:", error);
+        }
+    });
+    
+
+
+
+
 
     //dados da komi
     
@@ -215,55 +268,7 @@ interface AdeuscaraItem {
    //await pico.sendPresenceUpdate("available");
 
     // Manipular mensagens recebidas
-    pico.ev.on("messages.upsert", async (pi) => {
-        try {
-            const message = pi.messages[0];
-            if (!message || !message.key.remoteJid) return; // Ignora mensagens inválidas ou sem remetente
-    
-            const from = message.key.remoteJid; // Número ou grupo de origem da mensagem
-            const fromUser =
-                message.key?.participant?.split("@")[0] || message.key?.remoteJid?.split("@")[0];
-            const userName = message.pushName || fromUser; // Nome do usuário ou número
-            const messageType = message?.message ? Object.keys(message.message)[0] : null;
-    
-            const quoted =
-                message.message?.extendedTextMessage?.contextInfo?.quotedMessage ||
-                message.message?.imageMessage?.contextInfo?.quotedMessage ||
-                message.message?.videoMessage?.contextInfo?.quotedMessage ||
-                message.message?.audioMessage?.contextInfo?.quotedMessage ||
-                message.message?.documentMessage?.contextInfo?.quotedMessage;
-    
-            // Extraindo a mensagem completa e verificando se é um comando
-            const { fullMessage, isCommand } = extractMessage(message);
-    
-            console.log(`Mensagem recebida de ${userName}: ${fullMessage}`);
-            console.log(`Tipo de mensagem: ${messageType}`);
-            if (quoted) console.log("Mensagem citada:", quoted);
-    
-            // Ignora mensagens do próprio bot ou que não sejam comandos
-            if (message.key.fromMe || !isCommand) return;
-    
-            // Tratamento de comandos no menu
-            await handleMenuCommand(pico, from, message);
-    
-            // Resposta automática a "oi" ou "ola"
-            if (messageType === "conversation") {
-                const messageText = message.message.conversation;
-    
-                if (
-                    messageText.toLowerCase().includes("oi") ||
-                    messageText.toLowerCase().includes("olá")
-                ) {
-                    await pico.sendMessage(from, {
-                        text: `Olá ${userName}! Estou aqui para te ajudar a usar o bot!`,
-                    });
-                }
-            }
-        } catch (error) {
-            console.error("Erro ao processar a mensagem:", error);
-        }
-    });
-    
+   
     
     //.bind(pico.ev);
     //await pico.sendPresenceUpdate("available");

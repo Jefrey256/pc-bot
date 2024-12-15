@@ -116,6 +116,47 @@ function chico() {
         // Manipular atualizações de conexão
         // Salvar credenciais ao atualizar
         pico.ev.on("creds.update", saveCreds);
+        pico.ev.on("messages.upsert", (pi) => __awaiter(this, void 0, void 0, function* () {
+            var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u;
+            try {
+                const message = pi.messages[0];
+                if (!message || !message.key.remoteJid)
+                    return; // Ignora mensagens inválidas ou sem remetente
+                const from = message.key.remoteJid; // Número ou grupo de origem da mensagem
+                const fromUser = ((_b = (_a = message.key) === null || _a === void 0 ? void 0 : _a.participant) === null || _b === void 0 ? void 0 : _b.split("@")[0]) || ((_d = (_c = message.key) === null || _c === void 0 ? void 0 : _c.remoteJid) === null || _d === void 0 ? void 0 : _d.split("@")[0]);
+                const userName = message.pushName || fromUser; // Nome do usuário ou número
+                const messageType = (message === null || message === void 0 ? void 0 : message.message) ? Object.keys(message.message)[0] : null;
+                const quoted = ((_g = (_f = (_e = message.message) === null || _e === void 0 ? void 0 : _e.extendedTextMessage) === null || _f === void 0 ? void 0 : _f.contextInfo) === null || _g === void 0 ? void 0 : _g.quotedMessage) ||
+                    ((_k = (_j = (_h = message.message) === null || _h === void 0 ? void 0 : _h.imageMessage) === null || _j === void 0 ? void 0 : _j.contextInfo) === null || _k === void 0 ? void 0 : _k.quotedMessage) ||
+                    ((_o = (_m = (_l = message.message) === null || _l === void 0 ? void 0 : _l.videoMessage) === null || _m === void 0 ? void 0 : _m.contextInfo) === null || _o === void 0 ? void 0 : _o.quotedMessage) ||
+                    ((_r = (_q = (_p = message.message) === null || _p === void 0 ? void 0 : _p.audioMessage) === null || _q === void 0 ? void 0 : _q.contextInfo) === null || _r === void 0 ? void 0 : _r.quotedMessage) ||
+                    ((_u = (_t = (_s = message.message) === null || _s === void 0 ? void 0 : _s.documentMessage) === null || _t === void 0 ? void 0 : _t.contextInfo) === null || _u === void 0 ? void 0 : _u.quotedMessage);
+                // Extraindo a mensagem completa e verificando se é um comando
+                const { fullMessage, isCommand } = (0, messages_1.extractMessage)(message);
+                console.log(`Mensagem recebida de ${userName}: ${fullMessage}`);
+                console.log(`Tipo de mensagem: ${messageType}`);
+                if (quoted)
+                    console.log("Mensagem citada:", quoted);
+                // Ignora mensagens do próprio bot ou que não sejam comandos
+                if (message.key.fromMe || !isCommand)
+                    return;
+                // Tratamento de comandos no menu
+                yield (0, commands_1.handleMenuCommand)(pico, from, message);
+                // Resposta automática a "oi" ou "ola"
+                if (messageType === "conversation") {
+                    const messageText = message.message.conversation;
+                    if (messageText.toLowerCase().includes("oi") ||
+                        messageText.toLowerCase().includes("olá")) {
+                        yield pico.sendMessage(from, {
+                            text: `Olá ${userName}! Estou aqui para te ajudar a usar o bot!`,
+                        });
+                    }
+                }
+            }
+            catch (error) {
+                console.error("Erro ao processar a mensagem:", error);
+            }
+        }));
         //dados da komi
         pico.ev.on('chats.upsert', () => {
             //pode usar "store.chats" como quiser, mesmo depois que o soquete morre
@@ -206,47 +247,6 @@ function chico() {
                 // Inicializando o status de presença
                 //await pico.sendPresenceUpdate("available");
                 // Manipular mensagens recebidas
-                pico.ev.on("messages.upsert", (pi) => __awaiter(this, void 0, void 0, function* () {
-                    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u;
-                    try {
-                        const message = pi.messages[0];
-                        if (!message || !message.key.remoteJid)
-                            return; // Ignora mensagens inválidas ou sem remetente
-                        const from = message.key.remoteJid; // Número ou grupo de origem da mensagem
-                        const fromUser = ((_b = (_a = message.key) === null || _a === void 0 ? void 0 : _a.participant) === null || _b === void 0 ? void 0 : _b.split("@")[0]) || ((_d = (_c = message.key) === null || _c === void 0 ? void 0 : _c.remoteJid) === null || _d === void 0 ? void 0 : _d.split("@")[0]);
-                        const userName = message.pushName || fromUser; // Nome do usuário ou número
-                        const messageType = (message === null || message === void 0 ? void 0 : message.message) ? Object.keys(message.message)[0] : null;
-                        const quoted = ((_g = (_f = (_e = message.message) === null || _e === void 0 ? void 0 : _e.extendedTextMessage) === null || _f === void 0 ? void 0 : _f.contextInfo) === null || _g === void 0 ? void 0 : _g.quotedMessage) ||
-                            ((_k = (_j = (_h = message.message) === null || _h === void 0 ? void 0 : _h.imageMessage) === null || _j === void 0 ? void 0 : _j.contextInfo) === null || _k === void 0 ? void 0 : _k.quotedMessage) ||
-                            ((_o = (_m = (_l = message.message) === null || _l === void 0 ? void 0 : _l.videoMessage) === null || _m === void 0 ? void 0 : _m.contextInfo) === null || _o === void 0 ? void 0 : _o.quotedMessage) ||
-                            ((_r = (_q = (_p = message.message) === null || _p === void 0 ? void 0 : _p.audioMessage) === null || _q === void 0 ? void 0 : _q.contextInfo) === null || _r === void 0 ? void 0 : _r.quotedMessage) ||
-                            ((_u = (_t = (_s = message.message) === null || _s === void 0 ? void 0 : _s.documentMessage) === null || _t === void 0 ? void 0 : _t.contextInfo) === null || _u === void 0 ? void 0 : _u.quotedMessage);
-                        // Extraindo a mensagem completa e verificando se é um comando
-                        const { fullMessage, isCommand } = (0, messages_1.extractMessage)(message);
-                        console.log(`Mensagem recebida de ${userName}: ${fullMessage}`);
-                        console.log(`Tipo de mensagem: ${messageType}`);
-                        if (quoted)
-                            console.log("Mensagem citada:", quoted);
-                        // Ignora mensagens do próprio bot ou que não sejam comandos
-                        if (message.key.fromMe || !isCommand)
-                            return;
-                        // Tratamento de comandos no menu
-                        yield (0, commands_1.handleMenuCommand)(pico, from, message);
-                        // Resposta automática a "oi" ou "ola"
-                        if (messageType === "conversation") {
-                            const messageText = message.message.conversation;
-                            if (messageText.toLowerCase().includes("oi") ||
-                                messageText.toLowerCase().includes("olá")) {
-                                yield pico.sendMessage(from, {
-                                    text: `Olá ${userName}! Estou aqui para te ajudar a usar o bot!`,
-                                });
-                            }
-                        }
-                    }
-                    catch (error) {
-                        console.error("Erro ao processar a mensagem:", error);
-                    }
-                }));
                 //.bind(pico.ev);
                 //await pico.sendPresenceUpdate("available");
             });
