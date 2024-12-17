@@ -119,79 +119,40 @@ function chico() {
         // Salvar credenciais ao atualizar
         pico.ev.on("creds.update", saveCreds);
         pico.ev.on("messages.upsert", (pi) => __awaiter(this, void 0, void 0, function* () {
-            var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u;
+            var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
             try {
-                const message = pi.messages[0];
-                if (!message || !message.key.remoteJid)
-                    return; // Ignora mensagens inválidas ou sem remetente
-                const from = message.key.remoteJid; // Número ou grupo de origem da mensagem
+                const message = pi.messages && pi.messages[0];
+                if (!message || !message.message)
+                    return; // Ignora mensagens inválidas
+                const tfrom = message.key.remoteJid;
                 const fromUser = ((_b = (_a = message.key) === null || _a === void 0 ? void 0 : _a.participant) === null || _b === void 0 ? void 0 : _b.split("@")[0]) || ((_d = (_c = message.key) === null || _c === void 0 ? void 0 : _c.remoteJid) === null || _d === void 0 ? void 0 : _d.split("@")[0]);
                 const userName = message.pushName || fromUser; // Nome do usuário ou número
-                const messageType = (message === null || message === void 0 ? void 0 : message.message) ? Object.keys(message.message)[0] : null;
-                const quoted = ((_g = (_f = (_e = message.message) === null || _e === void 0 ? void 0 : _e.extendedTextMessage) === null || _f === void 0 ? void 0 : _f.contextInfo) === null || _g === void 0 ? void 0 : _g.quotedMessage) ||
-                    ((_k = (_j = (_h = message.message) === null || _h === void 0 ? void 0 : _h.imageMessage) === null || _j === void 0 ? void 0 : _j.contextInfo) === null || _k === void 0 ? void 0 : _k.quotedMessage) ||
-                    ((_o = (_m = (_l = message.message) === null || _l === void 0 ? void 0 : _l.videoMessage) === null || _m === void 0 ? void 0 : _m.contextInfo) === null || _o === void 0 ? void 0 : _o.quotedMessage) ||
-                    ((_r = (_q = (_p = message.message) === null || _p === void 0 ? void 0 : _p.audioMessage) === null || _q === void 0 ? void 0 : _q.contextInfo) === null || _r === void 0 ? void 0 : _r.quotedMessage) ||
-                    ((_u = (_t = (_s = message.message) === null || _s === void 0 ? void 0 : _s.documentMessage) === null || _t === void 0 ? void 0 : _t.contextInfo) === null || _u === void 0 ? void 0 : _u.quotedMessage);
-                // Extraindo a mensagem completa e verificando se é um comando
+                const messageText = ((_e = message.message) === null || _e === void 0 ? void 0 : _e.conversation) ||
+                    ((_g = (_f = message.message) === null || _f === void 0 ? void 0 : _f.extendedTextMessage) === null || _g === void 0 ? void 0 : _g.text) || '';
+                // Ignora mensagens enviadas pelo próprio bot
+                if (message.key.fromMe)
+                    return;
+                // Extrai mensagem completa e verifica se é um comando
                 const { fullMessage, isCommand } = (0, messages_1.extractMessage)(message);
                 console.log(`Mensagem recebida de ${userName}: ${fullMessage}`);
-                console.log(`Tipo de mensagem: ${messageType}`);
+                const messageType = (message === null || message === void 0 ? void 0 : message.message) ? Object.keys(message.message)[0] : null;
+                if (messageType)
+                    console.log(`Tipo de mensagem: ${messageType}`);
+                const quoted = (_k = (_j = (_h = message.message) === null || _h === void 0 ? void 0 : _h.extendedTextMessage) === null || _j === void 0 ? void 0 : _j.contextInfo) === null || _k === void 0 ? void 0 : _k.quotedMessage;
                 if (quoted)
                     console.log("Mensagem citada:", quoted);
-                // Ignora mensagens do próprio bot ou que não sejam comandos
-                if (message.key.fromMe || !isCommand)
-                    return;
-                // Tratamento de comandos no menu
-                yield (0, commands_1.handleMenuCommand)(pico, from, message);
-                // Resposta automática a "oi" ou "ola"
-                if (messageType === "conversation") {
-                    const messageText = message.message.conversation;
-                    if (messageText.toLowerCase().includes("oi") ||
-                        messageText.toLowerCase().includes("olá")) {
-                        yield pico.sendMessage(from, {
-                            text: `Olá ${userName}! Estou aqui para te ajudar a usar o bot!`,
-                        });
-                    }
-                }
-            }
-            catch (error) {
-                console.error("Erro ao processar a mensagem:", error);
-            }
-        }));
-        pico.ev.on('messages.upsert', (_a) => __awaiter(this, [_a], void 0, function* ({ messages }) {
-            var _b, _c, _d;
-            const { isCommand } = (0, messages_1.extractMessage)(messages[0]);
-            try {
-                const info = messages && messages[0];
-                if (!info || !info.message)
-                    return;
-                const from = info.key.remoteJid;
-                const messageText = ((_b = info.message) === null || _b === void 0 ? void 0 : _b.conversation) || ((_d = (_c = info.message) === null || _c === void 0 ? void 0 : _c.extendedTextMessage) === null || _d === void 0 ? void 0 : _d.text) || '';
-                // Verificar se a mensagem é do bot (usando fromMe)
-                if (!isCommand === info.key.fromMe) {
-                    // Se for do próprio bot, não responde
-                    console.log("Mensagem do bot, ignorando...");
+                // Tratamento de comandos
+                if (isCommand) {
+                    console.log("Processando comando...");
+                    yield (0, commands_1.handleMenuCommand)(pico, tfrom, message);
                     return;
                 }
-                yield (0, commands_1.handleMenuCommand)(pico, from, info);
-                console.log("Mensagem recebida de:", from);
-                console.log("Conteúdo da mensagem:", messageText);
+                // Resposta automática para mensagens "oi" ou "ola"
                 if (messageText) {
-                    const lowerCaseMessage = messageText.toLowerCase();
-                    if (lowerCaseMessage.includes("oi") || lowerCaseMessage.includes("olá")) {
-                        console.log("Respondendo ao usuário...");
-                        yield pico.sendMessage(from, {
-                            text: `Olá! Estou aqui para te ajudar a usar o bot!`,
-                        });
-                        console.log("Resposta enviada para:", from);
-                    }
-                    else if (lowerCaseMessage.includes("bot")) {
-                        console.log("Respondendo ao usuário...");
-                        yield pico.sendMessage(from, {
-                            text: `oq e desgraça!`,
-                        });
-                        console.log("Resposta enviada para:", from);
+                    const toLowerCase = messageText.toLowerCase();
+                    if (toLowerCase.includes("oi") || toLowerCase.includes("ola")) {
+                        console.log("Respondendo a saudação...");
+                        yield pico.sendMessage(tfrom, { text: "Olá, tudo bem?" });
                     }
                 }
             }
@@ -199,6 +160,42 @@ function chico() {
                 console.error("Erro ao processar a mensagem:", error);
             }
         }));
+        // pico.ev.on('messages.upsert', async ({ messages }) => {
+        //     const {isCommand} = extractMessage(messages[0]);
+        //     try {
+        //         const info = messages && messages[0];
+        //         if (!info || !info.message) return;
+        //         const from = info.key.remoteJid;
+        //         const messageText = info.message?.conversation || info.message?.extendedTextMessage?.text || '';
+        //         // Verificar se a mensagem é do bot (usando fromMe)
+        //         if (!isCommand === info.key.fromMe ) {
+        //             // Se for do próprio bot, não responde
+        //             console.log("Mensagem do bot, ignorando...");
+        //             return;
+        //         }
+        //         await handleMenuCommand(pico, from, info);
+        //         console.log("Mensagem recebida de:", from);
+        //         console.log("Conteúdo da mensagem:", messageText);
+        //         if (messageText) {
+        //             const lowerCaseMessage = messageText.toLowerCase();
+        //             if (lowerCaseMessage.includes("oi") || lowerCaseMessage.includes("olá")) {
+        //                 console.log("Respondendo ao usuário...");
+        //                 await pico.sendMessage(from, {
+        //                     text: `Olá! Estou aqui para te ajudar a usar o bot!`,
+        //                 });
+        //                 console.log("Resposta enviada para:", from);
+        //             } else if (lowerCaseMessage.includes("bot") ) {
+        //                 console.log("Respondendo ao usuário...");
+        //                 await pico.sendMessage(from, {
+        //                     text: `oq e desgraça!`,
+        //                 });
+        //                 console.log("Resposta enviada para:", from);
+        //             }
+        //         }
+        //     } catch (error) {
+        //         console.error("Erro ao processar a mensagem:", error);
+        //     }
+        // });
         //dados da komi
         pico.ev.on('chats.upsert', () => {
             //pode usar "store.chats" como quiser, mesmo depois que o soquete morre

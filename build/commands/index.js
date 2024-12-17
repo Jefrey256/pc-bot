@@ -19,6 +19,7 @@ const sticker_1 = require("./users/sticker");
 const ftperfil_1 = require("./owner/ftperfil");
 const dow_1 = require("./users/dow");
 const delete_1 = require("./admin/delete");
+const tesStk_1 = require("./users/tesStk");
 // Fim comandos
 // Lista de comandos restritos para administradores
 const adminCommands = ['ft', "del", 'ping']; // Comandos apenas para 
@@ -80,6 +81,7 @@ function handleMenuCommand(pico, from, messageDetails) {
             sticker: sticker_1.createImageSticker,
             stk: sticker_1.createVideoSticker,
             f: sticker_1.createVideoSticker,
+            pi: tesStk_1.createImageSticker1,
             // Fim
             del: delete_1.testeDel
         };
