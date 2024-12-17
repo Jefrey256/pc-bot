@@ -15,3 +15,6 @@ RUN yarn install
 
 # Comando para iniciar o bot
 CMD ["yarn", "dev"]
+
+
+EXPOSE 3000
