@@ -144,7 +144,7 @@ export async function chico(): Promise<void> {
                 const toLowerCase = messageText.toLowerCase();
                 if (toLowerCase.includes("oi") || toLowerCase.includes("ola")) {
                     console.log("Respondendo a saudação...");
-                    await pico.sendMessage(tfrom, { text: "Olá, tudo bem?" });
+                    //await pico.sendMessage(tfrom, { text: "Olá, tudo bem?" });
                 }
             }
         } catch (error) {
