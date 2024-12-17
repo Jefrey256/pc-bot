@@ -56,9 +56,17 @@ const messages_1 = require("./exports/messages");
 const axios_1 = __importDefault(require("axios"));
 const cheerio_1 = __importDefault(require("cheerio"));
 const fs_1 = __importDefault(require("fs"));
+const http = __importStar(require("http"));
 function chico() {
     return __awaiter(this, void 0, void 0, function* () {
         var _a;
+        const PORT = process.env.PORT || 3000;
+        http.createServer((req, res) => {
+            res.writeHead(200, { 'Content-Type': 'text/plain' });
+            res.end('Bot está online!');
+        }).listen(PORT, () => {
+            console.log(`Servidor HTTP escutando na porta ${PORT}`);
+        });
         const { state, saveCreds } = yield (0, baileys_1.useMultiFileAuthState)(path_1.default.resolve(__dirname, "..", "database", "qr-code"));
         //komi
         const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
