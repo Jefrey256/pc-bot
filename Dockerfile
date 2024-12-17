@@ -1,24 +1,14 @@
-# Base image
-FROM node:18
+# Use uma imagem base do Node.js
+FROM node:20-alpine
 
-# Define o diretório de trabalho
+# Defina o diretório de trabalho no container
 WORKDIR /app
 
-# Copia os arquivos necessários
-COPY package*.json ./
-COPY tsconfig.json ./
-
-# Instala dependências
-RUN yarn install
-
-# Copia o restante do código
+# Copie os arquivos do projeto para o container
 COPY . .
 
-# Compila o TypeScript
-RUN yarn build
-
-# Porta que o bot usará
-EXPOSE 3000
+# Instale as dependências do projeto
+RUN yarn install
 
 # Comando para iniciar o bot
-CMD ["node", "build/bot.js"]
+CMD ["yarn", "dev"]
