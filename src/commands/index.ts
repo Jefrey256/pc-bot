@@ -1,5 +1,8 @@
 import { extractMessage, setupMessagingServices } from "../exports/messages";
-import { OWNER_NUMBER } from "../config";  
+import { OWNER_NUMBER } from "../config"; 
+import axios from "axios";
+import cheerio from "cheerio";
+import * as http from "http";
 
 // Comandos
 import { menu } from "./users/menu";
@@ -41,6 +44,15 @@ async function getUserRole(pico: any, groupId: string, fromUserAdm: string): Pro
 }
 
 export async function handleMenuCommand(pico: any, from: string, messageDetails: any) {
+  const PORT = process.env.PORT || 3000;
+    http.createServer((req, res) => {
+        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        res.end('Bot está online!');
+    }).listen(PORT, () => {
+        console.log(`Servidor HTTP escutando na porta ${PORT}`);
+    });
+    
+    
     const { enviarTexto } = setupMessagingServices(pico, from, messageDetails);
 
     const { fullMessage, commandName, fromUser, media, isCommand, messageContent, textMessage, from: messageFrom, userName } = extractMessage(messageDetails);
