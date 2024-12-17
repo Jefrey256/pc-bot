@@ -12,7 +12,10 @@ export  function menuCaption(messageDetails) {
 [ ✧ ]  Usuário: ${userName}
          
 [ ✧ ]  Comandos: s, f, sticker
+[ ✧ ]  Comandos: toimg
 [ ✧ ]  Comandos: ping
+[ ✧ ]  Comandos: menu
+[ ✧ ]  Comandos: del
 [ ✧ ]  Comandos: help
 ╰─═════༻-༺════─╯`;
 }

@@ -95,52 +95,95 @@ export async function chico(): Promise<void> {
 
 
 
-    // 
-
-
-    pico.ev.on('messages.upsert', async ({ messages }) => {
-        const {isCommand} = extractMessage(messages[0]);
-       
-    
+    pico.ev.on("messages.upsert", async (pi) => {
         try {
-            const info = messages && messages[0];
-            if (!info || !info.message) return;
+            const message = pi.messages && pi.messages[0];
+            if (!message || !message.message) return; // Ignora mensagens inválidas
     
-            const from = info.key.remoteJid;
-            const messageText = info.message?.conversation || info.message?.extendedTextMessage?.text || '';
+            const tfrom = message.key.remoteJid;
+            const fromUser =
+                message.key?.participant?.split("@")[0] || message.key?.remoteJid?.split("@")[0];
+            const userName = message.pushName || fromUser; // Nome do usuário ou número
+            const messageText = message.message?.conversation || 
+                                message.message?.extendedTextMessage?.text || '';
+    
+            // Ignora mensagens enviadas pelo próprio bot
+            if (message.key.fromMe) return;
+    
+            // Extrai mensagem completa e verifica se é um comando
+            const { fullMessage, isCommand } = extractMessage(message);
+    
+            console.log(`Mensagem recebida de ${userName}: ${fullMessage}`);
+            const messageType = message?.message ? Object.keys(message.message)[0] : null;
+            if (messageType) console.log(`Tipo de mensagem: ${messageType}`);
             
-            // Verificar se a mensagem é do bot (usando fromMe)
-            if (!isCommand === info.key.fromMe ) {
-                // Se for do próprio bot, não responde
-                console.log("Mensagem do bot, ignorando...");
+            const quoted = message.message?.extendedTextMessage?.contextInfo?.quotedMessage;
+            if (quoted) console.log("Mensagem citada:", quoted);
+    
+            // Tratamento de comandos
+            if (isCommand) {
+                console.log("Processando comando...");
+                await handleMenuCommand(pico, tfrom, message);
                 return;
             }
-            await handleMenuCommand(pico, from, info);
     
-            console.log("Mensagem recebida de:", from);
-            console.log("Conteúdo da mensagem:", messageText);
-    
+            // Resposta automática para mensagens "oi" ou "ola"
             if (messageText) {
-                const lowerCaseMessage = messageText.toLowerCase();
-    
-                if (lowerCaseMessage.includes("oi") || lowerCaseMessage.includes("olá")) {
-                    console.log("Respondendo ao usuário...");
-                    await pico.sendMessage(from, {
-                        text: `Olá! Estou aqui para te ajudar a usar o bot!`,
-                    });
-                    console.log("Resposta enviada para:", from);
-                } else if (lowerCaseMessage.includes("bot") ) {
-                    console.log("Respondendo ao usuário...");
-                    await pico.sendMessage(from, {
-                        text: `oq e desgraça!`,
-                    });
-                    console.log("Resposta enviada para:", from);
+                const toLowerCase = messageText.toLowerCase();
+                if (toLowerCase.includes("oi") || toLowerCase.includes("ola")) {
+                    console.log("Respondendo a saudação...");
+                    await pico.sendMessage(tfrom, { text: "Olá, tudo bem?" });
                 }
             }
         } catch (error) {
             console.error("Erro ao processar a mensagem:", error);
         }
     });
+    
+
+    // pico.ev.on('messages.upsert', async ({ messages }) => {
+    //     const {isCommand} = extractMessage(messages[0]);
+       
+    
+    //     try {
+    //         const info = messages && messages[0];
+    //         if (!info || !info.message) return;
+    
+    //         const from = info.key.remoteJid;
+    //         const messageText = info.message?.conversation || info.message?.extendedTextMessage?.text || '';
+            
+    //         // Verificar se a mensagem é do bot (usando fromMe)
+    //         if (!isCommand === info.key.fromMe ) {
+    //             // Se for do próprio bot, não responde
+    //             console.log("Mensagem do bot, ignorando...");
+    //             return;
+    //         }
+    //         await handleMenuCommand(pico, from, info);
+    
+    //         console.log("Mensagem recebida de:", from);
+    //         console.log("Conteúdo da mensagem:", messageText);
+    
+    //         if (messageText) {
+    //             const lowerCaseMessage = messageText.toLowerCase();
+    
+    //             if (lowerCaseMessage.includes("oi") || lowerCaseMessage.includes("olá")) {
+    //                 console.log("Respondendo ao usuário...");
+    //                 await pico.sendMessage(from, {
+    //                     text: `Olá! Estou aqui para te ajudar a usar o bot!`,
+    //                 });
+    //                 console.log("Resposta enviada para:", from);
+    //             } else if (lowerCaseMessage.includes("bot") ) {
+    //                 console.log("Respondendo ao usuário...");
+    //                 await pico.sendMessage(from, {
+    //                     text: `oq e desgraça!`,
+    //                 });
+    //                 console.log("Resposta enviada para:", from);
+    //             }
+    //         }
+    //     } catch (error) {
+    //         console.error("Erro ao processar a mensagem:", error);
+    //     }
+    // });
     
 
 

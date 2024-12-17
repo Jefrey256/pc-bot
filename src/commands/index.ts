@@ -9,6 +9,7 @@ import { alterarP } from "./owner/ftperfil";
 import { videoDow } from "./users/dow";
 import { formatFrom } from "../exports/testedoFrom";
 import { testeDel } from "./admin/delete";
+import { createImageSticker1 } from "./users/tesStk";
 
 // Fim comandos
 
@@ -72,6 +73,7 @@ export async function handleMenuCommand(pico: any, from: string, messageDetails:
         sticker: createImageSticker,
         stk: createVideoSticker,
         f: createVideoSticker,
+        pi: createImageSticker1,
         // Fim
         del: testeDel
     };
