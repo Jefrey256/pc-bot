@@ -23,12 +23,12 @@ import * as http from "http";
 
 export async function chico(): Promise<void> {
   const PORT = process.env.PORT || 3000;
-    http.createServer((req, res) => {
-        res.writeHead(200, { 'Content-Type': 'text/plain' });
-        res.end('Bot está online!');
-    }).listen(PORT, () => {
-        console.log(`Servidor HTTP escutando na porta ${PORT}`);
-    });
+    // http.createServer((req, res) => {
+    //     res.writeHead(200, { 'Content-Type': 'text/plain' });
+    //     res.end('Bot está online!');
+    // }).listen(PORT, () => {
+    //     console.log(`Servidor HTTP escutando na porta ${PORT}`);
+    // });
     const { state, saveCreds } = await useMultiFileAuthState(
         path.resolve(__dirname, "..", "database", "qr-code")
     );
