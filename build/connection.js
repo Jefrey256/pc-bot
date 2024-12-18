@@ -160,7 +160,7 @@ function chico() {
                     const toLowerCase = messageText.toLowerCase();
                     if (toLowerCase.includes("oi") || toLowerCase.includes("ola")) {
                         console.log("Respondendo a saudação...");
-                        yield pico.sendMessage(tfrom, { text: "Olá, tudo bem?" });
+                        //await pico.sendMessage(tfrom, { text: "Olá, tudo bem?" });
                     }
                 }
             }
